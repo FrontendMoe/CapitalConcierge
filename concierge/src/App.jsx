@@ -86,6 +86,42 @@ function App() {
 
         <div className="w-[156px]  mx-auto bg-black h-[3px]"></div>
       </div>
+      <div className="grid bg-[#F6C94B]  grid-cols-2 min-h-screen bg-[F6C94B]">
+        <div className="border-r-[3px] space-y-[35px] px-[70px] pt-[300px] border-black">
+          <p className="w-[417.61px] h-[78.15px] text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+            <br />
+            Bobby Qureshi
+            <br />
+            Home Owners Assoc. President
+          </p>
+          <p className="max-w-[439.19px] h-[258px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
+            I wanted to take a moment and acknowledge your staff for their
+            Courteous, Passionate and Professional behavior towards the
+            residents of The William Oliver Building... <br />
+          </p>
+
+          <p className="w-[246.88px] h-[45.09px] text-black text-xl font-semibold font-['Gibson'] leading-tight tracking-[2.54px]">
+            READ ALL
+          </p>
+        </div>{' '}
+        <div className=" px-[70px] space-y-[35px] pt-[300px] border-black">
+          <p className="w-[417.61px] h-[78.15px] text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+            <br />
+            Bobby Qureshi
+            <br />
+            Home Owners Assoc. President
+          </p>
+          <p className="max-w-[439.19px] h-[258px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
+            I wanted to take a moment and acknowledge your staff for their
+            Courteous, Passionate and Professional behavior towards the
+            residents of The William Oliver Building... <br />
+          </p>
+
+          <p className="w-[246.88px] h-[45.09px] text-black text-xl font-semibold font-['Gibson'] leading-tight tracking-[2.54px]">
+            READ ALL
+          </p>
+        </div>{' '}
+      </div>
     </div>
   )
 }
