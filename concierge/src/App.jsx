@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="bg-[#F6C94B] text min-h-screen text-black">
-      Capital Concierge
+      <div className="py-[56px] border-b-[3px] border-black "></div>
     </div>
   )
 }
