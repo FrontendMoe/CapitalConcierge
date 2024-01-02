@@ -1,80 +1,120 @@
+import { Link } from 'react-router-dom'
 import video from '../vid.mp4'
 import { Fade } from 'react-reveal'
+import Navbar from '../components/Navbar'
 function Home() {
   return (
     <div className="bg-[#F6C94B] ">
-      <div className="bg-[#F6C94B] border-t-[3px] border-black flex  text min-h-screen text-black">
-        <div className="bg-[#F6C94B] space-y-[72px]   py-[128px] px-[150px]  border-black   border-r-[3px]  w-1/2 ">
-          <p className="text-[84px] max-w-[400px] Hiragino leading-[89px]">
-            The Best For Your Guest.
+      <section className="bg-[#F6C94B]  border-black flex  text min-h-screen text-black">
+        <div className="bg-[#282724] text-white space-y-[72px]   py-[128px] px-[150px]  border-black    w-1/2 ">
+          <p className="text-[84px] max-max-w-[400px] Hiragino leading-[89px]">
+            The Best For Your <span className="text-[#F6C94B]">Guest.</span>
           </p>
-          <div className="w-[156px] h-[3px] bg-black"></div>
-          <p className="text-[25px] leading-[37px] max-w-[330px] font-[300]">
+          <div className="max-max-w-[299px] text-orange-100 text-[27px] font-semibold font-['Gibson'] leading-[38px]">
             Professional & Innovative Concierge Services & Solutions.
-          </p>
+          </div>
         </div>
-        <Fade>
-          <video
-            src={video}
-            loop
-            autoPlay
-            muted
-            className="w-1/2 mix-blend-multiply object-cover"
-          ></video>
-        </Fade>
-      </div>
-      <div className="text-center border-black border-t-[3px] space-y-[70px] bg-[#FFF7DF] py-[160px]">
-        <p className="text-[52px] leading-[61px] Hiragino  font-[600]">
-          CAPITAL <br />
-          CONCIERGE
-        </p>
-        <div className="w-[341px] mx-auto bg-black h-[3px]"></div>
-        <p className="w-[890px] mx-auto text-center text-black text-[25px] font-light font-['Gibson'] leading-[58px] tracking-wide">
-          We provide each client the personal attention and consideration they
-          need, including but not limited to; residential, homeowners
-          associations, commercial properties and hospitality companies. We take
-          the values and requests of our clients' very seriously, providing only
-          the very best in customer service..
-        </p>
-
-        <div className="w-[156px]  mx-auto bg-black h-[3px]"></div>
-      </div>
-      <div className="grid bg-[#F6C94B]  grid-cols-2 min-h-screen bg-[F6C94B]">
-        <div className="border-r-[3px] space-y-[35px] px-[70px] pt-[300px] border-black">
-          <p className="w-[417.61px] h-[78.15px] text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+        <div className="w-1/2 relative">
+          <Navbar></Navbar>
+          <Fade>
+            <video
+              src={video}
+              loop
+              autoPlay
+              muted
+              className=" h-full object-left mix-blend-multiply object-cover"
+            ></video>
+          </Fade>
+        </div>
+      </section>
+      <section className="text-start space-y-[90px]  border-black    bg-[#F8EED3] py-[80px] px-[90px]">
+        <div className="space-y-[70px] py-[125px] px-[160px] bg-[#F6C94B]">
+          <p className="max-w-[734px] Hiragino  text-zinc-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+            tailored-fitted
             <br />
-            Bobby Qureshi
-            <br />
-            Home Owners Assoc. President
-          </p>
-          <p className="max-w-[439.19px] h-[258px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
-            I wanted to take a moment and acknowledge your staff for their
-            Courteous, Passionate and Professional behavior towards the
-            residents of The William Oliver Building... <br />
+            for each community
           </p>
 
-          <p className="w-[246.88px] h-[45.09px] text-black text-xl font-semibold font-['Gibson'] leading-tight tracking-[2.54px]">
-            READ ALL
-          </p>
-        </div>{' '}
-        <div className=" px-[70px] space-y-[35px] pt-[300px] border-black">
-          <p className="w-[417.61px] h-[78.15px] text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
-            <br />
-            Bobby Qureshi
-            <br />
-            Home Owners Assoc. President
-          </p>
-          <p className="max-w-[439.19px] h-[258px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
-            I wanted to take a moment and acknowledge your staff for their
-            Courteous, Passionate and Professional behavior towards the
-            residents of The William Oliver Building... <br />
-          </p>
+          <div className="max-w-[434px] text-zinc-800 text-[35px] font-light font-['Gibson'] lowercase leading-[49px]">
+            SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
+          </div>
+          <div className="max-w-[1004px] h-[0px] border border-black border-opacity-20"></div>
 
-          <p className="w-[246.88px] h-[45.09px] text-black text-xl font-semibold font-['Gibson'] leading-tight tracking-[2.54px]">
-            READ ALL
+          <div className="bg-[#7D5555] ">
+            <div className="px-[72px] space-y-[24px] py-[35px]">
+              <div className="max-max-w-[813px] Hiragino  text-yellow-50 text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[58px]">
+                Capital Concierge is Affordable, Accessible, Attentive &
+                Accountable.
+              </div>
+              <div className="max-w-[582px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
+                We are familiar with the challenges and difficulties communities
+                face and are prepared to tackle those challenges
+              </div>
+            </div>
+            <div className="bg-[#6B4949] px-[72px] py-[35px] text-right">
+              <div className="text-amber-300 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                VIEW OUR OFFERINGS & PRICING {'>'}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#282724] space-y-[70px] px-[180px] py-[110px]">
+          <div className="space-y-[44px]">
+            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+              About Us.
+            </div>
+            <div className="max-w-[714px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+              We believe Capital Concierge’s mission is to provide our clients
+              the highest quality and most effective customer service. Our
+              priority is to manage our clients expectations while working in
+              partnership to create innovative solutions, honestly, dependably,
+              proficiently and with integrity.
+            </div>
+          </div>
+
+          <div className="text-amber-300 text-right text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+            VIEW OUR OFFERINGS {'>'}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F8EED3] px-[150px]">
+        <div className="max-w-[767px]">
+          <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
+            our <br />
+          </span>
+          <span className="text-zinc-800 text-[84px] font-semibold Hiragino  leading-[89px]">
+            reputation
+            <br />
+          </span>
+          <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
+            speaks
+            <br />
+            for
+            <br />
+            itself.
+          </span>
+        </div>
+      </section>
+      <section className="px-[150px] space-y-[27px] py-[120px]">
+        <div className="max-w-[939px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+          Let’s Work Together.
+        </div>
+        <div className="max-w-[923px]  h-[150px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
+          Janell, and her team are attentive, professional, kind and most
+          importantly to me, because I am a senior, they make me feel safe and
+          cared for both inside our building <br />
+        </div>
+        <button className="w-[397px] flex items-center h-[69px] bg-[#282724]">
+          <p className="w-[417.61px] flex justify-between px-[25px]">
+            <span className="text-orange-100 text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+              CONTACT US{' '}
+            </span>
+            <span className="text-amber-300 text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+              {`>`}
+            </span>
           </p>
-        </div>{' '}
-      </div>
+        </button>
+      </section>
     </div>
   )
 }
