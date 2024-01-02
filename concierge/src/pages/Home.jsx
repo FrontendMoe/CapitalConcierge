@@ -2,7 +2,119 @@ import { Link } from 'react-router-dom'
 import video from '../vid.mp4'
 import { Fade } from 'react-reveal'
 import Navbar from '../components/Navbar'
+import Quote from '../components/Quote'
 function Home() {
+  const quotes = [
+    {
+      text: (
+        <>
+          Capital Concierge sets the standard for what a hybrid of security and
+          service should look like in any industry, I have watched Janell and
+          her team execute every single time, if it was my choice I would never
+          work with anyone else.{' '}
+        </>
+      ),
+      author: (
+        <>
+          Horace Williams <br />
+          Home Owners Assoc. Vice President
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
+          I wanted to take a moment and acknowledge your staff for their
+          Courteous, Passionate and Professional behavior towards the residents
+          of The William Oliver Building. I have personally experienced their
+          service as a resident since 2016 plus the numerous resident
+          compliments that the HOA Board has received. The Concierges have
+          always gone above and beyond for the residents. Please convey the{' '}
+          {"Board's"} gratitude to the concierges and for your leadership. Thank
+          you.
+        </>
+      ),
+      author: (
+        <>
+          {' '}
+          <br />
+          Bobby Qureshi
+          <br />
+          Home Owners Assoc. President
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
+          I wanted to take a moment and acknowledge your staff for their
+          Courteous, Passionate and Professional behavior towards the residents
+          of The William Oliver Building. I have personally experienced their
+          service as a resident since 2016 plus the numerous resident
+          compliments that the HOA Board has received. The Concierges have
+          always gone above and beyond for the residents. Please convey the{' '}
+          {"Board's"} gratitude to the concierges and for your leadership. Thank
+          you.
+        </>
+      ),
+      author: (
+        <>
+          {' '}
+          <br />
+          Bobby Qureshi
+          <br />
+          Home Owners Assoc. President
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
+          I wanted to take a moment and acknowledge your staff for their
+          Courteous, Passionate and Professional behavior towards the residents
+          of The William Oliver Building. I have personally experienced their
+          service as a resident since 2016 plus the numerous resident
+          compliments that the HOA Board has received. The Concierges have
+          always gone above and beyond for the residents. Please convey the{' '}
+          {"Board's"} gratitude to the concierges and for your leadership. Thank
+          you.
+        </>
+      ),
+      author: (
+        <>
+          {' '}
+          <br />
+          Bobby Qureshi
+          <br />
+          Home Owners Assoc. President
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
+          I wanted to take a moment and acknowledge your staff for their
+          Courteous, Passionate and Professional behavior towards the residents
+          of The William Oliver Building. I have personally experienced their
+          service as a resident since 2016 plus the numerous resident
+          compliments that the HOA Board has received. The Concierges have
+          always gone above and beyond for the residents. Please convey the{' '}
+          {"Board's"} gratitude to the concierges and for your leadership. Thank
+          you.
+        </>
+      ),
+      author: (
+        <>
+          {' '}
+          <br />
+          Bobby Qureshi
+          <br />
+          Home Owners Assoc. President
+        </>
+      ),
+    },
+  ]
+
   return (
     <div className="bg-[#F6C94B] ">
       <section className="bg-[#F6C94B]  border-black flex  text min-h-screen text-black">
@@ -77,8 +189,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8EED3] px-[150px]">
-        <div className="max-w-[767px]">
+      <section className="bg-[#F8EED3] columns-2 gap-[125px]	 px-[150px]">
+        <div className="max-w-[767px] pb-[100px]">
           <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
             our <br />
           </span>
@@ -94,6 +206,11 @@ function Home() {
             itself.
           </span>
         </div>
+        {quotes.map((el, index) => (
+          <div key={index} className="block ">
+            <Quote author={el.author} text={el.text}></Quote>
+          </div>
+        ))}
       </section>
       <section className="px-[150px] space-y-[27px] py-[120px]">
         <div className="max-w-[939px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
