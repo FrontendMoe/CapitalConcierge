@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   const nav = [
     {
-      name: 'WELCOME',
+      name: 'Home',
       link: '',
     },
     {
-      name: 'COMPANY',
-      link: 'COMPANY',
+      name: 'About',
+      link: 'About',
       color: '#7D5555',
     },
 
@@ -21,8 +21,8 @@ function Navbar() {
     },
   ]
   return (
-    <nav>
-      <div className="py-[56px] z-10 items-center  absolute top-0 w-full     flex space-x-[83px] justify-center border-black ">
+    <nav className="mx-auto relative">
+      <div className="py-[56px] z-10 items-center  mx-auto top-0 w-fit     flex space-x-[83px] justify-center border-black ">
         {nav.map((el, index) => (
           <Link
             key={el}

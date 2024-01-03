@@ -3,6 +3,8 @@ import video from '../vid.mp4'
 import { Fade } from 'react-reveal'
 import Navbar from '../components/Navbar'
 import Quote from '../components/Quote'
+import films from '../assets/films.png'
+import Work from '../components/Work'
 function Home() {
   const quotes = [
     {
@@ -114,7 +116,38 @@ function Home() {
       ),
     },
   ]
-
+  const charactheristics = [
+    {
+      name: 'FLEXIBILE',
+      text:
+        'Procedures and policies sometimes need to change immediately, and we are able to apply these changes in a short period of time.',
+    },
+    {
+      name: 'CUSTOM',
+      text:
+        'We realize that every building is different and has different needs, so we customize our services as needed for that property. ',
+    },
+    {
+      name: 'ACCESSIBLE',
+      text:
+        'Access our leadership directly- Our employees can contact the top leaders directly with day to day issues which allows us resolve any critical matters promptly.',
+    },
+    {
+      name: 'TECH-ENABLED',
+      text:
+        'All forms, documentation requiring signatures at the front desk and daily performance logs will be replaced with our curated technology solutions.',
+    },
+    {
+      name: 'EFFECTIVE',
+      text:
+        'We are able to maximize service and we do this by providing top-notch management and commitment from our company’s leadership, and concierge team.',
+    },
+    {
+      name: 'PERSONAL',
+      text:
+        'We are able to maximize service and we do this by providing top-notch management and commitment from our company’s leadership, and concierge team.',
+    },
+  ]
   return (
     <div className="bg-[#F6C94B] ">
       <section className="bg-[#F6C94B]  border-black flex  text min-h-screen text-black">
@@ -127,7 +160,9 @@ function Home() {
           </div>
         </div>
         <div className="w-1/2 relative">
-          <Navbar></Navbar>
+          <div className="absolute z-10 left-1/2 -translate-x-1/2">
+            <Navbar></Navbar>
+          </div>
           <Fade>
             <video
               src={video}
@@ -150,8 +185,43 @@ function Home() {
           <div className="max-w-[434px] text-zinc-800 text-[35px] font-light font-['Gibson'] lowercase leading-[49px]">
             SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
           </div>
+          <div className="max-w-[1004px] relative h-[0px] border border-black border-opacity-20">
+            <img
+              src={films}
+              className="absolute mix-blend-darken opacity-45 h-[1319px] rotate-90"
+            ></img>
+          </div>
+          <div className="flex gap-[65px] justify-between">
+            {charactheristics
+              .slice(0, 3)
+              .reverse()
+              .map((el, index) => (
+                <div key={index}>
+                  <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    {el.name}
+                  </div>
+                  <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    {el.text}
+                  </div>
+                </div>
+              ))}
+          </div>
           <div className="max-w-[1004px] h-[0px] border border-black border-opacity-20"></div>
-
+          <div className="flex gap-[65px] justify-between">
+            {charactheristics
+              .slice(3, 6)
+              .reverse()
+              .map((el, index) => (
+                <div key={index}>
+                  <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    {el.name}
+                  </div>
+                  <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    {el.text}
+                  </div>
+                </div>
+              ))}
+          </div>
           <div className="bg-[#7D5555] ">
             <div className="px-[72px] space-y-[24px] py-[35px]">
               <div className="max-max-w-[813px] Hiragino  text-yellow-50 text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[58px]">
@@ -189,7 +259,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8EED3] columns-2 gap-[125px]	 px-[150px]">
+      <section className="bg-[#F8EED3] pb-[120px] columns-2 gap-[125px]	 px-[150px]">
         <div className="max-w-[767px] pb-[100px]">
           <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
             our <br />
@@ -212,26 +282,7 @@ function Home() {
           </div>
         ))}
       </section>
-      <section className="px-[150px] space-y-[27px] py-[120px]">
-        <div className="max-w-[939px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
-          Let’s Work Together.
-        </div>
-        <div className="max-w-[923px]  h-[150px] text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
-          Janell, and her team are attentive, professional, kind and most
-          importantly to me, because I am a senior, they make me feel safe and
-          cared for both inside our building <br />
-        </div>
-        <button className="w-[397px] flex items-center h-[69px] bg-[#282724]">
-          <p className="w-[417.61px] flex justify-between px-[25px]">
-            <span className="text-orange-100 text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
-              CONTACT US{' '}
-            </span>
-            <span className="text-amber-300 text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
-              {`>`}
-            </span>
-          </p>
-        </button>
-      </section>
+      <Work></Work>
     </div>
   )
 }
