@@ -70,7 +70,7 @@ function About() {
             <div className="">
               {learn.map((el, index) => (
                 <div key={index} className="pb-[45px] ">
-                  <div className="w-[672px] h-[0px] border border-yellow-50 border-opacity-10"></div>
+                  <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
                   <div className=" pt-[45px] px-[70px] space-y-[18px]">
                     <div className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
                       {el.name}
@@ -78,10 +78,13 @@ function About() {
                     <div className="max-w-[481px]  text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
                       {el.text}
                     </div>
+                    <div className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
+                      <p>CONTINUE</p> <p>{'>'}</p>
+                    </div>
                   </div>
                 </div>
               ))}
-              <div className="w-[672px] h-[0px] border border-yellow-50 border-opacity-10"></div>
+              <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
             </div>{' '}
           </div>
         </div>
