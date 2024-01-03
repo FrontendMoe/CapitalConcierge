@@ -152,7 +152,7 @@ function Home() {
     <div className="bg-[#F6C94B] ">
       <section className="bg-[#F6C94B]  border-black flex  text min-h-screen text-black">
         <div className="bg-[#282724] text-white space-y-[72px]   py-[128px] px-[150px]  border-black    w-1/2 ">
-          <p className="text-[84px] max-max-w-[400px] Hiragino leading-[89px]">
+          <p className="text-[84px]  max-w-[300px] Hiragino leading-[89px]">
             The Best For Your <span className="text-[#F6C94B]">Guest.</span>
           </p>
           <div className="max-max-w-[299px] text-orange-100 text-[27px] font-semibold font-['Gibson'] leading-[38px]">
