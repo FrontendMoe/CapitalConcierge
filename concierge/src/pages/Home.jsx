@@ -10,10 +10,48 @@ function Home() {
     {
       text: (
         <>
+          I wanted to take a moment and acknowledge your staff for their
+          Courteous, Passionate and Professional behavior towards the residents
+          of The William Oliver Building. I have personally experienced their
+          service as a resident since 2016 plus the numerous resident
+          compliments that the HOA Board has received. The Concierges have
+          always gone above and beyond for the residents. Please convey the
+          Board's gratitude to the concierges and for your leadership. Thank
+          you.
+        </>
+      ),
+      author: (
+        <>
+          Bobby Qureshi <br /> Home Owners Assoc. President
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
+          anell, and her team are attentive, professional, kind and most
+          importantly to me, because I am a senior, they make me feel safe and
+          cared for both inside our building and within our Downtown Atlanta
+          community. <br /> <br /> After multiple years of working directly
+          Janelle and her team on resident needs, events, maintenance and more
+          was my favorite part of being a resident and HOA member of a Capital
+          Concierge community.
+        </>
+      ),
+      author: (
+        <>
+          Vera Moore <br />
+          Home Owners Assoc. Secretary
+        </>
+      ),
+    },
+    {
+      text: (
+        <>
           Capital Concierge sets the standard for what a hybrid of security and
           service should look like in any industry, I have watched Janell and
           her team execute every single time, if it was my choice I would never
-          work with anyone else.{' '}
+          work with anyone else.
         </>
       ),
       author: (
@@ -26,91 +64,25 @@ function Home() {
     {
       text: (
         <>
-          I wanted to take a moment and acknowledge your staff for their
-          Courteous, Passionate and Professional behavior towards the residents
-          of The William Oliver Building. I have personally experienced their
-          service as a resident since 2016 plus the numerous resident
-          compliments that the HOA Board has received. The Concierges have
-          always gone above and beyond for the residents. Please convey the{' '}
-          {"Board's"} gratitude to the concierges and for your leadership. Thank
-          you.
+          As the former President of my HOA I highly recommend Capital Concierge
+          for all of their services. Prior to bringing Capital Concierge on
+          board for our community we had what felt like a rotating door of
+          staff, as well a overall general lack of operational guidance. Janelle
+          and her team came in and completely turned things around for
+          community. <br /> <br /> Each day we were greeted with a smiling
+          helpful concierge team. In conjunction Janelle brought amazing insight
+          and guidance into the overall building operations. She was able to
+          recommend different process improvements, project tracking, and
+          guidance on vendor selection. With Janelle and Capital Concierge on
+          the job the board was able to focus on meeting the needs of the
+          community as opposed to consistently reinventing the wheel when it
+          came to finding help at the front desk and in building operations as a
+          whole.
         </>
       ),
       author: (
         <>
-          {' '}
-          <br />
-          Bobby Qureshi
-          <br />
-          Home Owners Assoc. President
-        </>
-      ),
-    },
-    {
-      text: (
-        <>
-          I wanted to take a moment and acknowledge your staff for their
-          Courteous, Passionate and Professional behavior towards the residents
-          of The William Oliver Building. I have personally experienced their
-          service as a resident since 2016 plus the numerous resident
-          compliments that the HOA Board has received. The Concierges have
-          always gone above and beyond for the residents. Please convey the{' '}
-          {"Board's"} gratitude to the concierges and for your leadership. Thank
-          you.
-        </>
-      ),
-      author: (
-        <>
-          {' '}
-          <br />
-          Bobby Qureshi
-          <br />
-          Home Owners Assoc. President
-        </>
-      ),
-    },
-    {
-      text: (
-        <>
-          I wanted to take a moment and acknowledge your staff for their
-          Courteous, Passionate and Professional behavior towards the residents
-          of The William Oliver Building. I have personally experienced their
-          service as a resident since 2016 plus the numerous resident
-          compliments that the HOA Board has received. The Concierges have
-          always gone above and beyond for the residents. Please convey the{' '}
-          {"Board's"} gratitude to the concierges and for your leadership. Thank
-          you.
-        </>
-      ),
-      author: (
-        <>
-          {' '}
-          <br />
-          Bobby Qureshi
-          <br />
-          Home Owners Assoc. President
-        </>
-      ),
-    },
-    {
-      text: (
-        <>
-          I wanted to take a moment and acknowledge your staff for their
-          Courteous, Passionate and Professional behavior towards the residents
-          of The William Oliver Building. I have personally experienced their
-          service as a resident since 2016 plus the numerous resident
-          compliments that the HOA Board has received. The Concierges have
-          always gone above and beyond for the residents. Please convey the{' '}
-          {"Board's"} gratitude to the concierges and for your leadership. Thank
-          you.
-        </>
-      ),
-      author: (
-        <>
-          {' '}
-          <br />
-          Bobby Qureshi
-          <br />
+          Laurence Anderson <br />
           Home Owners Assoc. President
         </>
       ),
@@ -259,7 +231,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8EED3] pb-[120px] columns-2 gap-[125px]	 px-[150px]">
+      <section className="bg-[#F8EED3] pb-[120px] columns-2 gap-[150px]	 px-[150px]">
         <div className="max-w-[767px] pb-[100px]">
           <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
             our <br />

@@ -25,10 +25,10 @@ function Quote({
   ),
 }) {
   return (
-    <div className="relative w-fit">
+    <div className="relative w-fit space-y-[40px] break-inside-avoid">
       <div className="relative w-fit">
         <div className="absolute top-0 -left-[80px]">{leftQuote}</div>
-        <div className="flex flex-col items-center text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
+        <div className="flex flex-col  items-center text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
           {text}
         </div>
         <div className="absolute bottom-0 -right-[80px]">{rightQuote}</div>
