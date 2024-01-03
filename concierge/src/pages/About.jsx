@@ -2,6 +2,23 @@ import Navbar from '../components/Navbar'
 import Work from '../components/Work'
 
 function About() {
+  const learn = [
+    {
+      name: 'PRICING',
+      text:
+        '   Hold doors to assist when needed and accept deliveries and hold packages for pick-up',
+    },
+    {
+      name: 'WHAT MAKES US DIFFERENT?',
+      text:
+        '          Hold doors to assist when needed and accept deliveries and hold  packages for pick-up',
+    },
+    {
+      name: 'OUR OFFERINGS',
+      text:
+        'Hold doors to assist when needed and accept deliveries and hold packages for pick-up',
+    },
+  ]
   return (
     <div className="bg-[#F6C94B]">
       <section>
@@ -11,7 +28,7 @@ function About() {
             <Navbar></Navbar>
           </div>
         </div>
-        <div className="px-[120px] space-y-[60px]">
+        <div className="px-[220px] space-y-[60px]">
           <div className="w-[660px] Hiragino text-zinc-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
             About
             <br />
@@ -19,7 +36,7 @@ function About() {
             <br />
             Concierge
           </div>
-          <div className="w-[982px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+          <div className="w-[982px] pb-[120px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
             Our objective is to always exemplify thought leadership and standard
             setting professionalism for commercial, homeowner and hospitality
             companies. We serve our customers' needs and consistently produce
@@ -31,45 +48,41 @@ function About() {
             teamwork, innovation, professionalism, and long-term
             decision-making.
           </div>
-          <div className="bg-[#282724]">
-            <div className="w-[660px] Hiragino text-amber-300 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
-              Our
-              <br />
-              Mission
-            </div>
-            <div className="w-[481px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
-              We believe Capital Concierge’s mission is to provide our clients
-              the highest quality and most effective customer service. Our
-              priority is to manage our clients expectations while working in
-              partnership to create innovative solutions, honestly, dependably,
-              proficiently and with integrity.
-            </div>
-            <div className="bg-[#38342D]">
-              <div className="w-[379px] text-orange-100 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
-                Learn More
-              </div>
-              <div className="w-[191.38px] text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
-                PRICING
-              </div>
-              <div className="w-[481px] text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
-                Hold doors to assist when needed and accept deliveries and hold
-                packages for pick-up
-              </div>
-              <div className="w-[446px] text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
-                WHAT MAKES US DIFFERENT?
-              </div>
-              <div className="w-[481px] text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
-                Hold doors to assist when needed and accept deliveries and hold
-                packages for pick-up
-              </div>
-              <div className="w-[446px] text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
-                OUR OFFERINGS
-              </div>
-              <div className="w-[481px] text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
-                Hold doors to assist when needed and accept deliveries and hold
-                packages for pick-up
-              </div>
-            </div>
+        </div>
+        <div className="bg-[#282724] space-y-[54px] px-[220px] pt-[90px]">
+          <div className="w-[660px] Hiragino text-amber-300 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+            Our
+            <br />
+            Mission
+          </div>
+          <div className="max-w-[880px]  text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+            We believe Capital Concierge’s mission is to provide our clients the
+            highest quality and most effective customer service. Our priority is
+            to manage our clients expectations while working in partnership to
+            create innovative solutions, honestly, dependably, proficiently and
+            with integrity.
+          </div>
+
+          <div className="bg-[#38342D] space-y-[77px] py-[100px] px-[90px] ">
+            <p className="max-w-[379px] Hiragino text-orange-100 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+              Learn More...
+            </p>
+            <div className="">
+              {learn.map((el, index) => (
+                <div key={index} className="pb-[45px] ">
+                  <div className="w-[672px] h-[0px] border border-yellow-50 border-opacity-10"></div>
+                  <div className=" pt-[45px] px-[70px] space-y-[18px]">
+                    <div className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
+                      {el.name}
+                    </div>
+                    <div className="max-w-[481px]  text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
+                      {el.text}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="w-[672px] h-[0px] border border-yellow-50 border-opacity-10"></div>
+            </div>{' '}
           </div>
         </div>
         <Work></Work>

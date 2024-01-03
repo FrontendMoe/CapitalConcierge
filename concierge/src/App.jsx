@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Company from './pages/Company'
 import Footer from './components/Footer'
 import About from './pages/About'
+import Services from './pages/Services'
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
         <Route path="" element={<Home></Home>}></Route>
         <Route path="/Company" element={<Company></Company>}></Route>
         <Route path="/About" element={<About></About>}></Route>
+        <Route path="/Services" element={<Services></Services>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

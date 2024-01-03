@@ -1,6 +1,6 @@
 function Work() {
   return (
-    <section className="px-[150px] space-y-[27px] py-[120px]">
+    <section className="px-[150px] bg-[#F6C94B] space-y-[27px] py-[120px]">
       <div className="max-w-[939px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
         Let’s Work Together.
       </div>
