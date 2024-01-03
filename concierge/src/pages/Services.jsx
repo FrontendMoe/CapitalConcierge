@@ -74,7 +74,7 @@ function Services() {
           </div>
         </div>
       </section>
-      <section className="px-[220px] py-[106px] space-y-[95px]  bg-[#FFF7DF]">
+      <section className="px-[220px] pt-[106px] space-y-[95px]  bg-[#FFF7DF]">
         <div className="w-[734px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
           Our Offerings
         </div>
@@ -97,7 +97,40 @@ function Services() {
             </div>
           ))}
         </div>
+        <div className="bg-[#282724] translate-y-[150px] space-y-[62px] px-[109px] py-[90px]">
+          <div className="w-[734px] Hiragino text-amber-300 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+            Pricing
+          </div>
+          <div className="w-[888px] h-[260px]">
+            <span className="text-neutral-400 text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+              Pricing for{' '}
+            </span>
+            <span className="text-white text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+              concierge staff, supervisors and building link support{' '}
+            </span>
+            <span className="text-neutral-400 text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+              are based on community size and needs.{' '}
+            </span>
+            <span className="text-white text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+              Contact us for a proposal.
+            </span>
+          </div>
+          <button className="w-[397px] flex items-center h-[69px] bg-[#F6C94B]">
+            <p className="w-[417.61px] flex justify-between px-[25px]">
+              <span
+                className="text-black
+               text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide"
+              >
+                REQUEST A PROPOSAL
+              </span>
+              <span className="text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+                {`>`}
+              </span>
+            </p>
+          </button>
+        </div>
       </section>
+      <div className="h-[150px] bg-[#F6C94B] w-full"></div>
       <Work></Work>
     </div>
   )
