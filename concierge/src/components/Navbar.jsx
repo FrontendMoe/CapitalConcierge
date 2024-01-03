@@ -3,21 +3,21 @@ function Navbar() {
   const nav = [
     {
       name: 'Home',
-      link: '',
+      link: '/',
     },
     {
       name: 'About',
-      link: 'About',
+      link: '/About',
       color: '#7D5555',
     },
 
     {
       name: 'Services',
-      link: 'Services',
+      link: '/Services',
     },
     {
       name: 'CONTACT',
-      link: 'CONTACT',
+      link: '/CONTACT',
     },
   ]
   return (
