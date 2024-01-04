@@ -150,70 +150,74 @@ function Home() {
         </div>
       </section>
       <section className="text-start relative space-y-[90px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className="space-y-[20px] overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
-          <p className=" px-[30px] lg:px-[160px]  Hiragino  text-zinc-800 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
-            tailored-fitted
-            <br />
-            for each community
-          </p>
+        <div className=" overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
+          <div className="space-y-[20px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
+            <p className="   Hiragino  text-zinc-800 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+              tailored-fitted
+              <br />
+              for each community
+            </p>
 
-          <div className="max-w-[500px] mx-[30px] lg:mx-[160px]  text-zinc-800 text-[24px] lg:text-[35px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
-            SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.{' '}
-          </div>
-          <div className="max-w-[1004px]  relative  border border-black border-opacity-20">
-            <img
-              src={films}
-              className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
-            ></img>
-          </div>
-          <div className="flex px-[30px] lg:px-[160px]  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
-            {charactheristics
-              .slice(0, 3)
-              .reverse()
-              .map((el, index) => (
-                <div key={index}>
-                  <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
-                    {el.name}
-                  </div>
-                  <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
-                    {el.text}
-                  </div>
-                </div>
-              ))}
-          </div>
-          <div className="max-w-[1004px] px-[30px] lg:px-[160px]  h-[0px] border border-black border-opacity-20"></div>
-          <div className="flex px-[30px] lg:px-[160px]  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
-            {charactheristics
-              .slice(3, 6)
-              .reverse()
-              .map((el, index) => (
-                <div key={index}>
-                  <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
-                    {el.name}
-                  </div>
-                  <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
-                    {el.text}
-                  </div>
-                </div>
-              ))}
-          </div>
-          <div className="bg-[#7D5555] relative ">
-            <div className="px-[15px] lg:px-[72px] space-y-[24px] py-[35px]">
-              <div className="max-w-[813px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
-                Capital Concierge is Affordable, Accessible, Attentive &
-                Accountable.
-              </div>
-              <div className="max-w-[582px] text-yellow-50  lg:text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
-                We are familiar with the challenges and difficulties communities
-                face and are prepared to tackle those challenges
-              </div>
+            <div className="max-w-[434px]   text-zinc-800 text-[24px] lg:text-[35px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+              SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.{' '}
             </div>
-            <div className="bg-[#6B4949]  lg:px-[72px] px-[15px] py-[35px] text-center">
-              <Link to={'/Services'}>
-                <button className="text-amber-300 text-[12px] lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
-                  VIEW OUR OFFERINGS & PRICING {'>'}
-                </button>
-              </Link>
+            <div className="max-w-[1004px]  relative  border border-black border-opacity-20">
+              <img
+                src={films}
+                className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
+              ></img>
+            </div>
+            <div className="flex  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+              {charactheristics
+                .slice(0, 3)
+                .reverse()
+                .map((el, index) => (
+                  <div key={index}>
+                    <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                      {el.name}
+                    </div>
+                    <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                      {el.text}
+                    </div>
+                  </div>
+                ))}
+            </div>
+            <div className="max-w-[1004px]  h-[0px] border border-black border-opacity-20"></div>
+            <div className="flex  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+              {charactheristics
+                .slice(3, 6)
+                .reverse()
+                .map((el, index) => (
+                  <div key={index}>
+                    <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                      {el.name}
+                    </div>
+                    <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                      {el.text}
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="lg:px-[160px]">
+            <div className="bg-[#7D5555] relative ">
+              <div className="px-[15px] lg:px-[72px] space-y-[24px] py-[35px]">
+                <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
+                  Capital Concierge is Affordable, Accessible, Attentive &
+                  Accountable.
+                </div>
+                <div className="max-w-[582px] text-yellow-50  lg:text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
+                  We are familiar with the challenges and difficulties
+                  communities face and are prepared to tackle those challenges
+                </div>
+              </div>
+              <div className="bg-[#6B4949]  lg:px-[72px] px-[15px] py-[35px] lg:text-right text-center">
+                <Link to={'/Services'}>
+                  <button className="text-amber-300 text-[12px] lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
+                    VIEW OUR OFFERINGS & PRICING {'>'}
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
