@@ -10,8 +10,9 @@ import About from './pages/About'
 import Services from './pages/Services'
 function App() {
   return (
-    <BrowserRouter>
-      {/* <div className="py-[56px] bg-[#F6C94B] flex space-x-[83px] justify-center border-black ">
+    <div className="overflow-hidden">
+      <BrowserRouter>
+        {/* <div className="py-[56px] bg-[#F6C94B] flex space-x-[83px] justify-center border-black ">
         {nav.map((el) => (
           <Link
             key={el}
@@ -22,14 +23,15 @@ function App() {
           </Link>
         ))}
       </div> */}
-      <Routes>
-        <Route path="" element={<Home></Home>}></Route>
-        <Route path="/Company" element={<Company></Company>}></Route>
-        <Route path="/About" element={<About></About>}></Route>
-        <Route path="/Services" element={<Services></Services>}></Route>
-      </Routes>
-      <Footer></Footer>
-    </BrowserRouter>
+        <Routes>
+          <Route path="" element={<Home></Home>}></Route>
+          <Route path="/Company" element={<Company></Company>}></Route>
+          <Route path="/About" element={<About></About>}></Route>
+          <Route path="/Services" element={<Services></Services>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
+    </div>
   )
 }
 

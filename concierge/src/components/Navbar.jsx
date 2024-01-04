@@ -1,5 +1,17 @@
-import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 function Navbar() {
+  let location = useLocation()
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  useEffect(() => {
+    scrollToTop()
+  }, [location])
   const nav = [
     {
       name: 'Home',
@@ -33,7 +45,7 @@ function Navbar() {
             }`}
             to={el.link}
           >
-            {el.name}
+            <button>{el.name}</button>
           </Link>
         ))}
       </div>

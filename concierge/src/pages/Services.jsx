@@ -75,7 +75,10 @@ function Services() {
         </div>
       </section>
       <section className="px-[220px] pt-[106px] space-y-[95px]  bg-[#FFF7DF]">
-        <div className="w-[734px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+        <div
+          id="Offering"
+          className="w-[734px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]"
+        >
           Our Offerings
         </div>
         <div className="grid gap-[100px] grid-cols-3">

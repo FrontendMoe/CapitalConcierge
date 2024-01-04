@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  @apply hover:opacity-90 duration-200 active:opacity-80;
+}
