@@ -67,7 +67,7 @@ function Navbar() {
   }, [])
   useEffect(() => {
     handleScroll()
-  }, [location])
+  }, [location, collapsed])
   return (
     <nav
       id="nav"
@@ -84,7 +84,7 @@ function Navbar() {
             }`}
             to={el.link}
           >
-            <button>{el.name}</button>
+            <div>{el.name}</div>
           </Link>
         ))}
       </div>
