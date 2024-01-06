@@ -28,15 +28,15 @@ function About() {
             <Navbar></Navbar>
           </div>
         </div>
-        <div className="px-[220px] space-y-[60px]">
-          <div className="w-[660px] Hiragino text-zinc-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+        <div className="px-[30px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
+          <div className="max-w-[660px] Hiragino text-zinc-800 text-[35px] lg:text-start text-center lg:text-[84px] font-[400] font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             About
             <br />
             Capital
             <br />
             Concierge
           </div>
-          <div className="w-[982px] pb-[120px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+          <div className="max-w-[982px] pb-[60px] lg:pb-[120px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
             Our objective is to always exemplify thought leadership and standard
             setting professionalism for commercial, homeowner and hospitality
             companies. We serve our customers' needs and consistently produce
@@ -49,8 +49,8 @@ function About() {
             decision-making.
           </div>
         </div>
-        <div className="bg-[#282724] space-y-[54px] px-[220px] pt-[90px]">
-          <div className="w-[660px] Hiragino text-amber-300 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+        <div className="bg-[#282724] space-y-[30px] lg:space-y-[54px] p-[30px] lg:px-[220px] pt-[90px]">
+          <div className="max-w-[660px] Hiragino text-amber-300 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             Our
             <br />
             Mission
@@ -63,15 +63,15 @@ function About() {
             with integrity.
           </div>
 
-          <div className="bg-[#38342D] space-y-[77px] py-[100px] px-[90px] ">
-            <p className="max-w-[379px] Hiragino text-orange-100 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+          <div className="bg-[#38342D] space-y-[30px] lg:space-y-[77px] py-[60px] lg:py-[100px] p-[30px] lg:px-[90px] ">
+            <p className="max-w-[379px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
               Learn More...
             </p>
             <div className="">
               {learn.map((el, index) => (
-                <div key={index} className="pb-[45px] ">
+                <div key={index} className="pb-[20px] lg:pb-[45px] ">
                   <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
-                  <div className=" pt-[45px] px-[70px] space-y-[18px]">
+                  <div className=" pt-[20px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[10px] lg:space-y-[18px]">
                     <div className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
                       {el.name}
                     </div>

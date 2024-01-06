@@ -131,7 +131,7 @@ function Home() {
             background:
               'linear-gradient(0deg, rgba(40,39,36,1) 0%, rgba(85,84,82,0.5) 36%, rgba(255,255,255,0) 100%)',
           }}
-          className="absolute  top-0 h-full left-0 w-full"
+          className="absolute lg:hidden  top-0 h-full left-0 w-full"
         >
           <Fade>
             <video
@@ -143,7 +143,7 @@ function Home() {
             ></video>
           </Fade>
         </div>
-        <div className="absolute top-0">
+        <div className="absolute lg:hidden top-0">
           <Navbar></Navbar>
         </div>
         <div className="bg-[#282724] text-white space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">

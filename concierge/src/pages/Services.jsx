@@ -74,16 +74,19 @@ function Services() {
           </div>
         </div>
       </section>
-      <section className="px-[220px] pt-[106px] space-y-[95px]  bg-[#FFF7DF]">
+      <section className="px-[30px] lg:px-[220px] pt-[50px] lg:pt-[106px] space-y-[30px] lg:space-y-[95px]  bg-[#FFF7DF]">
         <div
           id="Offering"
-          className="w-[734px] Hiragino text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]"
+          className="max-w-[734px]  text-center lg:text-start Hiragino text-stone-800 text-[35px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]"
         >
           Our Offerings
         </div>
-        <div className="grid gap-[100px] grid-cols-3">
+        <div className="grid gap-[50px] lg:gap-[100px] lg:grid-cols-3">
           {offers.map((el, index) => (
-            <div key={index} className="space-y-[45px]">
+            <div
+              key={index}
+              className="space-y-[45px] lg:block flex flex-col items-center text-center lg:text-start"
+            >
               <div className="h-[158.688px] flex items-end">
                 <img src={el.img} alt="" className=" " />
               </div>
@@ -100,33 +103,33 @@ function Services() {
             </div>
           ))}
         </div>
-        <div className="bg-[#282724] translate-y-[150px] space-y-[62px] px-[109px] py-[90px]">
-          <div className="w-[734px] Hiragino text-amber-300 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+        <div className="bg-[#282724] translate-y-[150px] space-y-[30px]  lg:space-y-[62px] p-[30px] lg:px-[109px] lg:py-[90px]">
+          <div className="max-w-[734px] Hiragino text-amber-300 text-[35px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
             Pricing
           </div>
-          <div className="w-[888px] h-[260px]">
-            <span className="text-neutral-400 text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+          <div className="max-w-[888px] ">
+            <span className="text-neutral-400 lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
               Pricing for{' '}
             </span>
-            <span className="text-white text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+            <span className="text-white lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
               concierge staff, supervisors and building link support{' '}
             </span>
-            <span className="text-neutral-400 text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+            <span className="text-neutral-400 lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
               are based on community size and needs.{' '}
             </span>
-            <span className="text-white text-[40.92px] font-light font-['Hiragino Mincho ProN'] leading-[58.40px]">
+            <span className="text-white lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
               Contact us for a proposal.
             </span>
           </div>
-          <button className="w-[397px] flex items-center h-[69px] bg-[#F6C94B]">
-            <p className="w-[417.61px] flex justify-between px-[25px]">
+          <button className="w-full lg:w-[397px] flex items-center h-[69px] bg-[#F6C94B]">
+            <p className="max-w-[417.61px] flex justify-between px-[16px] lg:px-[25px]">
               <span
                 className="text-black
-               text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide"
+              text-[18px]  lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide"
               >
                 REQUEST A PROPOSAL
               </span>
-              <span className="text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+              <span className="text-black text-[18px]  lg:text-[23px]  font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
                 {`>`}
               </span>
             </p>
