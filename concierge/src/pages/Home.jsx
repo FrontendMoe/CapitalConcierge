@@ -190,9 +190,9 @@ function Home() {
         </div>
       </section>
       <section className="text-start relative space-y-[90px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className=" overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
-          <div className="space-y-[20px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
-            <p className="   Hiragino  text-zinc-800 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+        <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
+          <div className="space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
+            <p className="   Hiragino  text-zinc-800 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               tailored-fitted
               <br />
               for each community
@@ -239,7 +239,7 @@ function Home() {
                 ))}
             </div>
           </div>
-          <div className="lg:px-[160px]">
+          <div className=" lg:px-[160px]">
             <div className="bg-[#7D5555] relative ">
               <div className="px-[15px] lg:px-[72px] space-y-[24px] py-[35px]">
                 <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
@@ -291,8 +291,8 @@ function Home() {
         </div>
       </section>
       <section className="bg-[#F8EED3] pb-[120px] lg:columns-2 gap-[150px] 	 px-[30px] lg:px-[150px]">
-        <div className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start text-center py-[50px] ">
-          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+        <div className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
+          <span className="text-zinc-800 text-[35px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
             our <br />
           </span>
           <span className="text-zinc-800 text-[30px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">

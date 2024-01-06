@@ -29,7 +29,7 @@ function About() {
           </div>
         </div>
         <div className="px-[30px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
-          <div className="max-w-[660px] Hiragino text-zinc-800 text-[35px] lg:text-start text-center lg:text-[84px] font-[400] font-['Hiragino Mincho ProN'] lg:leading-[85px]">
+          <div className="max-w-[660px] Hiragino text-zinc-800 text-[35px]  lg:text-[84px] font-[400] font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             About
             <br />
             Capital
