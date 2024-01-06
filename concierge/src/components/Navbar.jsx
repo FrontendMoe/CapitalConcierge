@@ -33,7 +33,6 @@ function Navbar() {
     },
     {
       name: 'CONTACT',
-      link: '/CONTACT',
     },
   ]
   useEffect(() => {
@@ -74,19 +73,32 @@ function Navbar() {
       className="mx-auto lg:bg-transparent  z-50 lg:relative w-full fixed top-0 left-0"
     >
       <div className="py-[56px] lg:flex hidden  z-10 items-center  mx-auto top-0 w-fit      space-x-[83px] justify-center border-black ">
-        {nav.map((el, index) => (
-          <Link
-            key={el}
-            style={{ backgroundColor: index === nav.length - 1 && '#000' }}
-            className={`cursor-pointer uppercase font-[600] ${
-              index === nav.length - 1 &&
-              'bg-black py-[12px] px-[22px] text-[#F6C94B]'
-            }`}
-            to={el.link}
-          >
-            <div>{el.name}</div>
-          </Link>
-        ))}
+        {nav.map((el, index) =>
+          el.link ? (
+            <Link
+              key={el}
+              style={{ backgroundColor: index === nav.length - 1 && '#000' }}
+              className={`cursor-pointer uppercase font-[600] ${
+                index === nav.length - 1 &&
+                'bg-black py-[12px] px-[22px] text-[#F6C94B]'
+              }`}
+              to={el.link}
+            >
+              <div>{el.name}</div>
+            </Link>
+          ) : (
+            <p
+              key={el}
+              style={{ backgroundColor: index === nav.length - 1 && '#000' }}
+              className={`cursor-pointer uppercase font-[600] ${
+                index === nav.length - 1 &&
+                'bg-black py-[12px] px-[22px] text-[#F6C94B]'
+              }`}
+            >
+              <div>{el.name}</div>
+            </p>
+          ),
+        )}
       </div>
       <nav className="lg:hidden w-full  ">
         <div
