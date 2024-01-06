@@ -30,16 +30,16 @@ function Quote({
         <div className="absolute top-0 -left-[15px] lg:-left-[80px] lg:scale-100 scale-50">
           {leftQuote}
         </div>
-        <div className="flex flex-col  items-center text-black text-[20px] lg:text-[25px] font-light font-['Gibson'] lg:leading-[44.70px]">
+        <p className="flex flex-col  items-center text-black text-[20px] lg:text-[25px] font-light font-['Gibson'] lg:leading-[44.70px]">
           {text}
-        </div>
+        </p>
         <div className="absolute bottom-0 -right-[15px] lg:-right-[80px]  lg:scale-100 scale-50">
           {rightQuote}
         </div>
       </div>
-      <div className="w-fit lg:h-[113px] text-black px-[45px] lg:px-[0px] text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+      <p className="w-fit lg:h-[113px] text-black px-[45px] lg:px-[0px] text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
         {author}
-      </div>
+      </p>
     </div>
   )
 }

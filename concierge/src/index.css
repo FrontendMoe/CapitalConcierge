@@ -72,3 +72,18 @@ header {
 .nav .nav__list_item {
   list-style-type: none;
 }
+
+p,
+button {
+  opacity: 0;
+  transition: 0.2s;
+}
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}

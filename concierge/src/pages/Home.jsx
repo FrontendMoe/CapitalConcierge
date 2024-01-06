@@ -7,6 +7,7 @@ import films from '../assets/films.png'
 import Work from '../components/Work'
 import { useNavigate } from 'react-router-dom'
 import { scrollToSection } from '../utils/functions'
+import { useEffect } from 'react'
 function Home() {
   let navigate = useNavigate()
   const quotes = [
@@ -123,6 +124,23 @@ function Home() {
         'We are able to maximize service and we do this by providing top-notch management and commitment from our company’s leadership, and concierge team.',
     },
   ]
+  const playAllVideos = () => {
+    const videos = document.querySelectorAll('video')
+    for (let i = 0; i < videos.length; i++) {
+      const video = videos[i]
+      video.muted = true // Force mute the video
+      video.addEventListener('ended', () => {
+        video.currentTime = 0 // Reset the video to the beginning
+        video.play() // Pause the video when it ends
+      })
+
+      video.play()
+    }
+  }
+
+  useEffect(() => {
+    playAllVideos()
+  }, [])
   return (
     <div className="bg-[#F6C94B] ">
       <section className="bg-[#F6C94B]  relative border-black flex  text min-h-screen text-black">

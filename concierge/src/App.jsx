@@ -8,6 +8,7 @@ import Company from './pages/Company'
 import Footer from './components/Footer'
 import About from './pages/About'
 import Services from './pages/Services'
+import { FadeEffect } from './utils/FadeEffect'
 function App() {
   return (
     <div className="overflow-hidden">
@@ -23,6 +24,7 @@ function App() {
           </Link>
         ))}
       </div> */}
+        <FadeEffect></FadeEffect>
         <Routes>
           <Route path="" element={<Home></Home>}></Route>
           <Route path="/Company" element={<Company></Company>}></Route>

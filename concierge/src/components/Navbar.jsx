@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import MenuBurger from './MenuBurger'
+import { handleScroll } from '../utils/FadeEffect'
 function Navbar() {
   const [collapsed, setCollapsed] = useState(false)
 
@@ -46,7 +47,7 @@ function Navbar() {
       })
     }
   }, [collapsed])
-  const handleScroll = () => {
+  const handleScroll2 = () => {
     if (window.scrollY > 50) {
       document.querySelector('#nav').style.backgroundColor = '#0000002f'
     } else {
@@ -56,15 +57,17 @@ function Navbar() {
 
   useEffect(() => {
     // Attach the event listener when the component mounts
-    window.addEventListener('scroll', handleScroll)
-    handleScroll()
+    window.addEventListener('scroll', handleScroll2)
+    handleScroll2()
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', handleScroll2)
     }
   }, [])
-
+  useEffect(() => {
+    handleScroll()
+  }, [location])
   return (
     <nav
       id="nav"

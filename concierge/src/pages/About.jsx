@@ -72,15 +72,15 @@ function About() {
                 <div key={index} className="pb-[20px] lg:pb-[45px] ">
                   <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
                   <div className=" pt-[20px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[10px] lg:space-y-[18px]">
-                    <div className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
+                    <p className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
                       {el.name}
-                    </div>
-                    <div className="max-w-[481px]  text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
+                    </p>
+                    <p className="max-w-[481px]  text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
                       {el.text}
-                    </div>
-                    <div className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
+                    </p>
+                    <p className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
                       <p>CONTINUE</p> <p>{'>'}</p>
-                    </div>
+                    </p>
                   </div>
                 </div>
               ))}
