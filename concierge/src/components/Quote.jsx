@@ -25,15 +25,19 @@ function Quote({
   ),
 }) {
   return (
-    <div className="relative w-fit space-y-[40px] break-inside-avoid">
-      <div className="relative w-fit">
-        <div className="absolute top-0 -left-[80px]">{leftQuote}</div>
-        <div className="flex flex-col  items-center text-black text-[25px] font-light font-['Gibson'] leading-[44.70px]">
+    <div className="relative w-fit space-y-[20px] lg:space-y-[40px] break-inside-avoid">
+      <div className="relative w-fit px-[45px] lg:px-[0]">
+        <div className="absolute top-0 -left-[15px] lg:-left-[80px] lg:scale-100 scale-50">
+          {leftQuote}
+        </div>
+        <div className="flex flex-col  items-center text-black text-[20px] lg:text-[25px] font-light font-['Gibson'] lg:leading-[44.70px]">
           {text}
         </div>
-        <div className="absolute bottom-0 -right-[80px]">{rightQuote}</div>
+        <div className="absolute bottom-0 -right-[15px] lg:-right-[80px]  lg:scale-100 scale-50">
+          {rightQuote}
+        </div>
       </div>
-      <div className="w-fit h-[113px] text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+      <div className="w-fit lg:h-[113px] text-black px-[45px] lg:px-[0px] text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
         {author}
       </div>
     </div>

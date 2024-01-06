@@ -125,12 +125,32 @@ function Home() {
   ]
   return (
     <div className="bg-[#F6C94B] ">
-      <section className="bg-[#F6C94B]  border-black flex  text min-h-screen text-black">
-        <div className="bg-[#282724] text-white space-y-[72px]    py-[60px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">
-          <p className="text-[30px] lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
+      <section className="bg-[#F6C94B]  relative border-black flex  text min-h-screen text-black">
+        <div
+          style={{
+            background:
+              'linear-gradient(0deg, rgba(40,39,36,1) 0%, rgba(85,84,82,0.5) 36%, rgba(255,255,255,0) 100%)',
+          }}
+          className="absolute  top-0 h-full left-0 w-full"
+        >
+          <Fade>
+            <video
+              src={video}
+              loop
+              autoPlay
+              muted
+              className=" h-full object-center  lg:object-left mix-blend-multiply object-cover"
+            ></video>
+          </Fade>
+        </div>
+        <div className="absolute top-0">
+          <Navbar></Navbar>
+        </div>
+        <div className="bg-[#282724] text-white space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">
+          <p className="text-[30px] relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
             The Best For Your <span className="text-[#F6C94B]">Guest.</span>
           </p>
-          <div className="max-max-w-[299px] text-orange-100 text-[27px] font-semibold font-['Gibson'] leading-[38px]">
+          <div className="max-max-w-[299px] relative z-10 text-orange-100 text-[27px] font-semibold font-['Gibson'] leading-[38px]">
             Professional & Innovative Concierge Services & Solutions.
           </div>
         </div>
@@ -221,12 +241,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#282724] relative space-y-[70px] px-[60px] lg:px-[180px] py-[60px]  lg:py-[110px]">
-          <div className="space-y-[44px]">
-            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+        <div className="bg-[#282724] relative space-y-[70px] px-[30px] lg:px-[180px] py-[60px]  lg:py-[110px]">
+          <div className="space-y-[20px] lg:space-y-[44px]">
+            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
             </div>
-            <div className="max-w-[714px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+            <div className="max-w-[714px] text-yellow-50 text-[17px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
@@ -243,32 +263,31 @@ function Home() {
                 }, 100)
                 navigate('/Services')
               }}
-              className="text-amber-300 text-right text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
+              className="text-amber-300 text-right text-[16px] lg:text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
             >
               VIEW OUR OFFERINGS {'>'}
             </button>
           </div>
         </div>
       </section>
-      <section className="bg-[#F8EED3] pb-[120px] columns-2 gap-[150px]	 px-[150px]">
-        <div className="max-w-[767px] pb-[100px]">
-          <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
+      <section className="bg-[#F8EED3] pb-[120px] lg:columns-2 gap-[150px] 	 px-[30px] lg:px-[150px]">
+        <div className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start text-center py-[50px] ">
+          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
             our <br />
           </span>
-          <span className="text-zinc-800 text-[84px] font-semibold Hiragino  leading-[89px]">
+          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
             reputation
             <br />
           </span>
-          <span className="text-zinc-800 text-[84px] font-light Hiragino  leading-[89px]">
-            speaks
-            <br />
+          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+            speaks <br className="lg:block hidden" />
             for
-            <br />
+            <br className="lg:block hidden" />
             itself.
           </span>
         </div>
         {quotes.map((el, index) => (
-          <div key={index} className="block ">
+          <div key={index} className="block pb-[100px] lg:pb-0">
             <Quote author={el.author} text={el.text}></Quote>
           </div>
         ))}

@@ -50,21 +50,21 @@ function Services() {
     <div className=" bg-[#7D5555]">
       <section>
         <div className="w-full flex relative">
-          <div className="w-1/2  "></div>
+          <div className="lg:block hidden lg:w-1/2  "></div>
           <div className="flex-1 ">
             <Navbar></Navbar>
           </div>
         </div>
-        <div className="px-[220px] text-[#FFF7DF] pb-[160px] space-y-[25px] b">
-          <div className="max-w-[660px] Hiragino text-yellow-50 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
+        <div className="lg:px-[220px] px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[25px] b">
+          <div className="max-w-[660px] Hiragino text-yellow-50 text-[35px] lg:text-[84px] font-semibold font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             Services.
           </div>
-          <div className="max-w-[813px] text-yellow-50 text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[58px]">
+          <div className="max-w-[813px] text-yellow-50 text-[25px] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
             Capital Concierge is Affordable, Accessible, Attentive &
             Accountable.
           </div>
 
-          <div className="max-w-[869px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+          <div className="max-w-[869px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[40px] lg:leading-[46px] tracking-wide">
             We are familiar with the challenges and difficulties communities
             face and are prepared to tackle those challenges by combining our
             day-to-day experience with ongoing professional training, the latest
