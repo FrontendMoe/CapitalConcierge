@@ -166,10 +166,10 @@ function Home() {
           <Navbar></Navbar>
         </div>
         <div className="bg-[#282724] text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">
-          <p className="text-[30px] relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
+          <p className="text-[40px] relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
             The Best For Your <span className="text-[#F6C94B]">Guest.</span>
           </p>
-          <div className="max-w-[299px] relative z-10 text-orange-100 text-[27px] font-semibold font-['Gibson'] leading-[38px]">
+          <div className="max-w-[299px] relative z-10 text-orange-100 text-[25px] lg:text-[27px] font-semibold font-['Gibson'] leading-[38px]">
             Professional & Innovative Concierge Services & Solutions.
           </div>
         </div>
