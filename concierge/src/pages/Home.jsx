@@ -153,6 +153,7 @@ function Home() {
         >
           <Fade>
             <video
+              playsInline
               src={video}
               loop
               autoPlay
@@ -178,6 +179,7 @@ function Home() {
           </div>
           <Fade>
             <video
+              playsInline
               src={video}
               loop
               autoPlay
