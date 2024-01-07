@@ -166,10 +166,18 @@ function Home() {
           <Navbar></Navbar>
         </div>
         <div className="bg-[#282724] text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">
-          <p className="text-[40px] relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
+          <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
             The Best For Your <span className="text-[#F6C94B]">Guest.</span>
           </p>
-          <div className="max-w-[299px] relative z-10 text-orange-100 text-[25px] lg:text-[27px] font-semibold font-['Gibson'] leading-[38px]">
+          <p className="text-[45px] lg:hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
+            The <br /> Best For <br /> Your{' '}
+            <span className="text-[#F6C94B]">
+              {' '}
+              <br />
+              Guest.
+            </span>
+          </p>
+          <div className="max-w-[299px] relative z-10 text-orange-100 text-[20px] lg:text-[27px] font-semibold font-['Gibson'] leading-[38px]">
             Professional & Innovative Concierge Services & Solutions.
           </div>
         </div>
@@ -192,33 +200,33 @@ function Home() {
       <section className="text-start relative space-y-[90px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
           <div className="space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
-            <p className="   Hiragino  text-zinc-800 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+            <p className="   Hiragino  text-zinc-800 text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               tailored-fitted
               <br />
               for each community
             </p>
 
-            <div className="max-w-[434px]   text-zinc-800 text-[24px] lg:text-[35px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+            <p className="max-w-[434px] pb-[50px] lg:pb-0   text-zinc-800 text-[28px] lg:text-[35px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.{' '}
-            </div>
+            </p>
             <div className="max-w-[1004px]  relative  border border-black border-opacity-20">
               <img
                 src={films}
                 className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
               ></img>
             </div>
-            <div className="flex  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex py-[50px] lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(0, 3)
                 .reverse()
                 .map((el, index) => (
                   <div key={index}>
-                    <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
-                    </div>
-                    <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    </p>
+                    <p className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
                       {el.text}
-                    </div>
+                    </p>
                   </div>
                 ))}
             </div>
@@ -229,19 +237,19 @@ function Home() {
                 .reverse()
                 .map((el, index) => (
                   <div key={index}>
-                    <div className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
-                    </div>
-                    <div className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    </p>
+                    <p className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
                       {el.text}
-                    </div>
+                    </p>
                   </div>
                 ))}
             </div>
           </div>
           <div className=" lg:px-[160px]">
             <div className="bg-[#7D5555] relative ">
-              <div className="px-[15px] lg:px-[72px] space-y-[24px] py-[35px]">
+              <div className="px-[30px] lg:px-[72px] space-y-[24px] py-[35px]">
                 <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
@@ -291,21 +299,21 @@ function Home() {
         </div>
       </section>
       <section className="bg-[#F8EED3] pb-[120px] lg:columns-2 gap-[150px] 	 px-[30px] lg:px-[150px]">
-        <div className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
-          <span className="text-zinc-800 text-[35px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+        <p className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
+          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
             our <br />
           </span>
-          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
+          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
             reputation
             <br />
           </span>
-          <span className="text-zinc-800 text-[30px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
             speaks <br className="lg:block hidden" />
             for
             <br className="lg:block hidden" />
             itself.
           </span>
-        </div>
+        </p>
         {quotes.map((el, index) => (
           <div key={index} className="block pb-[100px] lg:pb-0">
             <Quote author={el.author} text={el.text}></Quote>

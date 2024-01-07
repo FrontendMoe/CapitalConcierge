@@ -48,7 +48,7 @@ function Navbar() {
   }, [collapsed])
   const handleScroll2 = () => {
     if (window.scrollY > 50) {
-      document.querySelector('#nav').style.backgroundColor = '#0000002f'
+      document.querySelector('#nav').style.backgroundColor = '#282724'
     } else {
       document.querySelector('#nav').style.backgroundColor = 'transparent'
     }
@@ -119,7 +119,7 @@ function Navbar() {
                 }`}
                 to={el.link}
               >
-                <button onClick={() => setCollapsed(false)}>{el.name}</button>
+                <div onClick={() => setCollapsed(false)}>{el.name}</div>
               </Link>
             ))}
           </div>
