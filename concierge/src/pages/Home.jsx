@@ -197,7 +197,7 @@ function Home() {
           </Fade>
         </div>
       </section>
-      <section className="text-start relative space-y-[90px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
+      <section className="text-start relative lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
           <div className="space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
             <p className="   Hiragino  text-zinc-800 text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
@@ -269,12 +269,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#282724] relative space-y-[70px] px-[30px] lg:px-[180px] py-[60px]  lg:py-[110px]">
+        <div className="bg-[#282724]  relative space-y-[70px] px-[30px] lg:px-[180px] py-[60px]  lg:py-[110px]">
           <div className="space-y-[20px] lg:space-y-[44px]">
-            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
             </div>
-            <div className="max-w-[714px] text-yellow-50 text-[17px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
+            <div className="max-w-[714px] text-yellow-50 text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
