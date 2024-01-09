@@ -142,8 +142,8 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-[#F6C94B] ">
-      <section className="bg-[#F6C94B]  relative border-black flex  text min-h-screen text-black">
+    <div className="bg-[#F6C94B] lg:-mt-[5px]">
+      <section className="  relative border-black flex  text min-h-screen text-black">
         <div
           style={{
             background:
@@ -165,26 +165,27 @@ function Home() {
         <div className="absolute lg:hidden top-0">
           <Navbar></Navbar>
         </div>
-        <div className="bg-[#282724] text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:w-1/2 ">
-          <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
-            The Best For Your <span className="text-[#F6C94B]">Guest.</span>
-          </p>
-          <p className="text-[45px] lg:hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
-            The <br /> Best For <br /> Your{' '}
-            <span className="text-[#F6C94B]">
-              {' '}
-              <br />
-              Guest.
-            </span>
-          </p>
-          <div className="max-w-[299px] relative z-10 text-orange-100 text-[20px] lg:text-[27px] font-semibold font-['Gibson'] leading-[38px]">
-            Professional & Innovative Concierge Services & Solutions.
+        <div className="lg:w-1/2 flex-1 bg-black flex justify-end">
+          <div className="bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
+            <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
+              The Best For Your <span className="text-[#F6C94B]">Guest.</span>
+            </p>
+            <p className="text-[45px] lg:hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
+              The <br /> Best For <br /> Your{' '}
+              <span className="text-[#F6C94B]">
+                {' '}
+                <br />
+                Guest.
+              </span>
+            </p>
+            <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
+
+            <div className="max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[60px]">
+              Professional & Innovative Concierge Services & Solutions.
+            </div>
           </div>
         </div>
-        <div className="w-full lg:block hidden lg:w-1/2 relative">
-          <div className="absolute z-10 left-1/2 -translate-x-1/2">
-            <Navbar></Navbar>
-          </div>
+        <div className="w-full lg:block hidden overflow-hidden lg:w-[50vw] ">
           <Fade>
             <video
               playsInline
@@ -192,7 +193,7 @@ function Home() {
               loop
               autoPlay
               muted
-              className=" h-full object-center  lg:object-left mix-blend-multiply object-cover"
+              className=" w-screen h-full absolute top-0 -right-[200px] mix-blend-multiply object-cover"
             ></video>
           </Fade>
         </div>

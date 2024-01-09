@@ -49,12 +49,6 @@ function Services() {
   return (
     <div className=" bg-[#7D5555]">
       <section>
-        <div className="w-full flex relative">
-          <div className="lg:block hidden lg:w-1/2  "></div>
-          <div className="flex-1 ">
-            <Navbar></Navbar>
-          </div>
-        </div>
         <div className="lg:px-[220px] px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[25px] b">
           <div className="max-w-[660px] Hiragino text-yellow-50 text-[35px] lg:text-[84px] font-semibold font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             Services.

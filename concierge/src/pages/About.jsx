@@ -22,12 +22,6 @@ function About() {
   return (
     <div className="bg-[#F6C94B]">
       <section>
-        <div className="w-full flex relative">
-          <div className="w-1/2  "></div>
-          <div className="flex-1 ">
-            <Navbar></Navbar>
-          </div>
-        </div>
         <div className="px-[30px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
           <div className="max-w-[660px] Hiragino text-zinc-800 text-[35px]  lg:text-[84px] font-[400] font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             About
