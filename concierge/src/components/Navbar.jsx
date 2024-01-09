@@ -135,11 +135,16 @@ function Navbar() {
               }}
               className={`cursor-pointer uppercase font-[600] ${
                 index === nav.length - 1 &&
-                'bg-black z-10 py-[12px] text-[#1A1A1A] relative px-[22px] '
+                'bg-black z-20 py-[12px] text-[#1A1A1A] relative px-[22px] '
               }`}
               to={el.link}
             >
-              <div onClick={() => setCollapsed(false)}>{el.name}</div>
+              <div
+                className="z-20 relative"
+                onClick={() => setCollapsed(false)}
+              >
+                {el.name}
+              </div>
             </Link>
           ))}
           <video
