@@ -12,11 +12,26 @@ const MenuBurger = ({ collapsed }) => {
     menuBtn.classList?.toggle('active')
   }, [])
   return (
-    <header>
-      <div className="menu-btn cursor-pointer">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+    <header className="flex items-center">
+      <p
+        style={{ color: collapsed ? '#F6C94B' : '#fff' }}
+        className="text-[#FFF7DF] text-[11px] font-[600] tracking-[5.118px]"
+      >
+        {collapsed ? 'CLOSE' : 'MENU'}
+      </p>
+      <div className="menu-btn scale-[60%] cursor-pointer">
+        <span
+          style={{ borderColor: 'white', backgroundColor: 'white' }}
+          className="bar border-white bg-white"
+        ></span>
+        <span
+          style={{ borderColor: 'white', backgroundColor: 'white' }}
+          className="bar border-white bg-white"
+        ></span>{' '}
+        <span
+          style={{ borderColor: 'white', backgroundColor: 'white' }}
+          className="bar border-white bg-white"
+        ></span>
       </div>
     </header>
   )

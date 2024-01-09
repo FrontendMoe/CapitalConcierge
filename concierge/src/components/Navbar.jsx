@@ -38,7 +38,7 @@ function Navbar() {
   useEffect(() => {
     if (collapsed) {
       document.querySelectorAll('.bar').forEach((el) => {
-        el.style.backgroundColor = 'black'
+        el.style.backgroundColor = '#F6C94B'
       })
     } else {
       document.querySelectorAll('.bar').forEach((el) => {
@@ -109,6 +109,7 @@ function Navbar() {
       </div>
       <nav className="lg:hidden w-full  ">
         <div
+          key={'menybar'}
           className=" z-30 w-screen flex  justify-end p-[30px]  relative"
           onClick={() => setCollapsed(!collapsed)}
         >
@@ -116,6 +117,10 @@ function Navbar() {
         </div>
 
         <div
+          style={{
+            background:
+              ' linear-gradient(180deg, #0B0B0B 14.39%, #131212 56.27%, #141414 100%)',
+          }}
           id="navMobile"
           className={`fixed  duration-200 z-20 ${Height} flex flex-col justify-center items-center space-y-[20px] top-0 left-0 w-full overflow-hidden bg-[#FFF7DF]`}
         >
