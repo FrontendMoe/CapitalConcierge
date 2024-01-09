@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import MenuBurger from './MenuBurger'
 import { handleScroll } from '../utils/FadeEffect'
+import video from '../vid.mp4'
+
 function Navbar() {
   const [collapsed, setCollapsed] = useState(false)
   const [Height, setHeight] = useState('h-0')
@@ -48,7 +50,7 @@ function Navbar() {
   }, [collapsed])
   const handleScroll2 = () => {
     if (window.scrollY > 50) {
-      document.querySelector('#nav').style.backgroundColor = '#282724'
+      document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
     } else {
       document.querySelector('#nav').style.backgroundColor = 'transparent'
     }
@@ -126,17 +128,28 @@ function Navbar() {
         >
           {nav.map((el, index) => (
             <Link
-              key={el}
-              style={{ backgroundColor: index === nav.length - 1 && '#000' }}
+              key={'mob' + index}
+              style={{
+                backgroundColor: index === nav.length - 1 && '#E9C348',
+                color: index === nav.length - 1 ? '#1A1A1A' : '#fff',
+              }}
               className={`cursor-pointer uppercase font-[600] ${
                 index === nav.length - 1 &&
-                'bg-black py-[12px] px-[22px] text-[#F6C94B]'
+                'bg-black z-10 py-[12px] text-[#1A1A1A] relative px-[22px] '
               }`}
               to={el.link}
             >
               <div onClick={() => setCollapsed(false)}>{el.name}</div>
             </Link>
           ))}
+          <video
+            playsInline
+            src={video}
+            loop
+            autoPlay
+            muted
+            className=" h-full absolute bottom-0 w-screen object-center  lg:object-left mix-blend-overlay object-cover"
+          ></video>
         </div>
       </nav>
     </nav>

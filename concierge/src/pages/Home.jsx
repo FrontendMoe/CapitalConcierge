@@ -203,7 +203,7 @@ function Home() {
         </div>
 
         <div className="lg:w-1/2 flex-1 bg-black flex justify-end">
-          <div className="bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
+          <div className=" bg-[#0B0B0B] lg:bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
             <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
               The Best For Your <span className="text-[#F6C94B]">Guest.</span>
             </p>
