@@ -7,7 +7,7 @@ import films from '../assets/films.png'
 import Work from '../components/Work'
 import { useNavigate } from 'react-router-dom'
 import { scrollToSection } from '../utils/functions'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 function Home() {
   let navigate = useNavigate()
   const quotes = [
@@ -92,6 +92,8 @@ function Home() {
       ),
     },
   ]
+  const [innerWidth, setInnerWidth] = useState(null)
+  const [mxLeft, setMxLeft] = useState(null)
   const charactheristics = [
     {
       name: 'FLEXIBILE',
@@ -124,6 +126,43 @@ function Home() {
         'We are able to maximize service and we do this by providing top-notch management and commitment from our company’s leadership, and concierge team.',
     },
   ]
+  useEffect(() => {
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1280) {
+        setMxLeft(
+          window.innerWidth > 1280 &&
+            -(
+              window.innerWidth -
+              90 -
+              document.getElementById('topSection')?.offsetWidth
+            ) / 2,
+        )
+        setInnerWidth(
+          window.innerWidth > 1280 && (window.innerWidth - 90) * 0.78 + 'px',
+        )
+      } else {
+        setMxLeft(null)
+        setInnerWidth('100%')
+      }
+    })
+    if (window.innerWidth > 1280) {
+      setMxLeft(
+        window.innerWidth > 1280 &&
+          -(
+            window.innerWidth -
+            90 -
+            document.getElementById('topSection')?.offsetWidth
+          ) / 2,
+      )
+      setInnerWidth(
+        window.innerWidth > 1280 && (window.innerWidth - 90) * 0.78 + 'px',
+      )
+    } else {
+      setMxLeft(null)
+      setInnerWidth('100%')
+    }
+  }, [])
+
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
     for (let i = 0; i < videos.length; i++) {
@@ -200,21 +239,32 @@ function Home() {
       </section>
       <section className="text-start relative lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
-          <div className="space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]">
+          <div
+            id="topSection"
+            className=" max-w-[1026px]   mx-auto space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
+          >
             <p className="   Hiragino  text-zinc-800 text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
-              tailored-fitted
-              <br />
-              for each community
+              Tailored Services for the Specific Needs of Your Community.
             </p>
 
-            <p className="max-w-[434px] pb-[50px] lg:pb-0   text-zinc-800 text-[28px] lg:text-[35px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
-              SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.{' '}
+            <p className="max-w-[823px] pb-[50px] lg:pb-0   text-zinc-800 text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+              Our Concierge staff go the distance to ensure we provide services
+              that are the right-fit for every community.
             </p>
-            <div className="max-w-[1004px]  relative  border border-black border-opacity-20">
-              <img
-                src={films}
-                className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
-              ></img>
+            <div className="xl:px-[160px]">
+              <div
+                style={{
+                  width: innerWidth,
+
+                  marginLeft: mxLeft ? mxLeft : '0',
+                }}
+                className="mx-auto relative  border border-black border-opacity-20"
+              >
+                <img
+                  src={films}
+                  className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
+                ></img>
+              </div>
             </div>
             <div className="flex py-[50px] lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
@@ -231,7 +281,17 @@ function Home() {
                   </div>
                 ))}
             </div>
-            <div className="max-w-[1004px]  h-[0px] border border-black border-opacity-20"></div>
+            <div className="xl:px-[160px]">
+              <div
+                style={{
+                  width: innerWidth,
+
+                  marginLeft: mxLeft ? mxLeft : '0',
+                }}
+                className="w-full   h-[0px] border border-black border-opacity-20"
+              ></div>
+            </div>
+
             <div className="flex  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(3, 6)
@@ -248,8 +308,8 @@ function Home() {
                 ))}
             </div>
           </div>
-          <div className=" lg:px-[160px]">
-            <div className="bg-[#7D5555] relative ">
+          <div className=" xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
+            <div className="bg-[#7D5555] xl:mx-0 mx-auto   xl:w-[951px] relative ">
               <div className="px-[30px] lg:px-[72px] space-y-[24px] py-[35px]">
                 <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
                   Capital Concierge is Affordable, Accessible, Attentive &
@@ -270,8 +330,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#282724]  relative space-y-[70px] px-[30px] lg:px-[180px] py-[60px]  lg:py-[110px]">
-          <div className="space-y-[20px] lg:space-y-[44px]">
+        <div className="bg-[#282724]  relative space-y-[70px] px-[30px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
+          <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
             <div className="max-w-[734px] Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
             </div>
@@ -284,7 +344,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="w-full flex justify-end">
+          <div className="w-full xl:max-w-[1023px]  xl:mx-auto flex justify-end">
             <button
               onClick={() => {
                 setTimeout(function () {
@@ -299,28 +359,30 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8EED3] pb-[120px] lg:columns-2 gap-[150px] 	 px-[30px] lg:px-[150px]">
-        <p className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
-          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
-            our <br />
-          </span>
-          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
-            reputation
-            <br />
-          </span>
-          <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
-            speaks <br className="lg:block hidden" />
-            for
-            <br className="lg:block hidden" />
-            itself.
-          </span>
-        </p>
-        {quotes.map((el, index) => (
-          <div key={index} className="block pb-[100px] lg:pb-0">
-            <Quote author={el.author} text={el.text}></Quote>
-          </div>
-        ))}
-      </section>
+      <div className="bg-[#F8EED3] ">
+        <section className=" pb-[120px] xl:mx-auto lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[30px] lg:px-[150px]">
+          <p className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
+            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+              our <br />
+            </span>
+            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
+              reputation
+              <br />
+            </span>
+            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+              speaks <br className="lg:block hidden" />
+              for
+              <br className="lg:block hidden" />
+              itself.
+            </span>
+          </p>
+          {quotes.map((el, index) => (
+            <div key={index} className="block pb-[100px] lg:pb-0">
+              <Quote author={el.author} text={el.text}></Quote>
+            </div>
+          ))}
+        </section>
+      </div>
       <Work></Work>
     </div>
   )
