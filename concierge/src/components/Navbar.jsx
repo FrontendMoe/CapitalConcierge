@@ -4,7 +4,7 @@ import MenuBurger from './MenuBurger'
 import { handleScroll } from '../utils/FadeEffect'
 function Navbar() {
   const [collapsed, setCollapsed] = useState(false)
-
+  const [Height, setHeight] = useState('h-0')
   let location = useLocation()
   function scrollToTop() {
     window.scrollTo({
@@ -67,6 +67,13 @@ function Navbar() {
   useEffect(() => {
     handleScroll()
   }, [location, collapsed])
+  useEffect(() => {
+    if (collapsed) {
+      setHeight('h-full')
+    } else {
+      setHeight('h-0')
+    }
+  }, [collapsed])
   return (
     <nav
       id="nav"
@@ -107,23 +114,25 @@ function Navbar() {
         >
           <MenuBurger collapsed={collapsed}></MenuBurger>
         </div>
-        {collapsed && (
-          <div className="fixed z-20 flex flex-col justify-center items-center space-y-[20px] top-0 left-0 w-full h-full bg-[#FFF7DF]">
-            {nav.map((el, index) => (
-              <Link
-                key={el}
-                style={{ backgroundColor: index === nav.length - 1 && '#000' }}
-                className={`cursor-pointer uppercase font-[600] ${
-                  index === nav.length - 1 &&
-                  'bg-black py-[12px] px-[22px] text-[#F6C94B]'
-                }`}
-                to={el.link}
-              >
-                <div onClick={() => setCollapsed(false)}>{el.name}</div>
-              </Link>
-            ))}
-          </div>
-        )}
+
+        <div
+          id="navMobile"
+          className={`fixed  duration-200 z-20 ${Height} flex flex-col justify-center items-center space-y-[20px] top-0 left-0 w-full overflow-hidden bg-[#FFF7DF]`}
+        >
+          {nav.map((el, index) => (
+            <Link
+              key={el}
+              style={{ backgroundColor: index === nav.length - 1 && '#000' }}
+              className={`cursor-pointer uppercase font-[600] ${
+                index === nav.length - 1 &&
+                'bg-black py-[12px] px-[22px] text-[#F6C94B]'
+              }`}
+              to={el.link}
+            >
+              <div onClick={() => setCollapsed(false)}>{el.name}</div>
+            </Link>
+          ))}
+        </div>
       </nav>
     </nav>
   )
