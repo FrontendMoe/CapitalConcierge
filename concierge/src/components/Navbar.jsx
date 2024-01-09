@@ -28,7 +28,6 @@ function Navbar() {
       link: '/About',
       color: '#7D5555',
     },
-
     {
       name: 'Services',
       link: '/Services',
@@ -79,9 +78,14 @@ function Navbar() {
   return (
     <nav
       id="nav"
+      style={
+        {
+          // backgroundColor : location.pathname.includes('About')
+        }
+      }
       className="mx-auto lg:bg-transparent   z-50 lg:relative w-full fixed top-0 left-0"
     >
-      <div className="py-[25px] px-[50px]  lg:flex text-[#F8EED3] hidden bg-[#0B0B0B]  z-10 items-center  mx-auto top-0 w-full      space-x-[83px] justify-end border-black ">
+      <div className="py-[25px]  px-[50px]  lg:flex text-[#F8EED3] hidden bg-[#0B0B0B]  z-10 items-center  mx-auto top-0 w-full      space-x-[83px] justify-end border-black ">
         {nav.map((el, index) =>
           el.link ? (
             <Link
