@@ -28,5 +28,5 @@ const rightQuote = (
     />
   </svg>
 )
-
+const logo
 export { leftQuote, rightQuote }

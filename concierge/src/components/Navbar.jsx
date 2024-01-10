@@ -3,7 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import MenuBurger from './MenuBurger'
 import { handleScroll } from '../utils/FadeEffect'
 import video from '../vid.mp4'
+import logo from '../assets/logo.svg'
 import navBg from '../assets/navBg.png'
+import LogoText from '../assets/LogoText.png'
 function Navbar() {
   const [collapsed, setCollapsed] = useState(false)
   const [Height, setHeight] = useState('h-0')
@@ -85,41 +87,59 @@ function Navbar() {
       }
       className="mx-auto lg:bg-transparent   z-50 lg:relative w-full fixed top-0 left-0"
     >
-      <div className="py-[25px]  px-[50px]  lg:flex text-[#F8EED3] hidden bg-[#0B0B0B]  z-10 items-center  mx-auto top-0 w-full      space-x-[83px] justify-end border-black ">
-        {nav.map((el, index) =>
-          el.link ? (
-            <Link
-              key={el}
-              style={{ backgroundColor: index === nav.length - 1 && '#202020' }}
-              className={`cursor-pointer uppercase font-[600] ${
-                index === nav.length - 1 &&
-                ' py-[12px] px-[22px] text-[#F6C94B]'
-              }`}
-              to={el.link}
-            >
-              <div>{el.name}</div>
-            </Link>
-          ) : (
-            <p
-              key={el}
-              style={{ backgroundColor: index === nav.length - 1 && '#202020' }}
-              className={`cursor-pointer uppercase font-[600] ${
-                index === nav.length - 1 &&
-                'bg-[#202020] py-[12px] px-[22px] text-[#F6C94B]'
-              }`}
-            >
-              <div>{el.name}</div>
-            </p>
-          ),
-        )}
+      <div className=" py-[25px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between">
+        <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
+          <div className="flex items-center">
+            <img src={logo} className=" w-fit" alt="" />
+            <img src={LogoText} alt="" className="w-[93.779px] h-fit" />
+          </div>
+        </div>
+        <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[83px] justify-end ">
+          {nav.map((el, index) =>
+            el.link ? (
+              <Link
+                key={el}
+                style={{
+                  backgroundColor: index === nav.length - 1 && '#202020',
+                }}
+                className={`cursor-pointer uppercase font-[600] ${
+                  index === nav.length - 1 &&
+                  ' py-[12px] px-[22px] text-[#F6C94B]'
+                }`}
+                to={el.link}
+              >
+                <div>{el.name}</div>
+              </Link>
+            ) : (
+              <p
+                key={el}
+                style={{
+                  backgroundColor: index === nav.length - 1 && '#202020',
+                }}
+                className={`cursor-pointer uppercase font-[600] ${
+                  index === nav.length - 1 &&
+                  'bg-[#202020] py-[12px] px-[22px] text-[#F6C94B]'
+                }`}
+              >
+                <div>{el.name}</div>
+              </p>
+            ),
+          )}
+        </div>
       </div>
       <nav className="lg:hidden w-full  ">
-        <div
-          key={'menybar'}
-          className=" z-30 w-screen flex  justify-end p-[30px]  relative"
-          onClick={() => setCollapsed(!collapsed)}
-        >
-          <MenuBurger collapsed={collapsed}></MenuBurger>
+        <div className="flex items-center p-[30px] pt-[70px]">
+          <div className="flex items-center space-x-[7px]">
+            <img src={logo} alt="" />
+            <img src={LogoText} alt="" className="w-[93.779px] h-fit" />
+          </div>
+          <div
+            key={'menybar'}
+            className=" z-30  w-screen flex  justify-end   relative"
+            onClick={() => setCollapsed(!collapsed)}
+          >
+            <MenuBurger collapsed={collapsed}></MenuBurger>
+          </div>
         </div>
 
         <div
