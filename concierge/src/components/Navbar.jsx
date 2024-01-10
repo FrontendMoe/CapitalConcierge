@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import MenuBurger from './MenuBurger'
 import { handleScroll } from '../utils/FadeEffect'
 import video from '../vid.mp4'
-
+import navBg from '../assets/navBg.png'
 function Navbar() {
   const [collapsed, setCollapsed] = useState(false)
   const [Height, setHeight] = useState('h-0')
@@ -151,14 +151,11 @@ function Navbar() {
               </div>
             </Link>
           ))}
-          <video
-            playsInline
-            src={video}
-            loop
-            autoPlay
-            muted
-            className=" h-full absolute bottom-0 w-screen object-center  lg:object-left mix-blend-overlay object-cover"
-          ></video>
+          <img
+            src={navBg}
+            className="absolute mix-blend-overlay bottom-0 w-full"
+            alt="navbg"
+          ></img>
         </div>
       </nav>
     </nav>
