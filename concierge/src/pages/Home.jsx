@@ -182,7 +182,7 @@ function Home() {
   }, [])
   return (
     <div className="bg-[#F6C94B]  lg:-mt-[5px]">
-      <section className="  relative bg-black lg:pb-0 pb-[200px] border-black flex lg:flex-row flex-col  text min-h-screen text-black">
+      <section className="  relative lg:pb-0 pb-[200px] border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
           style={{
             background:
