@@ -20,7 +20,7 @@ function Navbar() {
   }, [location])
   const nav = [
     {
-      name: 'Home',
+      name: 'WELCOME',
       link: '/',
     },
     {
@@ -144,7 +144,7 @@ function Navbar() {
               to={el.link}
             >
               <div
-                className="z-20 relative"
+                className="z-20 text-[11.237px] font-[600] tracking-[5.731px] relative"
                 onClick={() => setCollapsed(false)}
               >
                 {el.name}
