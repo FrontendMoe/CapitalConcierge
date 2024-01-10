@@ -260,11 +260,14 @@ function Home() {
               >
                 <img
                   src={films}
-                  className=" object-cover object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
+                  className=" object-cover  object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
                 ></img>
+                <div>
+                  <div className="w-[1775px] opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
+                </div>
               </div>
             </div>
-            <div className="flex py-[50px] lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex py-[50px] relative  z-10 lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(0, 3)
                 .reverse()
@@ -279,7 +282,7 @@ function Home() {
                   </div>
                 ))}
             </div>
-            <div className="xl:px-[160px]">
+            <div className="relative xl:px-[160px]">
               <div
                 style={{
                   width: innerWidth,
@@ -290,7 +293,7 @@ function Home() {
               ></div>
             </div>
 
-            <div className="flex  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex  relative lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(3, 6)
                 .reverse()
