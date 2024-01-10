@@ -2,7 +2,7 @@ import video from '../vid.mp4'
 import { Fade } from 'react-reveal'
 function Company() {
   return (
-    <div className="bg-[#F6C94B] lg:pt-[100px]">
+    <div className="bg-[#F6C94B] pt-[100px]">
       <div className="bg-[#F6C94B] border-t-[3px] border-black flex  text min-h-screen text-black">
         <div className="bg-[#F6C94B] space-y-[72px]   py-[128px] px-[150px]  border-black   border-r-[3px]  w-1/2 ">
           <p className="text-[84px] max-w-[400px] Hiragino leading-[89px]">
