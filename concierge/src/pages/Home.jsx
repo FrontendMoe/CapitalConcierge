@@ -181,8 +181,8 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-[#F6C94B] lg:-mt-[5px]">
-      <section className="  relative border-black flex  text min-h-screen text-black">
+    <div className="bg-[#F6C94B]  lg:-mt-[5px]">
+      <section className="  relative bg-black lg:pb-0 pb-[200px] border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
           style={{
             background:
@@ -203,21 +203,17 @@ function Home() {
         </div>
 
         <div className="lg:w-1/2 flex-1 bg-black flex justify-end">
-          <div className=" bg-[#0B0B0B] lg:bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] px-[30px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
+          <div className=" bg-[#0B0B0B] lg:bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
             <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
               The Best For Your <span className="text-[#F6C94B]">Guest.</span>
             </p>
-            <p className="text-[45px] lg:hidden relative lg:text-[84px]  max-w-[300px] Hiragino lg:leading-[89px]">
-              The <br /> Best For <br /> Your{' '}
-              <span className="text-[#F6C94B]">
-                {' '}
-                <br />
-                Guest.
-              </span>
+            <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px] max-w-[201px] Hiragino lg:leading-[89px]">
+              The Best For Your <span className="text-[#F6C94B]"> Guest.</span>
             </p>
             <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
+            <div className="w-[69px] h-[0px] border-2 border-amber-300"></div>
 
-            <div className="max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[60px]">
+            <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px]">
               Professional & Innovative Concierge Services & Solutions.
             </div>
           </div>
@@ -234,18 +230,28 @@ function Home() {
             ></video>
           </Fade>
         </div>
+        <div className="lg:hidden  w-[557px] h-[200px] relative  bg-[#F6C94B]">
+          <video
+            playsInline
+            src={video}
+            loop
+            autoPlay
+            muted
+            className="  absolute  object-cover top-0 w-full h-full aspect-auto mix-blend-darken"
+          ></video>
+        </div>
       </section>
       <section className="text-start relative lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] bg-[#F6C94B]">
+        <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
           <div
             id="topSection"
             className=" max-w-[1026px]   mx-auto space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino  text-zinc-800 text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+            <p className="   Hiragino  text-[#29292B] text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               Tailored Services for the Specific Needs of Your Community.
             </p>
 
-            <p className="max-w-[823px] pb-[50px] lg:pb-0   text-zinc-800 text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+            <p className="max-w-[823px] pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               Our Concierge staff go the distance to ensure we provide services
               that are the right-fit for every community.
             </p>
