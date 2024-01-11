@@ -64,7 +64,7 @@ function Services() {
             </span>
           </p>
           <p className="Hiragino lg:hidden lg:w-[348px]">
-            <span className="text-orange-100 text-[50px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
+            <span className="text-orange-100 text-[48px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
               A Concierge Company <br />
               For All Your
               <br />
