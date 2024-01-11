@@ -364,7 +364,7 @@ function Home() {
               Us.
             </div>
 
-            <div className="max-w-[714px] lg:block hidden text-[#FFF7DF] text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
+            <div className="max-w-[714px] lg:block hidden text-[#FFF7DF] text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-[0.57px]">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
