@@ -141,7 +141,7 @@ function Services() {
               </div>
             </div>
           ))}
-          <div className="bg-[#282724]  relative z-20 space-y-[91px]  lg:space-y-[62px] p-[50px] lg:px-[109px] lg:py-[90px]">
+          <div className="bg-[#282724] lg:hidden relative z-20 space-y-[91px]  lg:space-y-[62px] p-[50px] lg:px-[109px] lg:py-[90px]">
             <div className="space-y-[32px] lg:space-y-[54px]">
               <div className="lg:block hidden Hiragino max-w-[734px] text-amber-300 text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
                 Pricing
@@ -182,6 +182,47 @@ function Services() {
               </p>
             </button>
           </div>
+        </div>
+        <div className="bg-[#282724] lg:block hidden relative z-20 space-y-[91px]  lg:space-y-[62px] p-[50px] lg:px-[109px] lg:py-[90px]">
+          <div className="space-y-[32px] lg:space-y-[54px]">
+            <div className="lg:block hidden Hiragino max-w-[734px] text-amber-300 text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+              Pricing
+            </div>
+
+            <div className="max-w-[239px] Hiragino lg:hidden text-amber-300 text-6xl font-light font-['Hiragino Mincho ProN'] tracking-[-3.022px] leading-[59.22px]">
+              Request
+              <br />
+              Pricing.
+            </div>
+
+            <div className="max-w-[890px]  lg:block hidden text-orange-100 text-[45px] font-light font-['Gibson'] leading-[60px]">
+              Pricing for staff, supervisors and building link support is
+              provided upon request and is based on for community size and
+              needs.{' '}
+            </div>
+            <div className="lg:hidden max-w-[277px]">
+              <span className="text-yellow-50 text-xl font-light font-['Gibson'] leading-[35px] tracking-[0.6px]">
+                Pricing for staff, supervisors and building link support is
+                provided upon request and is based on for community size and
+                needs.
+                <br />
+              </span>
+              <span
+                onClick={mailTo}
+                className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-[0.6px]"
+              >
+                Request Pricing for a Custom Proposal.{' '}
+              </span>
+            </div>
+          </div>
+          <button
+            onClick={mailTo}
+            className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
+          >
+            <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
+              REQUEST PRICING {'>'}
+            </p>
+          </button>
         </div>
       </section>
       <div className="h-[150px] -mt-[150px] bg-[#F6C94B] w-full"></div>
