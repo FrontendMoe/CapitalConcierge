@@ -17,6 +17,7 @@ function Navbar() {
       behavior: 'smooth',
     })
   }
+  useEffect(() => {}, [invert])
 
   useEffect(() => {
     scrollToTop()
@@ -62,7 +63,7 @@ function Navbar() {
     } else {
       document.querySelector('#nav').style.backgroundColor = 'transparent'
       document.querySelector('#paddingTop').style.paddingTop = '70px'
-      if (location.pathname.toLowerCase().includes('about')) {
+      if (location.pathname.toLowerCase().includes('about') && !collapsed) {
         setInvert('invert')
       }
     }
@@ -194,7 +195,9 @@ function Navbar() {
             <img
               src={logo}
               className={`${
-                location.pathname.toLowerCase().includes('about') && invert
+                location.pathname.toLowerCase().includes('about') && !collapsed
+                  ? invert
+                  : ''
               } `}
               alt=""
             />
@@ -202,7 +205,9 @@ function Navbar() {
               src={LogoText}
               alt=""
               className={`w-[93.779px] ${
-                location.pathname.toLowerCase().includes('about') && invert
+                location.pathname.toLowerCase().includes('about') && !collapsed
+                  ? invert
+                  : ''
               }  object-scale-down h-[32.914px]`}
             />
           </Link>
