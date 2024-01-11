@@ -92,16 +92,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Hiragino';
-  src: url('Hiragino\ Mincho\ Pro\ W3.otf') format('opentype');
-
-  font-style: normal;
-}
-
 body {
   font-family: 'Gibson';
-}
-.Hiragino {
-  font-family: 'Hiragino', 'sans-serif' !important;
 }
