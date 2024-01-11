@@ -122,7 +122,7 @@ function Services() {
               }  ${index === 0 && 'border-t-0'}`}
             >
               {index === 0 && window.innerWidth < 1200 && (
-                <div className="max-w-[299px] lg:hidden text-[#7D5555] Hiragino text-start text-[50.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
+                <div className="max-w-[299px] lg:hidden text-[#7D5555] Hiragino text-start text-[53px] font-light font-['Hiragino Mincho ProN'] tracking-[-2.724px] leading-[53.38px]">
                   Offerings <br />& Services.
                 </div>
               )}
@@ -148,7 +148,7 @@ function Services() {
               Pricing
             </div>
 
-            <div className="max-w-[239px] Hiragino lg:hidden text-amber-300 text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px]">
+            <div className="max-w-[239px] Hiragino lg:hidden text-amber-300 text-6xl font-light font-['Hiragino Mincho ProN'] tracking-[-3.022px] leading-[59.22px]">
               Request
               <br />
               Pricing.
@@ -160,7 +160,7 @@ function Services() {
               needs.{' '}
             </div>
             <div className="lg:hidden max-w-[277px]">
-              <span className="text-yellow-50 text-xl font-light font-['Gibson'] leading-[35px] tracking-wide">
+              <span className="text-yellow-50 text-xl font-light font-['Gibson'] leading-[35px] tracking-[0.6px]">
                 Pricing for staff, supervisors and building link support is
                 provided upon request and is based on for community size and
                 needs.
@@ -168,7 +168,7 @@ function Services() {
               </span>
               <span
                 onClick={mailTo}
-                className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-wide"
+                className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-[0.6px]"
               >
                 Request Pricing for a Custom Proposal.{' '}
               </span>
@@ -178,7 +178,7 @@ function Services() {
             onClick={mailTo}
             className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
           >
-            <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+            <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
               REQUEST PRICING {'>'}
             </p>
           </button>
