@@ -120,8 +120,8 @@ function Services() {
                 index <= 2 ? 'lg:border-t-0' : 'lg:border-b-0'
               }  ${index === 0 && 'border-t-0'}`}
             >
-              {index === 0 && (
-                <div className="max-w-[299px] text-[#7D5555] Hiragino text-start text-[54.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
+              {index === 0 && window.innerWidth < 1200 && (
+                <div className="max-w-[299px] lg:hidden text-[#7D5555] Hiragino text-start text-[54.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
                   Offerings <br />& Services.
                 </div>
               )}
