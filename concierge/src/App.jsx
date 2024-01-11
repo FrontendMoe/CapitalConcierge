@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import './fonts/stylesheet.css'
+
 import './App.css'
+import './fonts/stylesheet.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Company from './pages/Company'
