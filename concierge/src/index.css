@@ -15,7 +15,7 @@ button {
   @apply hover:opacity-90 duration-200 active:opacity-80;
 }
 #paddingTop {
-  @apply duration-100;
+  @apply duration-200;
 }
 /* Burger */
 header {
