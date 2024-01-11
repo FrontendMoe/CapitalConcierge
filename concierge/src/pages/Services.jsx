@@ -50,8 +50,8 @@ function Services() {
     <div className=" bg-[#7D5555] ">
       <Navbar></Navbar>
       <section className="pt-[50px] lg:pt-[100px]">
-        <div className="lg:px-[220px]  px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[75px] b">
-          <p className="max-w-[1020px] Hiragino">
+        <div className="lg:px-[220px]  px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[45px] lg:space-y-[75px] b">
+          <p className="max-w-[1020px] lg:block hidden Hiragino">
             <span className="text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
               A Concierge Company <br />
               For All Your{' '}
@@ -62,8 +62,21 @@ function Services() {
               Needs.
             </span>
           </p>
+          <p className="Hiragino lg:hidden lg:w-[348px]">
+            <span className="text-orange-100 text-[55.66px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
+              A Concierge Company <br />
+              For All Your
+              <br />
+            </span>
+            <span className="text-orange-100 text-[55.66px] font-semibold font-['Hiragino Mincho ProN'] leading-[54.30px]">
+              Community’s
+              <br />
+              Needs.
+            </span>
+          </p>
+
           <div className="w-[69px] h-[0px] border-2 border-yellow-50"></div>
-          <p className="max-w-[936px]">
+          <p className="max-w-[936px] lg:block hidden">
             <span className="text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
               We are familiar with the challenges and difficulties communities
               face and are prepared to tackle those challenges; combine our
@@ -76,23 +89,42 @@ function Services() {
               providing only the very best in customer service.
             </span>
           </p>
+          <div className="max-w-[325px] lg:hidden">
+            <span className="text-yellow-50 text-[21px] font-normal font-['Gibson'] leading-9 tracking-tight">
+              We are familiar with the challenges and difficulties communities
+              face and are prepared to tackle those challenges; combine our
+              day-to-day experience with ongoing professional training, the
+              latest in technology and some creative thinking to handle the
+              needs of today and tomorrow. <br />
+              <br />
+            </span>
+            <span className="text-yellow-50 text-[21px] font-semibold font-['Gibson'] leading-9 tracking-tight">
+              We take the values and requests of our clients' very seriously,
+              providing only the very best in customer service.
+            </span>
+          </div>
         </div>
       </section>
       <section className="px-[30px] lg:px-[220px] pt-[50px] lg:pt-[106px] space-y-[30px] lg:space-y-[95px]  bg-[#FFF7DF]">
         <div id="Offering">
-          <div className="w-[734px] Hiragino text-[#7D5555] text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+          <div className="w-[734px] lg:block hidden Hiragino text-[#7D5555] text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
             Offerings & Services.
           </div>
         </div>
 
-        <div className="grid gap-[50px] lg:gap-0 lg:grid-cols-3">
+        <div className="grid lg:gap-0 lg:grid-cols-3">
           {offers.map((el, index) => (
             <div
               key={index}
-              className={`space-y-[45px] lg:p-[60px] border-[#F4E8CF]  border lg:block flex flex-col items-center text-center lg:text-start  ${
+              className={`space-y-[45px] p-[30px] lg:p-[60px] border-[#F4E8CF]  border lg:block flex flex-col items-center text-center lg:text-start  ${
                 index <= 2 ? 'lg:border-t-0' : 'lg:border-b-0'
-              }`}
+              }  ${index === 0 && 'border-t-0'}`}
             >
+              {index === 0 && (
+                <div className="max-w-[299px] text-[#7D5555] Hiragino text-start text-[54.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
+                  Offerings <br />& Services.
+                </div>
+              )}
               <div className="h-[158.688px] flex items-end">
                 <img src={el.img} alt="" className=" " />
               </div>
@@ -109,35 +141,38 @@ function Services() {
             </div>
           ))}
         </div>
-        <div className="bg-[#282724] translate-y-[150px] space-y-[30px]  lg:space-y-[62px] p-[30px] lg:px-[109px] lg:py-[90px]">
-          <div className="max-w-[734px] Hiragino text-amber-300 text-[35px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
-            Pricing
-          </div>
-          <div className="max-w-[888px] ">
-            <span className="text-neutral-400 lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
-              Pricing for{' '}
-            </span>
-            <span className="text-white lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
-              concierge staff, supervisors and building link support{' '}
-            </span>
-            <span className="text-neutral-400 lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
-              are based on community size and needs.{' '}
-            </span>
-            <span className="text-white lg:text-[40.92px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58.40px]">
-              Contact us for a proposal.
-            </span>
-          </div>
-          <button className="w-full lg:w-[397px] flex items-center h-[69px] bg-[#F6C94B]">
-            <p className="max-w-[417.61px] flex justify-between px-[16px] lg:px-[25px]">
-              <span
-                className="text-black
-              text-[18px]  lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide"
-              >
-                REQUEST A PROPOSAL
+        <div className="bg-[#282724] space-y-[91px] translate-y-[150px]   lg:space-y-[62px] p-[50px] lg:px-[109px] lg:py-[90px]">
+          <div className="space-y-[32px] lg:space-y-[54px]">
+            <div className="lg:block hidden Hiragino max-w-[734px] text-amber-300 text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+              Pricing
+            </div>
+
+            <div className="max-w-[239px] Hiragino lg:hidden text-amber-300 text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px]">
+              Request
+              <br />
+              Pricing.
+            </div>
+
+            <div className="max-w-[890px]  lg:block hidden text-orange-100 text-[45px] font-light font-['Gibson'] leading-[60px]">
+              Pricing for staff, supervisors and building link support is
+              provided upon request and is based on for community size and
+              needs.{' '}
+            </div>
+            <div className="lg:hidden max-w-[277px]">
+              <span className="text-yellow-50 text-xl font-light font-['Gibson'] leading-[35px] tracking-wide">
+                Pricing for staff, supervisors and building link support is
+                provided upon request and is based on for community size and
+                needs.
+                <br />
               </span>
-              <span className="text-black text-[18px]  lg:text-[23px]  font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
-                {`>`}
+              <span className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-wide">
+                Request Pricing for a Custom Proposal.{' '}
               </span>
+            </div>
+          </div>
+          <button className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]">
+            <p className="max-w-[417.61px]  text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+              REQUEST PRICING {'>'}
             </p>
           </button>
         </div>
