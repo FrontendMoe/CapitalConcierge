@@ -94,7 +94,8 @@
 
 @font-face {
   font-family: 'Hiragino';
-  src: url('Hiragino\ Mincho\ ProN\ W3.otf');
+  src: url('Hiragino\ Mincho\ ProN\ W3.otf') format('opentype'),
+    url('Hiragino\ Mincho\ ProN\ W3.ttf') format('truetype');
 
   font-style: normal;
 }
