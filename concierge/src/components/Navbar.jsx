@@ -50,11 +50,11 @@ function Navbar() {
     }
   }, [collapsed])
   const handleScroll2 = () => {
-    // if (window.scrollY > 50) {
-    //   document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
-    // } else {
-    //   document.querySelector('#nav').style.backgroundColor = 'transparent'
-    // }
+    if (window.scrollY > 50) {
+      document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
+    } else {
+      document.querySelector('#nav').style.backgroundColor = 'transparent'
+    }
   }
 
   useEffect(() => {
