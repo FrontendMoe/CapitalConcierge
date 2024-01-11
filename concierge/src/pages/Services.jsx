@@ -91,7 +91,7 @@ function Services() {
             </span>
           </p>
           <div className="max-w-[325px] lg:hidden">
-            <span className="text-yellow-50 text-[21px] font-normal font-['Gibson'] leading-9 tracking-tight">
+            <span className="text-yellow-50 text-[21px] font-normal font-['Gibson'] leading-9 tracking-[0.21px]">
               We are familiar with the challenges and difficulties communities
               face and are prepared to tackle those challenges; combine our
               day-to-day experience with ongoing professional training, the
@@ -99,7 +99,7 @@ function Services() {
               needs of today and tomorrow. <br />
               <br />
             </span>
-            <span className="text-yellow-50 text-[21px] font-semibold font-['Gibson'] leading-9 tracking-tight">
+            <span className="text-yellow-50 text-[21px] font-semibold font-['Gibson'] leading-9 tracking-[0.21px]">
               We take the values and requests of our clients' very seriously,
               providing only the very best in customer service.
             </span>
