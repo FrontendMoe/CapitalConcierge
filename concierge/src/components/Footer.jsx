@@ -41,7 +41,7 @@ function Footer() {
           </span>
         </p>
 
-        <div className="flex justify-center items-center space-x-[20px] pb-[50px] lg:pb-0 px-[30px]">
+        <div className="flex justify-center items-center space-x-[20px] pb-[50px] lg:pb-0 px-[20px]">
           {links.map((el, index) => (
             <Link
               key={index}
