@@ -172,17 +172,15 @@ function Navbar() {
           <Link to={'/'} className="flex items-center space-x-[7px]">
             <img
               src={logo}
-              className={`${
-                location.pathname.toLowerCase().includes('about') && 'invert'
-              } `}
+              // className={`${
+              //   location.pathname.toLowerCase().includes('about') && 'invert'
+              // } `}
               alt=""
             />
             <img
               src={LogoText}
               alt=""
-              className={`w-[93.779px] object-scale-down h-[32.914px] ${
-                location.pathname.toLowerCase().includes('about') && 'invert'
-              }`}
+              className="w-[93.779px] object-scale-down h-[32.914px]"
             />
           </Link>
           <div
