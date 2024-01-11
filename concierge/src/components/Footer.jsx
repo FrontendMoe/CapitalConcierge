@@ -21,7 +21,7 @@ function Footer() {
       <div>
         <img src={Footerlogo} className="w-[187px]" alt="" />{' '}
       </div>
-      <div className=" space-y-[45px] flex-1 items-center flex 2xl:flex-row flex-col w-full">
+      <div className=" space-y-[45px] flex-1 items-center justify-between flex 2xl:flex-row flex-col w-full">
         <p className="max-w-[255.68px] mx-auto lg:hidden text-center">
           <span className="text-orange-100 text-[22.67px] font-semibold font-['Gibson'] leading-loose">
             Capital Concierge LLC. © 2023

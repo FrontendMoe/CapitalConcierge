@@ -181,7 +181,7 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-black relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
+    <div className="bg-[#0B0B0B] relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
       <Navbar></Navbar>
       <section className="  relative lg:pb-0 pb-[200px]  border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
@@ -203,19 +203,22 @@ function Home() {
           </Fade>
         </div>
 
-        <div className="lg:w-1/2 flex-1 bg-black flex justify-end">
-          <div className=" bg-[#0B0B0B] lg:bg-[#282724] relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]  border-black    w-full lg:max-w-[726px]">
-            <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
-              The Best For Your <span className="text-[#F6C94B]">Guest.</span>
-            </p>
-            <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px] max-w-[201px] Hiragino lg:leading-[89px]">
-              The Best For Your <span className="text-[#F6C94B]"> Guest.</span>
-            </p>
-            <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
-            <div className="w-[69px] lg:hidden h-[0px] border-2 border-amber-300"></div>
+        <div className="lg:w-1/2 flex-1 bg-[#0B0B0B] ">
+          <div className="flex justify-end relative z-20 bg-[#0B0B0B]">
+            <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
+              <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
+                The Best For Your <span className="text-[#F6C94B]">Guest.</span>
+              </p>
+              <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px] max-w-[201px] Hiragino lg:leading-[89px]">
+                The Best For Your{' '}
+                <span className="text-[#F6C94B]"> Guest.</span>
+              </p>
+              <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
+              <div className="w-[69px] lg:hidden h-[0px] border-2 border-amber-300"></div>
 
-            <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px]">
-              Professional & Innovative Concierge Services & Solutions.
+              <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px]">
+                Professional & Innovative Concierge Services & Solutions.
+              </div>
             </div>
           </div>
         </div>

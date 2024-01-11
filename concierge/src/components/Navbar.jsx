@@ -50,11 +50,11 @@ function Navbar() {
     }
   }, [collapsed])
   const handleScroll2 = () => {
-    if (window.scrollY > 50) {
-      document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
-    } else {
-      document.querySelector('#nav').style.backgroundColor = 'transparent'
-    }
+    // if (window.scrollY > 50) {
+    //   document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
+    // } else {
+    //   document.querySelector('#nav').style.backgroundColor = 'transparent'
+    // }
   }
 
   useEffect(() => {
@@ -131,7 +131,16 @@ function Navbar() {
           )}
         </div>
       </div>
-      <nav className="lg:hidden w-full  ">
+      <nav
+        style={{
+          backgroundColor:
+            location.pathname.toLowerCase().includes('about') ||
+            location.pathname.toLowerCase().includes('services')
+              ? '#0B0B0B33'
+              : '#0B0B0B',
+        }}
+        className="lg:hidden w-full  "
+      >
         <div className="flex items-center p-[30px] pt-[70px]">
           <div className="flex items-center space-x-[7px]">
             <img src={logo} alt="" />
