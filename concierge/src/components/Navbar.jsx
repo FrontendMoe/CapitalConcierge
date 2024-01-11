@@ -191,17 +191,27 @@ function Navbar() {
           className="flex items-center justify-between pl-[56px] p-[30px] pt-[70px]"
         >
           <Link to={'/'} className="flex items-center space-x-[7px]">
-            <img src={logo} className={`${invert} `} alt="" />
+            <img
+              src={logo}
+              className={`${
+                location.pathname.toLowerCase().includes('about') && invert
+              } `}
+              alt=""
+            />
             <img
               src={LogoText}
               alt=""
-              className={`w-[93.779px] ${invert}  object-scale-down h-[32.914px]`}
+              className={`w-[93.779px] ${
+                location.pathname.toLowerCase().includes('about') && invert
+              }  object-scale-down h-[32.914px]`}
             />
           </Link>
           <div
             key={'menybar'}
             id="burger"
-            className={`z-30  ${invert} w-fit flex    justify-end   relative`}
+            className={`z-30  ${
+              location.pathname.toLowerCase().includes('about') && invert
+            } w-fit flex    justify-end   relative`}
             onClick={() => setCollapsed(!collapsed)}
           >
             <MenuBurger collapsed={collapsed}></MenuBurger>
