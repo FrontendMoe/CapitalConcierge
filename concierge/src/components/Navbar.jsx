@@ -87,6 +87,7 @@ function Navbar() {
   }, [collapsed])
   useEffect(() => {
     handleScroll()
+    handleScroll2()
   }, [location, collapsed])
   useEffect(() => {
     if (collapsed) {
@@ -95,6 +96,7 @@ function Navbar() {
       setHeight('h-0')
     }
   }, [collapsed])
+
   return (
     <nav
       id="nav"
