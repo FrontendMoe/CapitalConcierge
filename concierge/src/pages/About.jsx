@@ -107,9 +107,9 @@ function About() {
             </p>
             <div className="">
               {learn.map((el, index) => (
-                <div key={index} className="pb-[20px] lg:pb-[45px] ">
+                <div key={index} className="pb-[40px] lg:pb-[45px] ">
                   <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
-                  <div className=" pt-[20px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[10px] lg:space-y-[18px]">
+                  <div className=" pt-[40px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[18px] lg:space-y-[18px]">
                     <p className=" text-[#FFF7DF] Hiragino text-xl font-[600] font-['Hiragino Mincho Pro'] leading-relaxed">
                       {el.name}
                     </p>
@@ -118,7 +118,7 @@ function About() {
                     </p>
                     <Link
                       to={el.link}
-                      className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider"
+                      className="text-amber-300 w-full lg:justify-end flex lg:text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider"
                     >
                       <p>{el.bottom}</p>
                     </Link>
