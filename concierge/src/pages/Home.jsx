@@ -206,11 +206,12 @@ function Home() {
         <div className="lg:w-1/2 flex-1 bg-[#0B0B0B] ">
           <div className="flex flex-col justify-end relative z-20 bg-[#0B0B0B]">
             <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
-              <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
-                The Best For Your <span className="text-[#F6C94B]">Guest.</span>
+              <p className="text-[40px] lg:block hidden relative lg:text-[84px]  Hiragino lg:leading-[89px]">
+                The <br /> Best For <br /> Your <br />{' '}
+                <span className="text-[#F6C94B]">Guest.</span>
               </p>
-              <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px] max-w-[201px] Hiragino lg:leading-[89px]">
-                The Best For Your{' '}
+              <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px]  Hiragino lg:leading-[89px]">
+                The Best <br /> For Your <br />
                 <span className="text-[#F6C94B]"> Guest.</span>
               </p>
               <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
