@@ -4,7 +4,6 @@ function Quote({
   // eslint-disable-next-line react/prop-types
   author = (
     <>
-      {' '}
       <br />
       Bobby Qureshi
       <br />
@@ -27,13 +26,13 @@ function Quote({
   return (
     <div className="relative w-fit space-y-[20px] lg:space-y-[40px] break-inside-avoid">
       <div className="relative w-fit  ">
-        <div className="lg:absolute  flex w-full lg:w-fit  justify-start top-0 -ml-[70px] lg:-ml-0  lg:-left-[80px] lg:scale-100 scale-50">
+        <div className="lg:absolute  flex w-full lg:w-fit  justify-start top-0 -ml-[70px] lg:-ml-0  lg:-left-[80px] lg:scale-100 scale-[60%]">
           {leftQuote}
         </div>
         <p className="flex flex-col  items-center text-black text-[20px] lg:text-[25px] font-light font-['Gibson'] lg:leading-[44.70px]">
           {text}
         </p>
-        <div className="lg:absolute  flex w-full lg:w-fit  justify-end bottom-0 -mr-[70px] lg:-mr-0  lg:-right-[80px] lg:scale-100 scale-50">
+        <div className="lg:absolute  flex w-full lg:w-fit  justify-end bottom-0 -mr-[70px] lg:-mr-0  lg:-right-[80px] lg:scale-100 scale-[60%]">
           {rightQuote}
         </div>
       </div>

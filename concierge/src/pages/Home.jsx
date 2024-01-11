@@ -248,7 +248,7 @@ function Home() {
         </div>
       </section>
       <section className="text-start overflow-visible relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
+        <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[180px]  bg-[#F6C94B]">
           <div
             id="topSection"
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
