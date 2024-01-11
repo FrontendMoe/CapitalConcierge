@@ -95,7 +95,7 @@ function Navbar() {
         className=" py-[25px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between"
       >
         <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
-          <div className="flex items-center">
+          <Link to={'/'} className="flex items-center">
             <img
               src={logo}
               className={` w-fit ${
@@ -110,7 +110,7 @@ function Navbar() {
                 location.pathname.toLowerCase().includes('about') && 'invert'
               }`}
             />
-          </div>
+          </Link>
         </div>
         <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[83px] justify-end ">
           {nav.map((el, index) =>
@@ -123,7 +123,14 @@ function Navbar() {
                 to={el.link}
               >
                 <div
-                  style={{ letterSpacing: '7.14px', fontSize: '14px' }}
+                  style={{
+                    color:
+                      location.pathname.toLowerCase().includes('about') &&
+                      index !== nav.length - 1 &&
+                      'black',
+                    letterSpacing: '7.14px',
+                    fontSize: '14px',
+                  }}
                   className={`cursor-pointer tracking-[7.14px] text-[14px] uppercase font-[600] ${
                     index === nav.length - 1 &&
                     ' py-[12px]  font-[600] px-[22px] text-[#F6C94B]'
