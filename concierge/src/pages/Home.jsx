@@ -203,7 +203,7 @@ function Home() {
           </Fade>
         </div>
 
-        <div className="lg:w-1/2  xl:flex  justify-end flex-1 bg-[#0B0B0B] ">
+        <div className="lg:w-1/2   xl:flex relative z-20  justify-end flex-1 bg-[#0B0B0B] ">
           <div className="flex w-fit  flex-col justify-end relative z-20 bg-[#0B0B0B]">
             <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
               <p className="text-[40px] lg:block text-[#F8EED3] hidden relative lg:text-[84px]  Hiragino lg:leading-[89px] tracking-[-6.72px]">
