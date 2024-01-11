@@ -36,7 +36,7 @@ function Quote({
           {rightQuote}
         </div>
       </div>
-      <p className="w-fit lg:h-[113px] text-black text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+      <p className="w-fit lg:h-[113px] text-black text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
         {author}
       </p>
     </div>
