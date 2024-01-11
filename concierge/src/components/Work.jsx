@@ -7,7 +7,7 @@ function Work() {
         <p className="max-w-[939px] lg:block hidden  Hiragino text-stone-800 text-[30px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
           Let’s Work Together.
         </p>
-        <p className="Hiragino max-w-[243px] lg:hidden  text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px]">
+        <p className="Hiragino max-w-[243px] lg:hidden  text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
           Let’s Work Together.
         </p>
 

@@ -206,18 +206,18 @@ function Home() {
         <div className="lg:w-1/2 flex-1 bg-[#0B0B0B] ">
           <div className="flex flex-col justify-end relative z-20 bg-[#0B0B0B]">
             <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
-              <p className="text-[40px] lg:block hidden relative lg:text-[84px]  Hiragino lg:leading-[89px]">
+              <p className="text-[40px] lg:block text-[#F8EED3] hidden relative lg:text-[84px]  Hiragino lg:leading-[89px]">
                 The <br /> Best For <br /> Your <br />{' '}
                 <span className="text-[#F6C94B]">Guest.</span>
               </p>
-              <p className="text-[55.659px] lg:hidden relative lg:text-[84px]  leading-[54.3px]  Hiragino lg:leading-[89px]">
+              <p className="text-[55.659px]  text-[#F8EED3] lg:hidden relative lg:text-[84px]  leading-[54.3px]  Hiragino lg:leading-[89px] tracking-[-4.453px]">
                 The Best <br /> For Your <br />
                 <span className="text-[#F6C94B]"> Guest.</span>
               </p>
               <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
-              <div className="w-[69px] lg:hidden h-[0px] border-2 border-amber-300"></div>
+              <div className="w-[69px] lg:hidden h-[0px] border-2 border-[#F6C94B]"></div>
 
-              <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px]">
+              <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px] tracking-[0.21px]">
                 Professional & Innovative Concierge Services & Solutions.
               </div>
             </div>
@@ -253,8 +253,8 @@ function Home() {
             id="topSection"
             className=" max-w-[1026px]   mx-auto space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino  text-[#29292B] text-[40px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
-              Tailored Services for the Specific Needs of Your Community.
+            <p className="   Hiragino  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+              tailored-fitted for each community{' '}
             </p>
 
             <p className="max-w-[823px] pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
@@ -285,11 +285,11 @@ function Home() {
                 .reverse()
                 .map((el, index) => (
                   <div key={index} className="space-y-[16px]">
-                    <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    <p className="text-[#29292B] text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
                     </p>
 
-                    <p className="max-w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    <p className="max-w-[222px] text-[#29292B] text-[15px] font-normal font-['Gibson'] leading-[29px]">
                       {el.text}
                     </p>
                   </div>
@@ -312,11 +312,11 @@ function Home() {
                 .reverse()
                 .map((el, index) => (
                   <div key={index} className="space-y-[16px]">
-                    <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
+                    <p className="text-[#29292B] text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
                     </p>
 
-                    <p className="max-w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+                    <p className="max-w-[222px] text-[#29292B] text-[15px] font-[400] font-['Gibson']  leading-[29px]">
                       {el.text}
                     </p>
                   </div>
@@ -325,26 +325,26 @@ function Home() {
           </div>
           <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
             <div className="bg-[#7D5555] translate-y-[100px] xl:mx-0 mx-auto   xl:w-[951px] relative ">
-              <div className="px-[30px] lg:px-[72px] space-y-[24px] py-[35px]">
-                <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
+              <div className="px-[55px] lg:px-[72px] space-y-[24px] py-[35px]">
+                <div className="max-w-[303px] lg:max-w-[700px] text-[28px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
                 </div>
                 <div className="max-w-[665px]">
-                  <span className="text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
+                  <span className="text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[30px] tracking-[0.57px]">
                     We are familiar with the challenges and difficulties
                     communities face and are prepared to tackle those
                     challenges.{' '}
                   </span>
-                  <span className="text-yellow-50 max:text-[19px] lg:font-semibold font-['Gibson'] leading-[30px] tracking-wide">
+                  {/* <span className="text-[#FFF7DF] max:text-[19px] lg:font-semibold font-['Gibson'] leading-[30px] tracking-wide">
                     Click below to learn more about what we have to offer your
                     community.
-                  </span>
+                  </span> */}
                 </div>
               </div>
               <div className="bg-[#6B4949]  lg:px-[72px] px-[15px] py-[35px] lg:text-right text-center">
                 <Link to={'/Services'}>
-                  <button className="text-amber-300 text-[12px] lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
+                  <button className="text-[#F6C94B] text-[22px] text-start max-w-[219px] lg:max-w-full lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
                     VIEW OUR OFFERINGS & PRICING {'>'}
                   </button>
                 </Link>
@@ -356,22 +356,22 @@ function Home() {
       <section className="relative z-20">
         <div className="bg-[#282724]  relative space-y-[70px] px-[70px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
           <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
-            <div className="max-w-[734px] lg:block hidden Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+            <div className="max-w-[734px] lg:block hidden Hiragino  text-[#FFF7DF] text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
             </div>
-            <div className="lg:hidden Hiragino text-yellow-50 text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px]">
+            <div className="lg:hidden Hiragino text-[#FFF7DF] text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px] tracking-[-3.022px]">
               About <br />
               Us.
             </div>
 
-            <div className="max-w-[714px] lg:block hidden text-yellow-50 text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
+            <div className="max-w-[714px] lg:block hidden text-[#FFF7DF] text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
               partnership to create innovative solutions, honestly, dependably,
               proficiently and with integrity.
             </div>
-            <div className="max-w-[290px] lg:hidden text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+            <div className="max-w-[290px] lg:hidden text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[46px] tracking-[0.57px]">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
@@ -388,7 +388,7 @@ function Home() {
                 }, 100)
                 navigate('/Services')
               }}
-              className="text-amber-300 text-right text-[16px] lg:text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
+              className="text-[#F6C94B] text-right text-[16px] lg:text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
             >
               VIEW OUR OFFERINGS {'>'}
             </button>
@@ -400,7 +400,7 @@ function Home() {
               }, 100)
               navigate('/Services')
             }}
-            className="w-[265px] cursor-pointer lg:hidden text-amber-300 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
+            className="w-[265px] cursor-pointer lg:hidden text-[#F6C94B] text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
           >
             VIEW OUR OFFERINGS {'>'}
           </div>
@@ -409,14 +409,14 @@ function Home() {
       <div className="bg-[#F8EED3] ">
         <section className=" pb-[120px] pt-[60px] xl:mx-auto space-y-[45px] lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[70px] lg:px-[150px]">
           <p className="max-w-[767px] lg:block hidden lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
-            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+            <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
               our <br />
             </span>
-            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
+            <span className="text-[#29292B] text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
               reputation
               <br />
             </span>
-            <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
+            <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
               speaks <br className="lg:block hidden" />
               for
               <br className="lg:block hidden" />
@@ -424,14 +424,14 @@ function Home() {
             </span>
           </p>
           <p className="max-w-[530px] lg:hidden">
-            <span className="text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px]">
+            <span className="text-[#29292B] text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
               our <br />
             </span>
-            <span className="text-zinc-800 text-[58.04px] font-semibold font-['Hiragino Mincho ProN'] leading-[61.50px]">
+            <span className="text-[#29292B] text-[58.04px] font-semibold font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
               reputation
               <br />
             </span>
-            <span className="text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px]">
+            <span className="text-[#29292B] text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
               speaks
               <br />
               for
