@@ -325,7 +325,7 @@ function Home() {
           <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
             <div className="bg-[#7D5555] translate-y-[100px] xl:mx-0 mx-auto   xl:w-[951px] relative ">
               <div className="px-[55px] lg:px-[72px] space-y-[36px] py-[70px]">
-                <div className="max-w-[303px] lg:max-w-[700px] text-[36.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
+                <div className="max-w-[303px] lg:max-w-[700px] text-[32.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
                 </div>
