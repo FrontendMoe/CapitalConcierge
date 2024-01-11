@@ -31,7 +31,7 @@ function Footer() {
             Professional & Innovative Concierge Services & Solutions.
           </span>
         </p>
-        <p className="max-w-[909.99px] ">
+        <p className="max-w-[909.99px] lg:block hidden ">
           <span className="text-orange-100 text-[25px] font-semibold font-['Gibson'] leading-[44.70px]">
             Capital Concierge LLC. © 2023 <br />
           </span>

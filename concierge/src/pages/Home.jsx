@@ -113,7 +113,7 @@ function Home() {
     {
       name: 'TECH-ENABLED',
       text:
-        'We build a connection with our residents by having a custom approach. We take the time to learn each client and their needs, while still adhering to all  building policies. ',
+        'All forms and subsequent documentation requiring signatures at the front desk as well as daily performance records and logs will be replaced with Capital Concierge systems technology.',
     },
     {
       name: 'EFFECTIVE',
@@ -123,7 +123,7 @@ function Home() {
     {
       name: 'PERSONAL',
       text:
-        'All forms and subsequent documentation requiring signatures at the front desk as well as daily performance records and logs will be replaced with Capital Concierge systems technology.',
+        'We build a connection with our residents by having a custom approach. We take the time to learn each client and their needs, while still adhering to all  building policies. ',
     },
   ]
   useEffect(() => {
@@ -282,11 +282,12 @@ function Home() {
                 .slice(0, 3)
                 .reverse()
                 .map((el, index) => (
-                  <div key={index}>
+                  <div key={index} className="space-y-[16px]">
                     <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
                     </p>
-                    <p className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+
+                    <p className="max-w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
                       {el.text}
                     </p>
                   </div>
@@ -308,11 +309,12 @@ function Home() {
                 .slice(3, 6)
                 .reverse()
                 .map((el, index) => (
-                  <div key={index}>
+                  <div key={index} className="space-y-[16px]">
                     <p className="text-zinc-800 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]">
                       {el.name}
                     </p>
-                    <p className="w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
+
+                    <p className="max-w-[222px] text-zinc-800 text-[15px] font-normal font-['Gibson'] leading-[29px]">
                       {el.text}
                     </p>
                   </div>
