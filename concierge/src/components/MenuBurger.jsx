@@ -14,12 +14,22 @@ const MenuBurger = ({ collapsed }) => {
   return (
     <header className="flex items-center">
       <p
-        style={{ color: collapsed ? '#F6C94B' : '#fff' }}
+        style={{
+          color: collapsed
+            ? '#F6C94B'
+            : location.pathname.toLowerCase().includes('about')
+            ? '#000'
+            : '#fff',
+        }}
         className="text-[#FFF7DF] text-[11px] font-[600] tracking-[5.118px]"
       >
         {collapsed ? 'CLOSE' : 'MENU'}
       </p>
-      <div className="menu-btn scale-[60%] cursor-pointer">
+      <div
+        className={`menu-btn scale-[60%] cursor-pointer ${
+          location.pathname.toLowerCase().includes('about') && 'invert'
+        }`}
+      >
         <span
           style={{ borderColor: 'white', backgroundColor: 'white' }}
           className="bar border-white bg-white"
