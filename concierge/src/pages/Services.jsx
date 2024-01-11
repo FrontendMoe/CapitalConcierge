@@ -64,12 +64,12 @@ function Services() {
             </span>
           </p>
           <p className="Hiragino lg:hidden lg:w-[348px]">
-            <span className="text-orange-100 text-[55.66px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
+            <span className="text-orange-100 text-[50px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
               A Concierge Company <br />
               For All Your
               <br />
             </span>
-            <span className="text-orange-100 text-[55.66px] font-semibold font-['Hiragino Mincho ProN'] leading-[54.30px]">
+            <span className="text-orange-100 text-[50px] font-semibold font-['Hiragino Mincho ProN'] leading-[54.30px]">
               Community’s
               <br />
               Needs.
@@ -122,7 +122,7 @@ function Services() {
               }  ${index === 0 && 'border-t-0'}`}
             >
               {index === 0 && window.innerWidth < 1200 && (
-                <div className="max-w-[299px] lg:hidden text-[#7D5555] Hiragino text-start text-[54.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
+                <div className="max-w-[299px] lg:hidden text-[#7D5555] Hiragino text-start text-[50.48px] font-light font-['Hiragino Mincho ProN'] leading-[53.38px]">
                   Offerings <br />& Services.
                 </div>
               )}
@@ -178,7 +178,7 @@ function Services() {
             onClick={mailTo}
             className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
           >
-            <p className="max-w-[417.61px]  text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
+            <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
               REQUEST PRICING {'>'}
             </p>
           </button>
