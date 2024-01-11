@@ -142,10 +142,10 @@ function Navbar() {
         className="lg:hidden w-full  "
       >
         <div className="flex items-center justify-between p-[30px] pt-[70px]">
-          <div className="flex items-center space-x-[7px]">
+          <Link to={'/'} className="flex items-center space-x-[7px]">
             <img src={logo} alt="" />
             <img src={LogoText} alt="" className="w-[93.779px] h-fit" />
-          </div>
+          </Link>
           <div
             key={'menybar'}
             className=" z-30  w-fit flex  justify-end   relative"
