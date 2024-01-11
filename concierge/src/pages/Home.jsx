@@ -271,8 +271,8 @@ function Home() {
               >
                 <img
                   src={films}
-                  style={{ width: '100vw' }}
-                  className=" object-cover  -left-[30px] lg:left-0 opacity-10   object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] right-0 w-screen lg:w-full h-[1600px] lg:h-[1319px] lg:opacity-25"
+                  // style={{ width: '100vw' }}
+                  className=" object-cover  opacity-10 lg:w-fit w-screen -left-[30px]   object-right lg:left-1/2 lg:-translate-x-1/2  overflow-scroll top-0 absolute  mix-blend-darken   h-[1600px] lg:h-[1600px] lg:opacity-25"
                 ></img>
                 <div>
                   <div className="w-[1775px] lg:block hidden opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
