@@ -253,11 +253,11 @@ function Home() {
             id="topSection"
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino px-[60px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+            <p className="   Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               tailored-fitted for each community{' '}
             </p>
 
-            <p className="max-w-[823px] px-[60px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+            <p className="max-w-[823px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
             </p>
             <div className="xl:px-[160px]">
@@ -278,7 +278,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex px-[60px] lg:px-0  py-[50px] relative  z-10 lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex px-[40px] lg:px-0  py-[50px] relative  z-10 lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(0, 3)
                 .reverse()
@@ -305,7 +305,7 @@ function Home() {
               ></div>
             </div>
 
-            <div className="flex px-[60px] lg:px-0   relative lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex px-[40px] lg:px-0   relative lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(3, 6)
                 .reverse()
@@ -324,7 +324,7 @@ function Home() {
           </div>
           <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
             <div className="bg-[#7D5555] translate-y-[100px] xl:mx-0 mx-auto   xl:w-[951px] relative ">
-              <div className="px-[55px] lg:px-[72px] space-y-[36px] py-[70px]">
+              <div className="px-[30px] lg:px-[72px] space-y-[36px] py-[70px]">
                 <div className="max-w-[303px] lg:max-w-[700px] text-[32.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
@@ -341,9 +341,9 @@ function Home() {
                   </span> */}
                 </div>
               </div>
-              <div className="bg-[#6B4949]  lg:px-[72px] px-[15px] py-[35px] lg:text-right text-center">
+              <div className="bg-[#6B4949]   lg:px-[72px]  py-[35px] lg:text-right px-[30px] text-start">
                 <Link to={'/Services'}>
-                  <button className="text-[#F6C94B] text-[22px] text-start max-w-[219px] lg:max-w-full lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
+                  <button className="text-[#F6C94B]  text-[22px] text-start max-w-[219px] lg:max-w-full lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
                     VIEW OUR OFFERINGS & PRICING {'>'}
                   </button>
                 </Link>
@@ -440,7 +440,7 @@ function Home() {
           </p>
 
           {quotes.map((el, index) => (
-            <div key={index} className="block pb-[100px] lg:pb-0">
+            <div key={index} className="block pb-[90px] lg:pb-0">
               <Quote author={el.author} text={el.text}></Quote>
             </div>
           ))}
