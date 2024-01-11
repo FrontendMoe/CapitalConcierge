@@ -18,7 +18,7 @@ function Footer() {
     },
   ]
   return (
-    <footer className="bg-[#282724] lg:px-[80px] 2xl:px-[125px] lg:space-x-[78px] flex lg:flex-row flex-col justify-center items-center  min-h-[30vh] pt-[100px] lg:py-[160px]">
+    <footer className="bg-[#282724] space-y-[49px] lg:space-y-0 lg:px-[80px] 2xl:px-[125px] lg:space-x-[78px] flex lg:flex-row flex-col justify-center items-center  min-h-[30vh] pt-[100px] lg:py-[160px]">
       <div>
         <img src={Footerlogo} className="w-[187px]" alt="" />{' '}
       </div>
@@ -41,7 +41,7 @@ function Footer() {
           </span>
         </p>
 
-        <div className="flex justify-center items-center space-x-[20px] px-[10px]">
+        <div className="flex justify-center items-center space-x-[20px] pb-[50px] lg:pb-0 px-[10px]">
           {links.map((el, index) => (
             <Link
               key={index}
