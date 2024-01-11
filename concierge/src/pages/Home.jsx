@@ -181,8 +181,8 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-[#F6C94B]  lg:-mt-[5px]">
-      <section className="  relative lg:pb-0 pb-[200px] border-black flex lg:flex-row flex-col  text min-h-screen text-black">
+    <div className="bg-black lg:bg-[#F6C94B]  lg:-mt-[5px]">
+      <section className="  relative lg:pb-0 pb-[200px]  border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
           style={{
             background:
@@ -197,7 +197,7 @@ function Home() {
               loop
               autoPlay
               muted
-              className=" h-full object-center  lg:object-left mix-blend-multiply object-cover"
+              className=" h-full object-center lg:block hidden  lg:object-left mix-blend-multiply object-cover"
             ></video>
           </Fade>
         </div>
@@ -211,7 +211,7 @@ function Home() {
               The Best For Your <span className="text-[#F6C94B]"> Guest.</span>
             </p>
             <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
-            <div className="w-[69px] h-[0px] border-2 border-amber-300"></div>
+            <div className="w-[69px] lg:hidden h-[0px] border-2 border-amber-300"></div>
 
             <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px]">
               Professional & Innovative Concierge Services & Solutions.
@@ -226,20 +226,20 @@ function Home() {
               loop
               autoPlay
               muted
-              className=" w-screen h-full absolute top-0 -right-[200px] mix-blend-multiply object-cover"
+              className=" w-screen h-full lg:block hidden absolute top-0 -right-[200px] mix-blend-multiply object-cover"
             ></video>
           </Fade>
         </div>
-        <div className="lg:hidden  w-[557px] h-[200px] relative  bg-[#F6C94B]">
+        {/* <div className="lg:hidden  w-[557px] h-[300px] relative  bg-[#F6C94B]">
           <video
             playsInline
             src={video}
             loop
             autoPlay
             muted
-            className="  absolute  object-cover top-0 w-full h-full aspect-auto mix-blend-darken"
+            className="  absolute z-20  left-0 object-cover object-center top-0 w-full h-full aspect-auto mix-blend-darken"
           ></video>
-        </div>
+        </div> */}
       </section>
       <section className="text-start relative lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
@@ -269,7 +269,7 @@ function Home() {
                   className=" object-cover  object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
                 ></img>
                 <div>
-                  <div className="w-[1775px] opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
+                  <div className="w-[1775px] lg:block hidden opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
                 </div>
               </div>
             </div>
@@ -315,16 +315,23 @@ function Home() {
                 ))}
             </div>
           </div>
-          <div className=" xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
-            <div className="bg-[#7D5555] xl:mx-0 mx-auto   xl:w-[951px] relative ">
+          <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
+            <div className="bg-[#7D5555] translate-y-[100px] xl:mx-0 mx-auto   xl:w-[951px] relative ">
               <div className="px-[30px] lg:px-[72px] space-y-[24px] py-[35px]">
                 <div className="max-w-[700px] text-[28px] Hiragino  text-yellow-50 lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
                 </div>
-                <div className="max-w-[582px] text-yellow-50  lg:text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
-                  We are familiar with the challenges and difficulties
-                  communities face and are prepared to tackle those challenges
+                <div className="max-w-[665px]">
+                  <span className="text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[30px] tracking-wide">
+                    We are familiar with the challenges and difficulties
+                    communities face and are prepared to tackle those
+                    challenges.{' '}
+                  </span>
+                  <span className="text-yellow-50 max:text-[19px] lg:font-semibold font-['Gibson'] leading-[30px] tracking-wide">
+                    Click below to learn more about what we have to offer your
+                    community.
+                  </span>
                 </div>
               </div>
               <div className="bg-[#6B4949]  lg:px-[72px] px-[15px] py-[35px] lg:text-right text-center">
@@ -337,6 +344,8 @@ function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
         <div className="bg-[#282724]  relative space-y-[70px] px-[30px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
           <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
             <div className="max-w-[734px] Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
