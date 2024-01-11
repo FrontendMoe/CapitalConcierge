@@ -257,7 +257,7 @@ function Home() {
               tailored-fitted for each community{' '}
             </p>
 
-            <p className="max-w-[823px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+            <p className="max-w-[823px] leading-[37px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
             </p>
             <div className="xl:px-[160px]  overflow-visible">
@@ -272,7 +272,7 @@ function Home() {
                 <img
                   src={films}
                   style={{ width: '100vw' }}
-                  className=" object-cover  -left-[30px] lg:left-0 opacity-10   object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] right-0 w-screen lg:w-full h-[1319px] lg:h-[1319px] lg:opacity-25"
+                  className=" object-cover  -left-[30px] lg:left-0 opacity-10   object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] right-0 w-screen lg:w-full h-[1600px] lg:h-[1319px] lg:opacity-25"
                 ></img>
                 <div>
                   <div className="w-[1775px] lg:block hidden opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
