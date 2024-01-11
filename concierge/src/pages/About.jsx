@@ -22,16 +22,31 @@ function About() {
   return (
     <div className="bg-[#F6C94B] ">
       <Navbar></Navbar>
-      <section className="pt-[50px] lg:pt-[100px]">
+      <section className="bg-[#F6C94B] pt-[50px] lg:pt-[100px]">
         <div className="px-[30px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
-          <div className="max-w-[660px] Hiragino text-zinc-800 text-[35px]  lg:text-[84px] font-[400] font-['Hiragino Mincho ProN'] lg:leading-[85px]">
-            About
-            <br />
-            Capital
-            <br />
-            Concierge
-          </div>
-          <div className="max-w-[982px] pb-[60px] lg:pb-[120px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+          <p className="max-w-[1020px] Hiragino lg:block hidden">
+            <span className="text-stone-800 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
+              About{' '}
+            </span>
+            <span className="text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+              Capital
+              <br />
+              Concierge
+            </span>
+          </p>
+          <p className="lg:hidden Hiragino max-w-[271px]">
+            <span className="text-stone-800 text-[55.66px] font-semibold font-['Hiragino Mincho ProN'] leading-[54.30px]">
+              About{' '}
+            </span>
+            <span className="text-stone-800 text-[55.66px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
+              Capital
+              <br />
+              Concierge
+            </span>
+          </p>
+          <div className="w-[69px] h-[0px] border-2 border-stone-800"></div>
+
+          <div className="lg:block hidden max-w-[877px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
             Our objective is to always exemplify thought leadership and standard
             setting professionalism for commercial, homeowner and hospitality
             companies. We serve our customers' needs and consistently produce
@@ -43,22 +58,42 @@ function About() {
             teamwork, innovation, professionalism, and long-term
             decision-making.
           </div>
-        </div>
-        <div className="bg-[#282724] space-y-[30px] lg:space-y-[54px] p-[30px] lg:px-[220px] pt-[90px]">
-          <div className="max-w-[660px] Hiragino text-amber-300 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
-            Our
+
+          <div className="lg:hidden max-w-[325px] text-stone-800 text-[21px] font-normal font-['Gibson'] leading-9 tracking-tight">
+            We are familiar with the challenges and difficulties communities
+            face and are prepared to tackle those challenges; combine our
+            day-to-day experience with ongoing professional training, the latest
+            in technology and some creative thinking to handle the needs of
+            today and tomorrow. <br />
             <br />
-            Mission
+            We take the values and requests of our clients' very seriously,
+            providing only the very best in customer service.
           </div>
-          <div className="max-w-[880px]  text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
-            We believe Capital Concierge’s mission is to provide our clients the
-            highest quality and most effective customer service. Our priority is
-            to manage our clients expectations while working in partnership to
-            create innovative solutions, honestly, dependably, proficiently and
-            with integrity.
+          <div className="pb-[50px] lg:pb-[100px] "></div>
+        </div>
+        <div className="lg:bg-[#282724] space-y-[50px] lg:space-y-0 relative p-[30px] lg:px-[220px] pt-[90px]">
+          <div className="w-full bg-[#282724] left-0 absolute top-0 h-[80%]"></div>
+          <div className="space-y-[30px] relative lg:space-y-[54px] ">
+            <p className="max-w-[660px] lg:block hidden Hiragino text-amber-300 text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+              Our
+              <br />
+              Mission
+            </p>
+            <p className="max-w-[264px] Hiragino lg:hidden  text-amber-300 text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px]">
+              Our
+              <br />
+              Mission
+            </p>
+            <div className="max-w-[880px]  text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+              We believe Capital Concierge’s mission is to provide our clients
+              the highest quality and most effective customer service. Our
+              priority is to manage our clients expectations while working in
+              partnership to create innovative solutions, honestly, dependably,
+              proficiently and with integrity.
+            </div>
           </div>
 
-          <div className="bg-[#38342D] space-y-[30px] lg:space-y-[77px] py-[60px] lg:py-[100px] p-[30px] lg:px-[90px] ">
+          <div className="bg-[#38342D] relative lg:translate-y-[100px] space-y-[30px] lg:space-y-[77px] py-[60px] lg:py-[100px] p-[30px] lg:px-[90px] ">
             <p className="max-w-[379px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
               Learn More...
             </p>
