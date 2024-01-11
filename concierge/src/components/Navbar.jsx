@@ -54,8 +54,10 @@ function Navbar() {
   const handleScroll2 = () => {
     if (window.scrollY > 50) {
       document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
+      document.querySelector('#paddingTop').style.paddingTop = '30px'
     } else {
       document.querySelector('#nav').style.backgroundColor = 'transparent'
+      document.querySelector('#paddingTop').style.paddingTop = '70px'
     }
   }
 
@@ -168,7 +170,10 @@ function Navbar() {
         }}
         className="lg:hidden w-full  "
       >
-        <div className="flex items-center justify-between p-[30px] pt-[70px]">
+        <div
+          id="paddingTop"
+          className="flex items-center justify-between p-[30px] pt-[70px]"
+        >
           <Link to={'/'} className="flex items-center space-x-[7px]">
             <img
               src={logo}
