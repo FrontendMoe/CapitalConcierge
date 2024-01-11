@@ -26,7 +26,7 @@ function Navbar() {
       link: '/',
     },
     {
-      name: 'About',
+      name: 'About US',
       link: '/About',
       color: '#7D5555',
     },
@@ -96,8 +96,20 @@ function Navbar() {
       >
         <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
           <div className="flex items-center">
-            <img src={logo} className=" w-fit" alt="" />
-            <img src={LogoText} alt="" className="w-[93.779px] h-[32.914px]" />
+            <img
+              src={logo}
+              className={` w-fit ${
+                location.pathname.toLowerCase().includes('about') && 'invert'
+              }`}
+              alt=""
+            />
+            <img
+              src={LogoText}
+              alt=""
+              className={`w-[93.779px]  object-scale-down h-[32.914px] ${
+                location.pathname.toLowerCase().includes('about') && 'invert'
+              }`}
+            />
           </div>
         </div>
         <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[83px] justify-end ">
@@ -108,27 +120,33 @@ function Navbar() {
                 style={{
                   backgroundColor: index === nav.length - 1 && '#202020',
                 }}
-                className={`cursor-pointer uppercase font-[600] ${
-                  index === nav.length - 1 &&
-                  ' py-[12px] px-[22px] text-[#F6C94B]'
-                }`}
                 to={el.link}
               >
-                <div>{el.name}</div>
+                <div
+                  style={{ letterSpacing: '7.14px', fontSize: '14px' }}
+                  className={`cursor-pointer tracking-[7.14px] text-[14px] uppercase font-[600] ${
+                    index === nav.length - 1 &&
+                    ' py-[12px]  font-[600] px-[22px] text-[#F6C94B]'
+                  }`}
+                >
+                  {el.name}
+                </div>
               </Link>
             ) : (
-              <p
-                key={el}
-                style={{
-                  backgroundColor: index === nav.length - 1 && '#202020',
-                }}
-                className={`cursor-pointer uppercase font-[600] ${
-                  index === nav.length - 1 &&
-                  'bg-[#202020] py-[12px] px-[22px] text-[#F6C94B]'
-                }`}
-              >
-                <div>{el.name}</div>
-              </p>
+              <>
+                {/* <p
+                  key={el}
+                  style={{
+                    backgroundColor: index === nav.length - 1 && '#202020',
+                  }}
+                  className={`cursor-pointer uppercase font-[400] ${
+                    index === nav.length - 1 &&
+                    ' py-[12px] tracking-[7.14px]   text-[#F6C94B]'
+                  }`}
+                >
+                  {el.name}
+                </p> */}
+              </>
             ),
           )}
         </div>
