@@ -113,7 +113,7 @@ function Home() {
     {
       name: 'TECH-ENABLED',
       text:
-        'All forms, documentation requiring signatures at the front desk and daily performance logs will be replaced with our curated technology solutions.',
+        'We build a connection with our residents by having a custom approach. We take the time to learn each client and their needs, while still adhering to all  building policies. ',
     },
     {
       name: 'EFFECTIVE',
@@ -123,7 +123,7 @@ function Home() {
     {
       name: 'PERSONAL',
       text:
-        'We are able to maximize service and we do this by providing top-notch management and commitment from our company’s leadership, and concierge team.',
+        'All forms and subsequent documentation requiring signatures at the front desk as well as daily performance records and logs will be replaced with Capital Concierge systems technology.',
     },
   ]
   useEffect(() => {
