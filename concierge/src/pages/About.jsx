@@ -7,16 +7,19 @@ function About() {
       name: 'PRICING REQUEST',
       text:
         'Pricing for staff, supervisors and building link support is provided upon request and is based on for community size and needs. ',
+      bottom: 'REQUEST PRICING  >',
     },
     {
       name: 'TAILORED FOR EACH COMMUNITY.',
       text:
         'Our Concierge staff go the distance to ensure we provide services that are the right-fit for every community.',
+      bottom: 'LEARN MORE   >',
     },
     {
       name: 'OUR OFFERINGS',
       text:
         "We take the values and requests of our clients' very seriously, providing only the very best in customer service.",
+      bottom: 'VIEW OFFERINGS  >',
     },
   ]
   return (
@@ -109,7 +112,7 @@ function About() {
                       {el.text}
                     </p>
                     <p className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
-                      <p>CONTINUE</p> <p>{'>'}</p>
+                      <p>{el.bottom}</p>
                     </p>
                   </div>
                 </div>
