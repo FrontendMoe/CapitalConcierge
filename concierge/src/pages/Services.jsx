@@ -47,8 +47,9 @@ function Services() {
     },
   ]
   return (
-    <div className=" bg-[#7D5555] pt-[50px] lg:pt-[100px]">
-      <section>
+    <div className=" bg-[#7D5555] ">
+      <Navbar></Navbar>
+      <section className="pt-[50px] lg:pt-[100px]">
         <div className="lg:px-[220px] px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[25px] b">
           <div className="max-w-[660px] Hiragino text-yellow-50 text-[35px] lg:text-[84px] font-semibold font-['Hiragino Mincho ProN'] lg:leading-[85px]">
             Services.

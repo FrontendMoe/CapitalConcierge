@@ -80,14 +80,18 @@ function Navbar() {
   return (
     <nav
       id="nav"
-      style={
-        {
-          // backgroundColor : location.pathname.includes('About')
-        }
-      }
-      className="mx-auto lg:bg-transparent   z-50 lg:relative w-full fixed top-0 left-0"
+      className="mx-auto lg:bg-transparent   z-40 lg:relative w-full fixed top-0 left-0"
     >
-      <div className=" py-[25px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between">
+      <div
+        style={{
+          backgroundColor:
+            location.pathname.toLowerCase().includes('about') ||
+            location.pathname.toLowerCase().includes('services')
+              ? '#0B0B0B33'
+              : '#0B0B0B',
+        }}
+        className=" py-[25px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between"
+      >
         <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
           <div className="flex items-center">
             <img src={logo} className=" w-fit" alt="" />

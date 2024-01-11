@@ -181,7 +181,8 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-black lg:bg-[#F6C94B]  lg:-mt-[5px]">
+    <div className="bg-black relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
+      <Navbar></Navbar>
       <section className="  relative lg:pb-0 pb-[200px]  border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
           style={{

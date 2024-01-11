@@ -26,13 +26,14 @@ function App() {
         ))}
       </div> */}
         <FadeEffect></FadeEffect>
-        <Navbar></Navbar>
+
         <Routes>
           <Route path="" element={<Home></Home>}></Route>
           <Route path="/Company" element={<Company></Company>}></Route>
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/Services" element={<Services></Services>}></Route>
         </Routes>
+
         <Footer></Footer>
       </BrowserRouter>
     </div>
