@@ -30,7 +30,7 @@ function About() {
     <div className="bg-[#F6C94B] ">
       <Navbar></Navbar>
       <section className="bg-[#F6C94B] pt-[50px] lg:pt-[100px]">
-        <div className="px-[30px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
+        <div className="px-[50px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
           <p className="max-w-[1020px] Hiragino lg:block hidden">
             <span className="text-stone-800 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
               About{' '}
@@ -78,7 +78,7 @@ function About() {
           </div>
           <div className="pb-[50px] lg:pb-[100px] "></div>
         </div>
-        <div className="lg:bg-[#282724] space-y-[50px] lg:space-y-0 relative p-[30px] lg:px-[220px] pt-[90px]">
+        <div className="lg:bg-[#282724] space-y-[50px] lg:space-y-0 relative p-[50px] lg:px-[220px] pt-[90px]">
           <div className="w-full bg-[#282724] left-0 absolute top-0 h-[80%]"></div>
           <div className="space-y-[30px] relative lg:space-y-[54px] ">
             <p className="max-w-[660px] lg:block hidden Hiragino text-amber-300 text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
