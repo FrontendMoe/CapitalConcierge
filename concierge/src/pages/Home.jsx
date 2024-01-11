@@ -183,7 +183,7 @@ function Home() {
   return (
     <div className="bg-[#0B0B0B] relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
       <Navbar></Navbar>
-      <section className="  relative lg:pb-0 pb-[200px]  border-black flex lg:flex-row flex-col  text min-h-screen text-black">
+      <section className="   relative    border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
           style={{
             background:
@@ -204,7 +204,7 @@ function Home() {
         </div>
 
         <div className="lg:w-1/2 flex-1 bg-[#0B0B0B] ">
-          <div className="flex justify-end relative z-20 bg-[#0B0B0B]">
+          <div className="flex flex-col justify-end relative z-20 bg-[#0B0B0B]">
             <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
               <p className="text-[40px] lg:block hidden relative lg:text-[84px]  max-w-[290.893px] Hiragino lg:leading-[89px]">
                 The Best For Your <span className="text-[#F6C94B]">Guest.</span>
@@ -220,6 +220,17 @@ function Home() {
                 Professional & Innovative Concierge Services & Solutions.
               </div>
             </div>
+            <div className="lg:hidden  w-full h-[300px] relative  bg-[#F6C94B]">
+              <video
+                playsInline
+                src={video}
+                loop
+                autoPlay
+                muted
+                className="  absolute z-20  left-0 object-cover object-center top-0 w-full h-full aspect-auto mix-blend-darken"
+              ></video>
+            </div>
+            <div className="bg-[#0B0B0B] h-[200px] w-full"></div>
           </div>
         </div>
         <div className="w-full lg:block hidden overflow-hidden lg:w-[50vw] ">
@@ -234,18 +245,8 @@ function Home() {
             ></video>
           </Fade>
         </div>
-        {/* <div className="lg:hidden  w-[557px] h-[300px] relative  bg-[#F6C94B]">
-          <video
-            playsInline
-            src={video}
-            loop
-            autoPlay
-            muted
-            className="  absolute z-20  left-0 object-cover object-center top-0 w-full h-full aspect-auto mix-blend-darken"
-          ></video>
-        </div> */}
       </section>
-      <section className="text-start relative lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
+      <section className="text-start relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
           <div
             id="topSection"
