@@ -50,37 +50,48 @@ function Services() {
     <div className=" bg-[#7D5555] ">
       <Navbar></Navbar>
       <section className="pt-[50px] lg:pt-[100px]">
-        <div className="lg:px-[220px] px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[25px] b">
-          <div className="max-w-[660px] Hiragino text-yellow-50 text-[35px] lg:text-[84px] font-semibold font-['Hiragino Mincho ProN'] lg:leading-[85px]">
-            Services.
-          </div>
-          <div className="max-w-[813px] text-yellow-50 text-[25px] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
-            Capital Concierge is Affordable, Accessible, Attentive &
-            Accountable.
-          </div>
-
-          <div className="max-w-[869px] text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[40px] lg:leading-[46px] tracking-wide">
-            We are familiar with the challenges and difficulties communities
-            face and are prepared to tackle those challenges by combining our
-            day-to-day experience with ongoing professional training, the latest
-            in technology and some creative thinking to handle the needs of
-            today and tomorrow. We take the values and requests of our clients'
-            very seriously, providing only the very best in customer service.
-          </div>
+        <div className="lg:px-[220px]  px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[20px] lg:space-y-[75px] b">
+          <p className="max-w-[1020px] Hiragino">
+            <span className="text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+              A Concierge Company <br />
+              For All Your{' '}
+            </span>
+            <span className="text-yellow-50 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
+              Community’s
+              <br />
+              Needs.
+            </span>
+          </p>
+          <div className="w-[69px] h-[0px] border-2 border-yellow-50"></div>
+          <p className="max-w-[936px]">
+            <span className="text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+              We are familiar with the challenges and difficulties communities
+              face and are prepared to tackle those challenges; combine our
+              day-to-day experience with ongoing professional training, the
+              latest in technology and some creative thinking to handle the
+              needs of today and tomorrow.{' '}
+            </span>
+            <span className="text-yellow-50 text-[19px] font-semibold font-['Gibson'] leading-[46px] tracking-wide">
+              We take the values and requests of our clients' very seriously,
+              providing only the very best in customer service.
+            </span>
+          </p>
         </div>
       </section>
       <section className="px-[30px] lg:px-[220px] pt-[50px] lg:pt-[106px] space-y-[30px] lg:space-y-[95px]  bg-[#FFF7DF]">
-        <div
-          id="Offering"
-          className="max-w-[734px]  text-center lg:text-start Hiragino text-stone-800 text-[35px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]"
-        >
-          Our Offerings
+        <div id="Offering">
+          <div className="w-[734px] Hiragino text-[#7D5555] text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
+            Offerings & Services.
+          </div>
         </div>
-        <div className="grid gap-[50px] lg:gap-[100px] lg:grid-cols-3">
+
+        <div className="grid gap-[50px] lg:gap-0 lg:grid-cols-3">
           {offers.map((el, index) => (
             <div
               key={index}
-              className="space-y-[45px] lg:block flex flex-col items-center text-center lg:text-start"
+              className={`space-y-[45px]  border lg:block flex flex-col items-center text-center lg:text-start  ${
+                index <= 2 ? 'lg:border-t-0' : 'lg:border-b-0'
+              }`}
             >
               <div className="h-[158.688px] flex items-end">
                 <img src={el.img} alt="" className=" " />
