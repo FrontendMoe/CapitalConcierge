@@ -346,12 +346,24 @@ function Home() {
         </div>
       </section>
       <section>
-        <div className="bg-[#282724]  relative space-y-[70px] px-[30px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
+        <div className="bg-[#282724]  relative space-y-[70px] px-[70px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
           <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
-            <div className="max-w-[734px] Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
+            <div className="max-w-[734px] lg:block hidden Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
             </div>
-            <div className="max-w-[714px] text-yellow-50 text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
+            <div className="lg:hidden Hiragino text-yellow-50 text-6xl font-light font-['Hiragino Mincho ProN'] leading-[59.22px]">
+              About <br />
+              Us.
+            </div>
+
+            <div className="max-w-[714px] lg:block hidden text-yellow-50 text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-wide">
+              We believe Capital Concierge’s mission is to provide our clients
+              the highest quality and most effective customer service. Our
+              priority is to manage our clients expectations while working in
+              partnership to create innovative solutions, honestly, dependably,
+              proficiently and with integrity.
+            </div>
+            <div className="max-w-[290px] lg:hidden text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
@@ -360,7 +372,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="w-full xl:max-w-[1023px]  xl:mx-auto flex justify-end">
+          <div className="w-full lg:block hidden xl:max-w-[1023px]  xl:mx-auto flex justify-end">
             <button
               onClick={() => {
                 setTimeout(function () {
@@ -373,11 +385,22 @@ function Home() {
               VIEW OUR OFFERINGS {'>'}
             </button>
           </div>
+          <div
+            onClick={() => {
+              setTimeout(function () {
+                scrollToSection('Offering')
+              }, 100)
+              navigate('/Services')
+            }}
+            className="w-[265px] cursor-pointer lg:hidden text-amber-300 text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
+          >
+            VIEW OUR OFFERINGS {'>'}
+          </div>
         </div>
       </section>
       <div className="bg-[#F8EED3] ">
-        <section className=" pb-[120px] xl:mx-auto lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[30px] lg:px-[150px]">
-          <p className="max-w-[767px] lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
+        <section className=" pb-[120px] pt-[60px] xl:mx-auto space-y-[45px] lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[70px] lg:px-[150px]">
+          <p className="max-w-[767px] lg:block hidden lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
             <span className="text-zinc-800 text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
               our <br />
             </span>
@@ -392,6 +415,23 @@ function Home() {
               itself.
             </span>
           </p>
+          <p className="max-w-[530px] lg:hidden">
+            <span className="text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px]">
+              our <br />
+            </span>
+            <span className="text-zinc-800 text-[58.04px] font-semibold font-['Hiragino Mincho ProN'] leading-[61.50px]">
+              reputation
+              <br />
+            </span>
+            <span className="text-zinc-800 text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px]">
+              speaks
+              <br />
+              for
+              <br />
+              itself.
+            </span>
+          </p>
+
           {quotes.map((el, index) => (
             <div key={index} className="block pb-[100px] lg:pb-0">
               <Quote author={el.author} text={el.text}></Quote>
