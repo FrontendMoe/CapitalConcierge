@@ -254,11 +254,12 @@ function Home() {
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
             <p className="   Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
-              tailor-fitted for each community{' '}
+              Tailor-fitted for each community{' '}
             </p>
 
             <p className="max-w-[823px] leading-[37px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
-              SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
+              SEE A MEASURABLE DIFFERENCE WITH{' '}
+              <p className="uppercase">CAPITAL CONCIERGE</p> .
             </p>
             <div className="xl:px-[160px]  overflow-visible">
               <div
