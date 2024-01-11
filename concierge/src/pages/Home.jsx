@@ -257,9 +257,9 @@ function Home() {
               Tailor-fitted for each community{' '}
             </p>
 
-            <p className="max-w-[823px] leading-[37px] capitalize px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
-              see a measurable difference with
-              <p className="capitalize">CAPITAL CONCIERGE</p> .
+            <p className="max-w-[823px] leading-[37px]  px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
+              See a measurable difference with
+              <p className="capitalize">capital concierge</p> .
             </p>
             <div className="xl:px-[160px]  overflow-visible">
               <div
