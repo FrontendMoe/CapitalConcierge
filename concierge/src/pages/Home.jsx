@@ -253,13 +253,12 @@ function Home() {
             id="topSection"
             className=" max-w-[1026px]   mx-auto space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+            <p className="   Hiragino  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               tailored-fitted for each community{' '}
             </p>
 
             <p className="max-w-[823px] pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
-              Our Concierge staff go the distance to ensure we provide services
-              that are the right-fit for every community.
+              SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
             </p>
             <div className="xl:px-[160px]">
               <div

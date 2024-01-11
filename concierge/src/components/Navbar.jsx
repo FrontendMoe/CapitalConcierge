@@ -172,7 +172,7 @@ function Navbar() {
       >
         <div
           id="paddingTop"
-          className="flex items-center justify-between p-[30px] pt-[70px]"
+          className="flex items-center justify-between pl-[56px] p-[30px] pt-[70px]"
         >
           <Link to={'/'} className="flex items-center space-x-[7px]">
             <img
