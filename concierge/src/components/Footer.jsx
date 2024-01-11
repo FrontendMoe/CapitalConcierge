@@ -1,6 +1,7 @@
 // import { FooterLogo } from '../assets/icons'
 import { Link } from 'react-router-dom'
 import Footerlogo from '../assets/FooterLogo.png'
+import { mailTo } from '../utils/functions'
 function Footer() {
   const links = [
     {
@@ -50,13 +51,24 @@ function Footer() {
               {el.name}
             </Link>
           ))}
-          <div className=" text-center items-center justify-center lg:flex hidden h-[43px] bg-[#202020]">
+          <div
+            onClick={mailTo}
+            className=" text-center cursor-pointer items-center justify-center lg:flex hidden h-[43px] bg-[#202020]"
+          >
             <p className="text-amber-300 text-[12px] px-[10px] font-semibold font-['Gibson'] uppercase tracking-[6.12px]">
               CONTACT
             </p>
           </div>
         </div>
-        <div className="w-full lg:hidden justify-center flex items-center h-[118px] bg-[#202020]">
+        <div
+          onClick={() =>
+            window.open(
+              "mailto:email@example.com?subject=I'm%20Interested%20in%20learning%20more%20about%20Capital%20Concierge",
+              '_blank',
+            )
+          }
+          className="w-full lg:hidden justify-center flex items-center h-[118px] bg-[#202020]"
+        >
           <p className=" text-center text-amber-300 text-[17.12px] font-semibold font-['Gibson'] uppercase tracking-[8.73px]">
             CONTACT
           </p>

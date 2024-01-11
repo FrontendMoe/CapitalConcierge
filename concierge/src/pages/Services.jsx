@@ -6,6 +6,7 @@ import event from '../assets/event.svg'
 import keys from '../assets/keys.svg'
 import moving from '../assets/moving.svg'
 import Doorman from '../assets/Doorman.svg'
+import { mailTo } from '../utils/functions'
 
 function Services() {
   const offers = [
@@ -165,12 +166,18 @@ function Services() {
                 needs.
                 <br />
               </span>
-              <span className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-wide">
+              <span
+                onClick={mailTo}
+                className="text-yellow-50 text-xl font-semibold font-['Gibson'] leading-[35px] tracking-wide"
+              >
                 Request Pricing for a Custom Proposal.{' '}
               </span>
             </div>
           </div>
-          <button className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]">
+          <button
+            onClick={mailTo}
+            className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
+          >
             <p className="max-w-[417.61px]  text-black text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
               REQUEST PRICING {'>'}
             </p>

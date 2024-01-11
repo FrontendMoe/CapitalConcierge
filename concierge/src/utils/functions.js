@@ -8,5 +8,11 @@ function scrollToSection(sectionId, margin = 50) {
 		});
 	}
 }
+function mailTo() {
+	window.open(
+		"mailto:Jbourn@capitalconcierge.org?subject=I'm%20Interested%20in%20learning%20more%20about%20Capital%20Concierge",
+		'_blank'
+	);
+}
 
-export { scrollToSection };
+export { scrollToSection, mailTo };

@@ -1,3 +1,5 @@
+import { mailTo } from '../utils/functions'
+
 function Work() {
   return (
     <div className="bg-[#F6C94B] -mt-[1px] w-full">
@@ -21,7 +23,10 @@ function Work() {
         </div>
 
         <button className="max-w-[397px] w-full flex items-center h-[69px] bg-[#282724]">
-          <p className="w-full lg:w-[417.61px] flex justify-between px-[25px]">
+          <p
+            onClick={mailTo}
+            className="w-full lg:w-[417.61px] flex justify-between px-[25px]"
+          >
             <span className="text-orange-100 text-[17px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-wide">
               CONTACT US{' '}
             </span>
