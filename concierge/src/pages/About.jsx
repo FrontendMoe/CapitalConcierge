@@ -4,19 +4,19 @@ import Work from '../components/Work'
 function About() {
   const learn = [
     {
-      name: 'PRICING',
+      name: 'PRICING REQUEST',
       text:
-        '   Hold doors to assist when needed and accept deliveries and hold packages for pick-up',
+        'Pricing for staff, supervisors and building link support is provided upon request and is based on for community size and needs. ',
     },
     {
-      name: 'WHAT MAKES US DIFFERENT?',
+      name: 'TAILORED FOR EACH COMMUNITY.',
       text:
-        '          Hold doors to assist when needed and accept deliveries and hold  packages for pick-up',
+        'Our Concierge staff go the distance to ensure we provide services that are the right-fit for every community.',
     },
     {
       name: 'OUR OFFERINGS',
       text:
-        'Hold doors to assist when needed and accept deliveries and hold packages for pick-up',
+        "We take the values and requests of our clients' very seriously, providing only the very best in customer service.",
     },
   ]
   return (
@@ -84,7 +84,7 @@ function About() {
               <br />
               Mission
             </p>
-            <div className="max-w-[880px]  text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+            <div className="max-w-[880px]  text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
@@ -94,7 +94,7 @@ function About() {
           </div>
 
           <div className="bg-[#38342D] relative lg:translate-y-[100px] space-y-[30px] lg:space-y-[77px] py-[60px] lg:py-[100px] p-[30px] lg:px-[90px] ">
-            <p className="max-w-[379px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
+            <p className="max-w-[379px] lg:max-w-[706px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
               Learn More...
             </p>
             <div className="">
@@ -102,10 +102,10 @@ function About() {
                 <div key={index} className="pb-[20px] lg:pb-[45px] ">
                   <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
                   <div className=" pt-[20px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[10px] lg:space-y-[18px]">
-                    <p className=" text-yellow-50 text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed">
+                    <p className=" text-[#FFF7DF] Hiragino text-xl font-[600] font-['Hiragino Mincho Pro'] leading-relaxed">
                       {el.name}
                     </p>
-                    <p className="max-w-[481px]  text-yellow-50 text-lg font-light font-['Gibson'] leading-[27.18px]">
+                    <p className="max-w-[481px]  text-[#FFF7DF] text-lg font-light font-['Gibson'] leading-[27.18px]">
                       {el.text}
                     </p>
                     <p className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
