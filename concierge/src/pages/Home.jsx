@@ -248,16 +248,16 @@ function Home() {
         </div>
       </section>
       <section className="text-start relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className="  overflow-visible lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
+        <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
           <div
             id="topSection"
-            className=" max-w-[1026px]   mx-auto space-y-[20px] pb-[60px]  px-[30px] lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
+            className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+            <p className="   Hiragino px-[60px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               tailored-fitted for each community{' '}
             </p>
 
-            <p className="max-w-[823px] pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
+            <p className="max-w-[823px] px-[60px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
             </p>
             <div className="xl:px-[160px]">
@@ -278,7 +278,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex py-[50px] relative  z-10 lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex px-[60px] lg:px-0  py-[50px] relative  z-10 lg:py-0  lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(0, 3)
                 .reverse()
@@ -294,7 +294,7 @@ function Home() {
                   </div>
                 ))}
             </div>
-            <div className="relative xl:px-[160px]">
+            <div className="relative lg:block hidden xl:px-[160px]">
               <div
                 style={{
                   width: innerWidth,
@@ -305,7 +305,7 @@ function Home() {
               ></div>
             </div>
 
-            <div className="flex  relative lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
+            <div className="flex px-[60px] lg:px-0   relative lg:flex-row flex-col  gap-[30px] lg:gap-[65px] justify-between">
               {charactheristics
                 .slice(3, 6)
                 .reverse()
@@ -324,8 +324,8 @@ function Home() {
           </div>
           <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
             <div className="bg-[#7D5555] translate-y-[100px] xl:mx-0 mx-auto   xl:w-[951px] relative ">
-              <div className="px-[55px] lg:px-[72px] space-y-[24px] py-[35px]">
-                <div className="max-w-[303px] lg:max-w-[700px] text-[28px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] lg:leading-[58px]">
+              <div className="px-[55px] lg:px-[72px] space-y-[36px] py-[70px]">
+                <div className="max-w-[303px] lg:max-w-[700px] text-[36.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
                 </div>
