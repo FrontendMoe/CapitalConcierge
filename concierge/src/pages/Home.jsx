@@ -352,7 +352,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="relative z-20">
         <div className="bg-[#282724]  relative space-y-[70px] px-[70px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
           <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
             <div className="max-w-[734px] lg:block hidden Hiragino  text-yellow-50 text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
