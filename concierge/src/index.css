@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'Hiragino';
+  src: url('Hiragino\ Mincho\ Pro\ W3.otf') format('opentype');
+
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.Hiragino {
+  font-family: 'Hiragino', 'sans-serif' !important;
+}
 button {
   @apply hover:opacity-90 duration-200 active:opacity-80;
 }
