@@ -51,7 +51,7 @@ function Services() {
     <div className=" bg-[#7D5555] ">
       <Navbar></Navbar>
       <section className="pt-[50px] lg:pt-[100px]">
-        <div className="lg:px-[220px]  px-[30px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[45px] lg:space-y-[75px] b">
+        <div className="lg:px-[220px]  px-[50px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[45px] lg:space-y-[75px] b">
           <p className="max-w-[1020px] lg:block hidden Hiragino">
             <span className="text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
               A Concierge Company <br />
@@ -106,7 +106,7 @@ function Services() {
           </div>
         </div>
       </section>
-      <section className="px-[30px] lg:px-[220px] pt-[50px] lg:pt-[106px] space-y-[30px] lg:space-y-[95px]  bg-[#FFF7DF]">
+      <section className="px-[50px] lg:px-[220px] pt-[50px] lg:pt-[106px] space-y-[30px] lg:space-y-[95px]  bg-[#FFF7DF]">
         <div id="Offering">
           <div className="w-[734px] lg:block hidden Hiragino text-[#7D5555] text-[80px] font-light font-['Hiragino Mincho ProN'] leading-[82.30px]">
             Offerings & Services.
