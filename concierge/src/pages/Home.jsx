@@ -220,7 +220,7 @@ function Home() {
                 Professional & Innovative Concierge Services & Solutions.
               </div>
             </div>
-            <div className="lg:hidden  w-full h-[300px] relative  bg-[#F6C94B]">
+            <div className="lg:hidden  w-full h-[280px] relative  bg-[#F6C94B]">
               <video
                 playsInline
                 src={video}

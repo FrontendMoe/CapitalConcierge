@@ -95,7 +95,7 @@ function Navbar() {
         <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
           <div className="flex items-center">
             <img src={logo} className=" w-fit" alt="" />
-            <img src={LogoText} alt="" className="w-[93.779px] h-fit" />
+            {/* <img src={LogoText} alt="" className="w-[93.779px] h-fit" /> */}
           </div>
         </div>
         <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[83px] justify-end ">
