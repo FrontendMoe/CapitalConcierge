@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Work from '../components/Work'
 
@@ -8,6 +9,8 @@ function About() {
       text:
         'Pricing for staff, supervisors and building link support is provided upon request and is based on for community size and needs. ',
       bottom: 'REQUEST PRICING  >',
+      link:
+        "mailto:Jbourn@capitalconcierge.org?subject=I'm%20Interested%20in%20learning%20more%20about%20Capital%20Concierge",
     },
     {
       name: 'TAILORED FOR EACH COMMUNITY.',
@@ -20,6 +23,7 @@ function About() {
       text:
         "We take the values and requests of our clients' very seriously, providing only the very best in customer service.",
       bottom: 'VIEW OFFERINGS  >',
+      link: '/services',
     },
   ]
   return (
@@ -111,9 +115,12 @@ function About() {
                     <p className="max-w-[481px]  text-[#FFF7DF] text-lg font-light font-['Gibson'] leading-[27.18px]">
                       {el.text}
                     </p>
-                    <p className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider">
+                    <Link
+                      to={el.link}
+                      className="text-amber-300 w-full justify-end flex text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider"
+                    >
                       <p>{el.bottom}</p>
-                    </p>
+                    </Link>
                   </div>
                 </div>
               ))}
