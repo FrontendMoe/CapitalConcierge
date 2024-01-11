@@ -181,7 +181,7 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="bg-[#0B0B0B] relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
+    <div className="bg-[#0B0B0B]  relative lg:bg-[#F6C94B]  lg:-mt-[5px]">
       <Navbar></Navbar>
       <section className="   relative    border-black flex lg:flex-row flex-col  text min-h-screen text-black">
         <div
@@ -247,7 +247,7 @@ function Home() {
           </Fade>
         </div>
       </section>
-      <section className="text-start relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
+      <section className="text-start overflow-visible relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
         <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[120px]  bg-[#F6C94B]">
           <div
             id="topSection"
@@ -260,18 +260,19 @@ function Home() {
             <p className="max-w-[823px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">
               SEE A MEASURABLE DIFFERENCE WITH CAPITAL CONCIERGE.
             </p>
-            <div className="xl:px-[160px]">
+            <div className="xl:px-[160px]  overflow-visible">
               <div
                 style={{
                   width: innerWidth,
 
                   marginLeft: mxLeft ? mxLeft : '0',
                 }}
-                className="mx-auto relative  border border-black border-opacity-20"
+                className="mx-auto relative   overflow-visible border border-black border-opacity-20"
               >
                 <img
                   src={films}
-                  className=" object-cover  object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] left-0 w-full lg:block hidden lg:h-[1319px] opacity-25"
+                  style={{ width: '100vw' }}
+                  className=" object-cover  -left-[30px] lg:left-0 opacity-10   object-center  overflow-scroll top-0 absolute  mix-blend-darken lg:-right-[100px] right-0 w-screen lg:w-full h-[1319px] lg:h-[1319px] lg:opacity-25"
                 ></img>
                 <div>
                   <div className="w-[1775px] lg:block hidden opacity-75 -translate-x-1/2 left-1/2 absolute top-[50%] h-[1437.29px] bg-amber-200 rounded-full blur-[215px]" />
