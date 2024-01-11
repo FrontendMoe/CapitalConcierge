@@ -36,6 +36,8 @@ function Navbar() {
     },
     {
       name: 'CONTACT',
+      link:
+        "mailto:email@example.com?subject=I'm%20Interested%20in%20learning%20more%20about%20Capital%20Concierge",
     },
   ]
   useEffect(() => {
