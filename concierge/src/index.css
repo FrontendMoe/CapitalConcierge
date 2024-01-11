@@ -87,3 +87,6 @@ button {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
 }
+.Hiragino {
+  font-family: 'Hiragino', 'sans-serif' !important;
+}
