@@ -89,7 +89,7 @@ function Services() {
           {offers.map((el, index) => (
             <div
               key={index}
-              className={`space-y-[45px]  border lg:block flex flex-col items-center text-center lg:text-start  ${
+              className={`space-y-[45px] lg:p-[60px] border-[#F4E8CF]  border lg:block flex flex-col items-center text-center lg:text-start  ${
                 index <= 2 ? 'lg:border-t-0' : 'lg:border-b-0'
               }`}
             >
@@ -98,7 +98,7 @@ function Services() {
               </div>
               <div className="space-y-[13px]">
                 <p
-                  className="text-black Hiragino text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed"
+                  className=" text-[#7D5555] Hiragino text-xl font-semibold font-['Hiragino Mincho Pro'] leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: el.name }}
                 ></p>
 
