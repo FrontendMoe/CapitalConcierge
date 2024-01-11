@@ -21,7 +21,7 @@ function About() {
     {
       name: 'OUR OFFERINGS',
       text:
-        "We take the values and requests of our clients' very seriously, providing only the very best in customer service.",
+        'We take the values and requests of our clients very seriously, providing only the very best in customer service.',
       bottom: 'VIEW OFFERINGS  >',
       link: '/services',
     },
@@ -67,14 +67,15 @@ function About() {
           </div>
 
           <div className="lg:hidden max-w-[325px] text-stone-800 text-[21px] font-normal font-['Gibson'] leading-9 tracking-tight">
-            We are familiar with the challenges and difficulties communities
-            face and are prepared to tackle those challenges; combine our
-            day-to-day experience with ongoing professional training, the latest
-            in technology and some creative thinking to handle the needs of
-            today and tomorrow. <br />
+            Our objective is to always exemplify thought leadership and standard
+            setting professionalism for commercial, homeowner and hospitality
+            companies. We serve our customers' needs and consistently produce
+            and manage developments of lasting value to the community. <br />
             <br />
-            We take the values and requests of our clients' very seriously,
-            providing only the very best in customer service.
+            We recognize the need to be flexible, entrepreneurial, and
+            aggressive, both as individuals and as a company. We believe in
+            teamwork, innovation, professionalism, and long-term
+            decision-making.
           </div>
           <div className="pb-[50px] lg:pb-[100px] "></div>
         </div>

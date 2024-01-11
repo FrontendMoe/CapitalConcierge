@@ -33,10 +33,10 @@ function Home() {
     {
       text: (
         <>
-          anell, and her team are attentive, professional, kind and most
+          Janelle, and her team are attentive, professional, kind and most
           importantly to me, because I am a senior, they make me feel safe and
           cared for both inside our building and within our Downtown Atlanta
-          community. <br /> <br /> After multiple years of working directly
+          community. <br /> <br /> After multiple years of working directly with
           Janelle and her team on resident needs, events, maintenance and more
           was my favorite part of being a resident and HOA member of a Capital
           Concierge community.
@@ -61,7 +61,7 @@ function Home() {
       author: (
         <>
           Horace Williams <br />
-          Home Owners Assoc. Vice President
+          Home Owners Assoc. <br /> Vice President
         </>
       ),
     },
@@ -254,7 +254,7 @@ function Home() {
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
             <p className="   Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
-              tailored-fitted for each community{' '}
+              tailor-fitted for each community{' '}
             </p>
 
             <p className="max-w-[823px] leading-[37px] px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson'] lowercase lg:leading-[49px]">

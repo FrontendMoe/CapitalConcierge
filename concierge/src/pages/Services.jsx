@@ -80,7 +80,7 @@ function Services() {
           <p className="max-w-[936px] lg:block hidden">
             <span className="text-yellow-50 text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
               We are familiar with the challenges and difficulties communities
-              face and are prepared to tackle those challenges; combine our
+              face and are prepared to tackle those challenges by combining our
               day-to-day experience with ongoing professional training, the
               latest in technology and some creative thinking to handle the
               needs of today and tomorrow.{' '}

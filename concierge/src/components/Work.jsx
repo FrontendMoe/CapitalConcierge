@@ -12,14 +12,16 @@ function Work() {
         </p>
 
         <p className="max-w-[923px] lg:block hidden    text-black text-[20px] lg:text-[25px] font-light font-['Gibson'] lg:leading-[44.70px]">
-          Janell, and her team are attentive, professional, kind and most
-          importantly to me, because I am a senior, they make me feel safe and
-          cared for both inside our building <br />
+          Are you interested in having us serve your community or want to learn
+          more or are you interested in joining our team at Capital Concierge?
+          Contact us by clicking below, We would love to hear from you!
+          <br />
         </p>
         <div className="max-w-[261px] lg:hidden  text-black text-xl font-light font-['Gibson'] leading-9">
-          Janell, and her team are attentive, professional, kind and most
-          importantly to me, because I am a senior, they make me feel safe and
-          cared for both inside our building <br />
+          Are you interested in having us serve your community or want to learn
+          more or are you interested in joining our team at Capital Concierge?
+          Contact us by clicking below, We would love to hear from you!
+          <br />
         </div>
 
         <button className="max-w-[397px] w-full flex items-center h-[69px] bg-[#282724]">
