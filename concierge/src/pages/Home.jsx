@@ -429,15 +429,14 @@ function Home() {
               <br />
             </span>
             <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
-              Speaks <br className="lg:block hidden" />
-              for
+              Speaks for
               <br className="lg:block hidden" />
               Itself.
             </span>
           </p>
           <p className="max-w-[530px] lg:hidden">
             <span className="text-[#29292B] text-[58.04px] font-light font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
-              our <br />
+              ur <br />
             </span>
             <span className="text-[#29292B] text-[58.04px] font-semibold font-['Hiragino Mincho ProN'] leading-[61.50px] tracking-[-2.902px]">
               reputation
