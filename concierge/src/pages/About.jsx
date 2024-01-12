@@ -102,12 +102,12 @@ function About() {
           </div>
 
           <div className="bg-[#38342D] relative lg:translate-y-[100px] space-y-[30px] lg:space-y-[77px] py-[60px] lg:py-[100px] p-[30px] lg:px-[90px] ">
-            <p className="max-w-[379px] lg:max-w-[706px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
+            <p className="max-w-[379px] lg:px-[39px] lg:max-w-[706px] Hiragino text-orange-100 text-[35px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[85px]">
               Learn More...
             </p>
             <div className="">
               {learn.map((el, index) => (
-                <div key={index} className="pb-[40px] lg:pb-[45px] ">
+                <div key={index} className="pb-[40px] lg:pb-[10px] ">
                   <div className="w-full h-[0px] border border-yellow-50 border-opacity-10"></div>
                   <div className=" pt-[40px] lg:pt-[45px] px-[10px] lg:px-[70px] space-y-[18px] lg:space-y-[18px]">
                     <p className=" text-[#FFF7DF] Hiragino text-xl font-[600] font-['Hiragino Mincho Pro'] leading-relaxed">
