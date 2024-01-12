@@ -94,7 +94,11 @@ button {
   opacity: 1;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
 }
-
+@media (min-width: 1700px) {
+  .footerFlex {
+    flex-direction: row;
+  }
+}
 .fadeOut {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
