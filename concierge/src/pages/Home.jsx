@@ -214,8 +214,8 @@ function Home() {
                 The Best <br /> For Your <br />
                 <span className="text-[#F6C94B]"> Guest.</span>
               </p>
-              <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
-              <div className="w-[69px] lg:hidden h-[0px] border-2 border-[#F6C94B]"></div>
+              <div className="w-[85.46px] h-[0px] lg:block hidden border border-[#E9C348]"></div>
+              <div className="w-[69px] lg:hidden h-[0px] border border-[#F6C94B]"></div>
 
               <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[300] font-['Gibson'] leading-[36px] lg:leading-[60px] tracking-[0.21px]">
                 Professional & Innovative Concierge Services & Solutions.
@@ -333,7 +333,7 @@ function Home() {
           <div className=" px-[17px] xl:px-[0px]   xl:max-w-[1026px] mx-auto ">
             <div className="bg-[#7D5555] translate-y-[100px] lg:translate-y-0 xl:mx-0 mx-auto   xl:w-[951px] relative ">
               <div className="px-[30px] lg:px-[72px] space-y-[36px] py-[70px]">
-                <div className="max-w-[303px] lg:max-w-[700px] text-[32.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-light font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
+                <div className="max-w-[303px] lg:max-w-[813px] text-[32.891px] Hiragino  text-[#FFF7DF] lg:text-[49px] font-[300] font-['Hiragino Mincho ProN'] leading-[43.667px] lg:leading-[58px] ">
                   Capital Concierge is Affordable, Accessible, Attentive &
                   Accountable.
                 </div>
@@ -342,6 +342,10 @@ function Home() {
                     We are familiar with the challenges and difficulties
                     communities face and are prepared to tackle those
                     challenges.{' '}
+                    <span className="font-[600]">
+                      Click below to learn more about what we have to offer your
+                      community.
+                    </span>
                   </span>
                   {/* <span className="text-[#FFF7DF] max:text-[19px] lg:font-semibold font-['Gibson'] leading-[30px] tracking-wide">
                     Click below to learn more about what we have to offer your
@@ -398,7 +402,7 @@ function Home() {
               }}
               className="text-[#F6C94B] text-right text-[16px] lg:text-[22px] font-semibold font-['Gibson'] leading-[29px] tracking-[2.64px]"
             >
-              VIEW OUR OFFERINGS {'>'}
+              ABOUT CAPITAL CONCIERGE {'>'}
             </button>
           </div>
           <div
