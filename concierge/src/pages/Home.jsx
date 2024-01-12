@@ -217,7 +217,7 @@ function Home() {
               <div className="w-[85.46px] h-[0px] lg:block hidden border-2 border-[#E9C348]"></div>
               <div className="w-[69px] lg:hidden h-[0px] border-2 border-[#F6C94B]"></div>
 
-              <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[400] font-['Gibson'] leading-[36px] lg:leading-[60px] tracking-[0.21px]">
+              <div className="max-w-[237px] lg:max-w-[371px] relative z-10 text-[#F8EED3] text-[21px] lg:text-[45px] font-[300] font-['Gibson'] leading-[36px] lg:leading-[60px] tracking-[0.21px]">
                 Professional & Innovative Concierge Services & Solutions.
               </div>
             </div>
@@ -418,17 +418,17 @@ function Home() {
         <section className=" pb-[120px] pt-[60px] xl:mx-auto space-y-[45px] lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[70px] lg:px-[150px]">
           <p className="max-w-[767px] lg:block hidden lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
             <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
-              our <br />
+              Our <br />
             </span>
             <span className="text-[#29292B] text-[40px] lg:text-[84px] font-semibold Hiragino  lg:leading-[89px]">
-              reputation
+              Reputation
               <br />
             </span>
             <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
-              speaks <br className="lg:block hidden" />
+              Speaks <br className="lg:block hidden" />
               for
               <br className="lg:block hidden" />
-              itself.
+              Itself.
             </span>
           </p>
           <p className="max-w-[530px] lg:hidden">
