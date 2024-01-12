@@ -206,8 +206,8 @@ function Home() {
         <div className="lg:w-1/2   xl:flex lg:relative z-20  justify-end flex-1 bg-[#0B0B0B] ">
           <div className="flex lg:w-fit  flex-col justify-end lg:relative lg:z-20 bg-[#0B0B0B]">
             <div className=" bg-[#0B0B0B]  relative z-20 text-white space-y-[30px] pt-[150px] lg:space-y-[72px]    py-[80px] pl-[100px] lg:py-[128px] lg:px-[150px]      w-full lg:max-w-[726px]">
-              <p className="text-[40px] lg:block text-[#F8EED3] hidden relative lg:text-[84px]  Hiragino lg:leading-[89px] tracking-[-6.72px]">
-                The <br /> Best For <br /> Your <br />{' '}
+              <p className="text-[40px] lg:block text-[#F8EED3] hidden relative lg:text-[84px]  Hiragino lg:leading-[85px] tracking-[-6.72px]">
+                The Best <br /> For Your <br />{' '}
                 <span className="text-[#F6C94B]">Guest.</span>
               </p>
               <p className="text-[55.659px]  text-[#F8EED3] lg:hidden relative lg:text-[84px]  leading-[54.3px]  Hiragino lg:leading-[89px] tracking-[-4.453px]">
@@ -248,7 +248,7 @@ function Home() {
         </div>
       </section>
       <section className="text-start overflow-visible relative z-20 lg:space-y-[90px] space-y-[120px]  border-black    bg-[#F8EED3] py-[40px] lg:py-[80px] px-[30px] lg:px-[90px]">
-        <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[125px] lg:-translate-y-0 -translate-y-[180px]  bg-[#F6C94B]">
+        <div className="  overflow-visible space-y-[-100px] lg:space-y-[70px]  pt-[60px] lg:py-[118px] lg:-translate-y-0 -translate-y-[180px]  bg-[#F6C94B]">
           <div
             id="topSection"
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
@@ -256,7 +256,7 @@ function Home() {
             <p className=" lg:hidden    Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               Tailor-fitted for each community{' '}
             </p>
-            <p className="  lg:block hidden Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+            <p className="  lg:block hidden Hiragino  lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               Tailored Services for the Specific Needs of Your Community.
             </p>
             <p className="max-w-[864px] lg:block hidden leading-[37px]  px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
