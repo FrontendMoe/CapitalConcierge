@@ -365,7 +365,7 @@ function Home() {
         </div>
       </section>
       <section className="relative z-20">
-        <div className="bg-[#282724]  relative space-y-[70px] px-[70px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[110px]">
+        <div className="bg-[#282724]  relative space-y-[70px] px-[70px] lg:px-[180px] xl:px-0 py-[60px]  lg:py-[160px]">
           <div className="space-y-[20px] xl:max-w-[1023px] mx-auto  lg:space-y-[44px]">
             <div className="max-w-[734px] lg:block hidden Hiragino  text-[#FFF7DF] text-[30px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px]">
               About Us.
@@ -419,7 +419,7 @@ function Home() {
         </div>
       </section>
       <div className="bg-[#F8EED3] ">
-        <section className=" pb-[120px] pt-[60px] xl:mx-auto space-y-[45px] lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[70px] lg:px-[150px]">
+        <section className=" pb-[120px] pt-[60px] lg:pt-[133px] xl:mx-auto space-y-[45px] lg:columns-2 gap-[150px] xl:max-w-[1023px] xl:px-0	 px-[70px] lg:px-[150px]">
           <p className="max-w-[767px] lg:block hidden lg:pb-[100px] lg:pt-0 lg:text-start  py-[50px] ">
             <span className="text-[#29292B] text-[40px] lg:text-[84px] font-light Hiragino  lg:leading-[89px]">
               Our <br />

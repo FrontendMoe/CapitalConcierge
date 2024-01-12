@@ -20,7 +20,11 @@ function Footer() {
   return (
     <footer className="bg-[#282724] space-y-[49px] lg:space-y-0 lg:px-[80px] 2xl:px-[125px] lg:space-x-[128px] 2xl:space-x-[78px] flex lg:flex-row flex-col justify-center items-center  min-h-[30vh] pt-[100px] lg:py-[160px]">
       <div>
-        <img src={Footerlogo} className="w-[187px]" alt="" />{' '}
+        <img
+          src={Footerlogo}
+          className="w-[187px] lg:w-[200px] object-scale-down "
+          alt=""
+        />{' '}
       </div>
       <div className=" space-y-[45px] flex-1 items-center 2xl:items-start justify-between flex footerFlex flex-col w-full">
         <p className="max-w-[255.68px] mx-auto lg:hidden text-center">
