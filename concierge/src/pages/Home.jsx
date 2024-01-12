@@ -253,11 +253,17 @@ function Home() {
             id="topSection"
             className=" max-w-[1026px]    mx-auto space-y-[20px] pb-[60px]   lg:px-[160px] xl:px-[0px] overflow-visible lg:space-y-[70px]   bg-[#F6C94B]"
           >
-            <p className="   Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+            <p className=" lg:hidden    Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
               Tailor-fitted for each community{' '}
             </p>
-
-            <p className="max-w-[823px] leading-[37px]  px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
+            <p className="  lg:block hidden Hiragino px-[40px] lg:px-0  text-[#29292B] text-[54.482px] lg:text-[84px] font-light font-['Hiragino Mincho ProN'] lg:leading-[82.30px] tracking-[-2.724px] leading-[53.379px] lg:max-w-[700px] 2xl:max-w-[800px] max-w-[299px] lg:tracking-[-4px]">
+              Tailored Services for the Specific Needs of Your Community.
+            </p>
+            <p className="max-w-[864px] lg:block hidden leading-[37px]  px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
+              Our Concierge staff goes the distance to ensure we provide
+              services that are the right-fit for every community.
+            </p>
+            <p className="max-w-[823px] lg:hidden leading-[37px]  px-[40px] lg:px-0  pb-[50px] lg:pb-0   text-[#29292B] text-[28px] lg:text-[45px] font-light font-['Gibson']  lg:leading-[49px]">
               See a measurable difference with
               <p className="capitalize">capital concierge</p> .
             </p>
@@ -343,7 +349,7 @@ function Home() {
                   </span> */}
                 </div>
               </div>
-              <div className="bg-[#6B4949]   lg:px-[72px]  py-[35px] lg:text-right px-[30px] text-start">
+              <div className="bg-[#6B4949]   lg:px-[72px]  py-[35px] lg:text-start px-[30px] text-start">
                 <Link to={'/Services'}>
                   <button className="text-[#F6C94B]  text-[22px] text-start max-w-[219px] lg:max-w-full lg:text-[22px] font-semibold font-['Gibson'] lg:leading-[29px] tracking-[2.64px]">
                     VIEW OUR OFFERINGS & PRICING {'>'}
@@ -365,12 +371,13 @@ function Home() {
               Us.
             </div>
 
-            <div className="max-w-[714px] lg:block hidden text-[#FFF7DF] text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-[0.57px]">
+            <div className="max-w-[881px] lg:block hidden text-[#FFF7DF] text-[16px] lg:text-[19px] font-light font-['Gibson'] lg:leading-[46px] leading-[35px] tracking-[0.57px]">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
               partnership to create innovative solutions, honestly, dependably,
-              proficiently and with integrity.
+              proficiently and with integrity.{' '}
+              <span className="font-semibold">Click below to learn more.</span>
             </div>
             <div className="max-w-[290px] lg:hidden text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[46px] tracking-[0.57px]">
               We believe Capital Concierge’s mission is to provide our clients

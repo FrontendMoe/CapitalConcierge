@@ -31,11 +31,11 @@ function About() {
       <Navbar></Navbar>
       <section className="bg-[#F6C94B] pt-[50px] lg:pt-[100px]">
         <div className="px-[50px] lg:px-[220px] pt-[100px] lg:pt-0  space-y-[30px] lg:space-y-[60px]">
-          <p className="max-w-[1020px] Hiragino lg:block hidden">
-            <span className="text-stone-800 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
+          <p className="max-w-[1020px] Hiragino lg:block hidden ">
+            <span className="text-stone-800 text-[84px] tracking-[-6.72px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
               About{' '}
             </span>
-            <span className="text-stone-800 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+            <span className="text-stone-800 text-[84px] tracking-[-6.72px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
               Capital
               <br />
               Concierge
@@ -53,7 +53,7 @@ function About() {
           </p>
           <div className="w-[69px] h-[0px] border-2 border-stone-800"></div>
 
-          <div className="lg:block hidden max-w-[877px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+          <div className="lg:block hidden max-w-[877px] text-black text-[19px] font-light font-['Gibson'] leading-[46px] tracking-[0.57px]">
             Our objective is to always exemplify thought leadership and standard
             setting professionalism for commercial, homeowner and hospitality
             companies. We serve our customers' needs and consistently produce
@@ -66,7 +66,7 @@ function About() {
             decision-making.
           </div>
 
-          <div className="lg:hidden max-w-[325px] text-stone-800 text-[21px] font-normal font-['Gibson'] leading-9 tracking-tight">
+          <div className="lg:hidden max-w-[325px] text-stone-800 text-[21px] font-normal font-['Gibson'] leading-[36.2px] tracking-[0.21px]">
             Our objective is to always exemplify thought leadership and standard
             setting professionalism for commercial, homeowner and hospitality
             companies. We serve our customers' needs and consistently produce
@@ -92,7 +92,7 @@ function About() {
               <br />
               Mission
             </p>
-            <div className="max-w-[880px]  text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[46px] tracking-wide">
+            <div className="max-w-[880px]  text-[#FFF7DF] text-[19px] font-light font-['Gibson'] leading-[46px] tracking-[0.57px]">
               We believe Capital Concierge’s mission is to provide our clients
               the highest quality and most effective customer service. Our
               priority is to manage our clients expectations while working in
@@ -118,7 +118,7 @@ function About() {
                     </p>
                     <Link
                       to={el.link}
-                      className="text-amber-300 w-full lg:justify-end flex lg:text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-wider"
+                      className="text-amber-300 w-full lg:justify-end flex lg:text-end space-x-[10px] text-xs font-semibold font-['Gibson'] leading-[29px] tracking-[1.44px]"
                     >
                       <p>{el.bottom}</p>
                     </Link>

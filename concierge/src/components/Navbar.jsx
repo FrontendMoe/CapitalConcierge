@@ -131,7 +131,7 @@ function Navbar() {
             />
           </Link>
         </div>
-        <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[83px] justify-end ">
+        <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[60px] justify-end ">
           {nav.map((el, index) =>
             el.link ? (
               <Link

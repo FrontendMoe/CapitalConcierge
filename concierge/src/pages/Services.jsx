@@ -53,11 +53,11 @@ function Services() {
       <section className="pt-[50px] lg:pt-[100px]">
         <div className="lg:px-[220px]  px-[50px] pt-[100px] lg:pt-0 text-[#FFF7DF] pb-[160px] space-y-[45px] lg:space-y-[75px] b">
           <p className="max-w-[1020px] lg:block hidden Hiragino">
-            <span className="text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] leading-[85px]">
+            <span className="text-yellow-50 text-[84px] font-light font-['Hiragino Mincho ProN'] tracking-[-6px] leading-[85px]">
               A Concierge Company <br />
               For All Your{' '}
             </span>
-            <span className="text-yellow-50 text-[84px] font-semibold font-['Hiragino Mincho ProN'] leading-[85px]">
+            <span className="text-yellow-50 text-[84px] font-semibold font-['Hiragino Mincho ProN'] tracking-[-6px] leading-[85px]">
               Community’s
               <br />
               Needs.
