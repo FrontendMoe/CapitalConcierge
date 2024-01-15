@@ -63,8 +63,8 @@ function Services() {
               Needs.
             </span>
           </p>
-          <p className="Hiragino lg:hidden lg:w-[348px]">
-            <span className="text-orange-100 text-[48px] font-light font-['Hiragino Mincho ProN'] leading-[54.30px]">
+          <p className="Hiragino lg:hidden lg:w-[348px] tracking-[-3.5px]">
+            <span className="text-orange-100 text-[48px] font-light font-['Hiragino Mincho ProN']  leading-[54.30px]">
               A Concierge Company <br />
               For All Your
               <br />
@@ -177,7 +177,7 @@ function Services() {
               onClick={mailTo}
               className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
             >
-              <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
+              <p className="max-w-[417.61px]  text-black text-[16px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
                 REQUEST PRICING {'>'}
               </p>
             </button>

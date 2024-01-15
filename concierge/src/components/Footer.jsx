@@ -45,12 +45,12 @@ function Footer() {
           </span>
         </p>
 
-        <div className="flex justify-start items-center space-x-[20px] pb-[50px] lg:pb-0 px-[20px] lg:px-0">
+        <div className="flex  items-center justify-between space-x-[10px] pb-[50px] lg:pb-0  lg:px-0">
           {links.map((el, index) => (
             <Link
               key={index}
               to={el.link}
-              className="text-orange-100 text-[12.303px] lg:text-xs font-semibold font-['Gibson'] uppercase tracking-[6.27px]"
+              className="text-orange-100 text-[11px] lg:text-xs font-semibold font-['Gibson'] uppercase tracking-[6px]"
             >
               {el.name}
             </Link>
