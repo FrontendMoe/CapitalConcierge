@@ -1,8 +1,11 @@
 import { mailTo } from '../utils/functions'
 
-function Work() {
+function Work({ bg }) {
   return (
-    <div className="bg-[#F6C94B] -mt-[1px] w-full">
+    <div
+      style={{ backgroundColor: bg }}
+      className="bg-[#F6C94B] -mt-[1px] w-full"
+    >
       <section className="px-[70px] xl:max-w-[1023px] xl:mx-auto xl:px-0 lg:px-[150px]  space-y-[40px] lg:space-y-[27px] py-[60px] lg:py-[120px]">
         <p className="max-w-[939px] lg:block hidden  Hiragino text-stone-800 text-[30px] lg:text-[84px] font-[400] lg:font-light font-['Hiragino Mincho ProN'] tracking-[-4px] lg:leading-[82.30px]">
           Let’s Work Together.

@@ -10,6 +10,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import { FadeEffect } from './utils/FadeEffect'
 import Navbar from './components/Navbar'
+import FireSafety from './pages/FireSafety'
 function App() {
   return (
     <div className="overflow-hidden">
@@ -32,6 +33,10 @@ function App() {
           <Route path="/Company" element={<Company></Company>}></Route>
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/Services" element={<Services></Services>}></Route>
+          <Route
+            path="/fire-safety"
+            element={<FireSafety></FireSafety>}
+          ></Route>
         </Routes>
 
         <Footer></Footer>

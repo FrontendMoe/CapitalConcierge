@@ -32,9 +32,21 @@ function Navbar() {
       link: '/About',
       color: '#7D5555',
     },
+    // {
+    //   name: 'Fire Safety',
+    //   link: '/fire-safety',
+    //   color: '#7D5555',
+    // },
     {
       name: 'Services',
       link: '/Services',
+      links: [
+        {
+          name: 'Fire Safety',
+          link: '/fire-safety',
+          color: '#7D5555',
+        },
+      ],
     },
     {
       name: 'CONTACT',
@@ -57,13 +69,20 @@ function Navbar() {
     if (window.scrollY > 50) {
       document.querySelector('#nav').style.backgroundColor = '#0B0B0B'
       document.querySelector('#paddingTop').style.paddingTop = '30px'
-      if (location.pathname.toLowerCase().includes('about')) {
+      if (
+        location.pathname.toLowerCase().includes('about') ||
+        location.pathname.toLowerCase().includes('fire-safety')
+      ) {
         setInvert('')
       }
     } else {
       document.querySelector('#nav').style.backgroundColor = 'transparent'
       document.querySelector('#paddingTop').style.paddingTop = '70px'
-      if (location.pathname.toLowerCase().includes('about') && !collapsed) {
+      if (
+        (location.pathname.toLowerCase().includes('about') ||
+          location.pathname.toLowerCase().includes('fire-safety')) &&
+        !collapsed
+      ) {
         setInvert('invert')
       }
     }
@@ -107,7 +126,9 @@ function Navbar() {
         style={{
           backgroundColor:
             location.pathname.toLowerCase().includes('about') ||
-            location.pathname.toLowerCase().includes('services')
+            location.pathname.toLowerCase().includes('fire-safety') ||
+            location.pathname.toLowerCase().includes('services') ||
+            location.pathname.toLowerCase().includes('fire-safety')
               ? '#0B0B0B33'
               : '#0B0B0B',
         }}
@@ -118,7 +139,9 @@ function Navbar() {
             <img
               src={logo}
               className={` w-fit ${
-                location.pathname.toLowerCase().includes('about') && 'invert'
+                (location.pathname.toLowerCase().includes('about') ||
+                  location.pathname.toLowerCase().includes('fire-safety')) &&
+                'invert'
               }`}
               alt=""
             />
@@ -126,7 +149,9 @@ function Navbar() {
               src={LogoText}
               alt=""
               className={`w-[93.779px]  object-scale-down h-[32.914px] ${
-                location.pathname.toLowerCase().includes('about') && 'invert'
+                (location.pathname.toLowerCase().includes('about') ||
+                  location.pathname.toLowerCase().includes('fire-safety')) &&
+                'invert'
               }`}
             />
           </Link>
@@ -144,7 +169,10 @@ function Navbar() {
                 <div
                   style={{
                     color:
-                      location.pathname.toLowerCase().includes('about') &&
+                      (location.pathname.toLowerCase().includes('about') ||
+                        location.pathname
+                          .toLowerCase()
+                          .includes('fire-safety')) &&
                       index !== nav.length - 1 &&
                       'black',
                     letterSpacing: '7.14px',
@@ -181,6 +209,7 @@ function Navbar() {
         style={{
           backgroundColor:
             location.pathname.toLowerCase().includes('about') ||
+            location.pathname.toLowerCase().includes('fire-safety') ||
             location.pathname.toLowerCase().includes('services')
               ? '#0B0B0B33'
               : '#0B0B0B',
@@ -195,7 +224,9 @@ function Navbar() {
             <img
               src={logo}
               className={`${
-                location.pathname.toLowerCase().includes('about') && !collapsed
+                (location.pathname.toLowerCase().includes('about') ||
+                  location.pathname.toLowerCase().includes('fire-safety')) &&
+                !collapsed
                   ? invert
                   : ''
               } `}
@@ -205,7 +236,9 @@ function Navbar() {
               src={LogoText}
               alt=""
               className={`w-[93.779px] ${
-                location.pathname.toLowerCase().includes('about') && !collapsed
+                (location.pathname.toLowerCase().includes('about') ||
+                  location.pathname.toLowerCase().includes('fire-safety')) &&
+                !collapsed
                   ? invert
                   : ''
               }  object-scale-down h-[32.914px]`}
@@ -215,7 +248,9 @@ function Navbar() {
             key={'menybar'}
             id="burger"
             className={`z-30  ${
-              location.pathname.toLowerCase().includes('about') && invert
+              (location.pathname.toLowerCase().includes('about') ||
+                location.pathname.toLowerCase().includes('fire-safety')) &&
+              invert
             } w-fit flex    justify-end   relative`}
             onClick={() => setCollapsed(!collapsed)}
           >
