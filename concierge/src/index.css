@@ -103,3 +103,10 @@ button {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
 }
+
+.nav-el:hover .nav-cheveron {
+  @apply rotate-180;
+}
+.nav-el:hover .nav-el-menu {
+  @apply block;
+}

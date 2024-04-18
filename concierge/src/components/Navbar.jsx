@@ -6,6 +6,7 @@ import video from '../vid.mp4'
 import logo from '../assets/logo.svg'
 import navBg from '../assets/navBg.png'
 import LogoText from '../assets/LogoText.png'
+import { chevron } from '../assets/icons'
 function Navbar() {
   const [invert, setInvert] = useState('invert')
   const [collapsed, setCollapsed] = useState(false)
@@ -41,6 +42,11 @@ function Navbar() {
       name: 'Services',
       link: '/Services',
       links: [
+        {
+          name: 'OUR SERVICES',
+          link: '/Services',
+          color: '#7D5555',
+        },
         {
           name: 'Fire Safety',
           link: '/fire-safety',
@@ -132,7 +138,7 @@ function Navbar() {
               ? '#0B0B0B33'
               : '#0B0B0B',
         }}
-        className=" py-[25px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between"
+        className=" h-[113px] hidden lg:flex bg-[#0B0B0B] border-black   px-[50px] justify-between"
       >
         <div className="flex items-center flex-row-reverse    w-fit space-x-[7px]">
           <Link to={'/'} className="flex items-center">
@@ -156,7 +162,7 @@ function Navbar() {
             />
           </Link>
         </div>
-        <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit     space-x-[60px] justify-end ">
+        <div className="   text-[#F8EED3] flex  z-10 items-center   top-0 w-fit    h-[113px] space-x-[60px] justify-end ">
           {nav.map((el, index) =>
             el.link ? (
               <Link
@@ -178,12 +184,32 @@ function Navbar() {
                     letterSpacing: '7.14px',
                     fontSize: '14px',
                   }}
-                  className={`cursor-pointer tracking-[7.14px] text-[14px] uppercase font-[600] ${
-                    index === nav.length - 1 &&
-                    ' py-[12px]  font-[600] px-[22px] text-[#F6C94B]'
+                  className={`cursor-pointer  relative   flex items-center  nav-el tracking-[7.14px] text-[14px] uppercase font-[600] ${
+                    index === nav.length - 1
+                      ? ' py-[12px]   font-[600] px-[22px] text-[#F6C94B]'
+                      : 'h-[113px]'
                   }`}
                 >
-                  {el.name}
+                  {el.name}{' '}
+                  {el.links?.length > 0 && (
+                    <>
+                      <div className="nav-cheveron -mt-[4px] ml-[10px] duration-150 w-fit h-fit ">
+                        {chevron}
+                      </div>
+                      <div className="absolute z-20 duration-150 w-[225px] text-white nav-el-menu hidden bg-[#0B0B0B33] left-1/2 -translate-x-1/2 top-[100%] ">
+                        {el.links.map((subEl) => (
+                          <Link to={subEl.link}>
+                            <button
+                              className="border-t-[#715353]  text-[11.237px] uppercase
+                           font-[600] leading-[26.855px] tracking-[5.731px] h-[60px] w-full border-t"
+                            >
+                              {subEl.name}
+                            </button>
+                          </Link>
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
               </Link>
             ) : (
