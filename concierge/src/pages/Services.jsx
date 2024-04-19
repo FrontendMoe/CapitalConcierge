@@ -207,7 +207,7 @@ function Services() {
               </div>
               <div>
                 <Link to="/fire-safety">
-                  <button className="flex text-[23px] font-[600] tracking-[0.46px] text-white leading-[29.7px] w-[265.233px] lg:w-[397px] items-center h-[69px] px-[28px] lg:px-[32px] bg-[#7D5555] justify-between">
+                  <button className="flex text-[20px] lg:text-[23px] font-[600] tracking-[0.46px] text-white leading-[29.7px] w-[220.233px] lg:w-[397px] items-center h-[69px] px-[28px] lg:px-[32px] bg-[#7D5555] justify-between">
                     <span>LEARN MORE</span> <span>{'>'}</span>
                   </button>
                 </Link>

@@ -89,7 +89,7 @@ function FireSafety() {
                 early signs of fire, activating an alarm and notifying the fire
                 department in the event of a fire. 
               </p>
-              <button className="flex items-center text-[20.82px] lg:text-[23px] font-[600] leading-[29.7px] tracking-[0.46px] justify-between  lg:space-x-[40px] w-[284px] lg:w-[427px] px-[20px] lg:px-[32px] h-[69px] bg-[#F6C94B]">
+              <button className="flex items-center text-[18.82px] lg:text-[23px] font-[600] leading-[29.7px] tracking-[0.46px] justify-between  lg:space-x-[40px] w-full lg:w-[427px] px-[20px] lg:px-[32px] h-[69px] bg-[#F6C94B]">
                 <span>READ FULL ARTICLE </span> <span>{'>'}</span>
               </button>
             </div>
@@ -133,7 +133,7 @@ function FireSafety() {
                 onClick={mailTo}
                 className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
               >
-                <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
+                <p className="max-w-[417.61px]  text-black text-[17px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
                   REQUEST A PROPOSAL {'>'}
                 </p>
               </button>
