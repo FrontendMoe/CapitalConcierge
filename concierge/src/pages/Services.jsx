@@ -254,7 +254,7 @@ function Services() {
               onClick={mailTo}
               className="w-full lg:w-[397px]  flex justify-center items-center h-[69px] bg-[#F6C94B]"
             >
-              <p className="max-w-[417.61px]  text-black text-[20px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
+              <p className="max-w-[417.61px]  text-black text-[18px] lg:text-[23px] font-semibold font-['Gibson'] leading-[29.70px] tracking-[0.46px]">
                 REQUEST A PROPOSAL {'>'}
               </p>
             </button>
